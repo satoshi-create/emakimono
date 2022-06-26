@@ -10,29 +10,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap");
 
+:root {
+  --transition: all 0.3s linear;
+}
+
+.btn {
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+
 .section.ekotoba {
   writing-mode: vertical-rl;
-  font-size: 20px;
+  background-image: url(/img/110310200304.png);
 }
 .section.ekotoba {
   position: relative;
-}
-.title {
-  margin-top: 4rem;
-}
-.section.ekotoba h3 {
-  margin: 0 3rem;
-  font-size: 2.5rem;
 }
 .section.ekotoba .minus-icon {
   display: none;
 }
 .section.ekotoba .kobun-text {
   position: relative;
+  padding: 2rem;
 }
 .section.ekotoba .kobun-text p {
   font-family: "Zen Kurenaido", sans-serif;
-  font-size: 2.5rem;
+  font-size: 35px;
 }
 .section.ekotoba .translate {
   position: absolute;
@@ -53,11 +58,11 @@
 }
 .section.ekotoba .translate-text p {
   font-family: "Zen Kurenaido", sans-serif;
-  margin: 0 2rem;
+  padding: 2rem;
   font-size: 2.2rem;
 }
 .section.ekotoba .translate-btn {
-  color: var(--clr-btn);
+  color: #d6d6d6;
 }
 .section.ekotoba.show-text .minus-icon {
   display: block;

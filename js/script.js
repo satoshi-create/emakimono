@@ -114,13 +114,37 @@ $(function () {
 
   contentsSp.innerHTML = emakis
     .map((emaki, index) => {
-      const { srcSp, nameSp } = emaki;
-      return `
-    <div id="s${index}"></div>
-    <div class="section section${index + 1}">
-    <img src=${srcSp} alt=${nameSp} />
-    </div>
-    `;
+      const { cat, kobun, gendaibun, src, name } = emaki;
+      if (cat == "ekotoba") {
+        return `<div class="section ${cat}"> 
+        <div class="kobun-text">
+  <p>
+    ${kobun}
+  </p>
+  <div class="translate">
+    <!-- question button -->
+    <button type="button" class="btn translate-btn section-btn">
+      <span class="plus-icon">
+        <i class="far fa-plus-square"></i>
+      </span>
+      <span class="minus-icon">
+        <i class="far fa-minus-square"></i>
+      </span>
+    </button>
+  </div>
+</div>
+<div class="translate-text">
+  <p class="gendaibun-text">${gendaibun}</p>
+</div>
+</div>`;
+      } else {
+        return `
+<div id="s${index}"></div>
+<div class="section section${index + 1}">
+<img src=${src} alt=${name} />
+</div>
+`;
+      }
     })
     .join("");
 
