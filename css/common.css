@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap");
+
+/*
+=============== 
+Root
+===============
+*/
+:root {
+  font-size: 10px;
+  --title-font: "Hina Mincho", serif;
+  --text-font: "Noto Serif JP", serif;
+  --my-font: 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN",
+    "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
+  --clr-black: #222222;
+  --clr-gray: #6c6c6c;
+  --clr-white: #fff;
+  --clr-primary-01: rgba(117, 159, 238, 0.57);
+  --clr-primary-01-02: rgba(117, 159, 238, 0.3);
+  --clr-primary-02: #7daaff;
+  --clr-primary-03: #5c8fed;
+  --clr-accent-01: #e1644d;
+  --clr-btn: #d6d6d6;
+  --clr-btn-02: #b3b3b3;
+  --transition: all 0.3s linear;
+  --h1-right: 137px;
+  --slideR-width: 180px;
+  --slideR-height: 400px;
+  --slideR-right: -140px;
+}
+
+/*
+=============== 
+Reset
+===============
+*/
+/* * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+} */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+/*
+=============== 
+common parts
+===============
+*/
+
+/* 
+@media (max-height: 600px) {
+  html,
+  body {
+    overflow-x: visible;
+    overflow-y: hidden;
+    width: 100%;
+    height: 100%;
+  }
+} */
+
+body {
+  font-family: var(--my-font);
+  font-size: 16px;
+  color: var(--clr-black);
+}
+
+.contents {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+.contents.sp {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.section {
+  height: 100%;
+}
+.image-container {
+  height: 100%;
+}
+
+.off {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+img {
+  height: 100%;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+.sp {
+  display: block;
+}
+
+.pc {
+  display: none;
+}
+
+.btn {
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+@media (min-height: 600px) {
+  .sp {
+    display: none;
+  }
+
+  .pc {
+    display: block;
+  }
+}

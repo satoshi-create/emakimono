@@ -1,137 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap");
-
 /*
 =============== 
-Root
+header/footer
 ===============
 */
-:root {
-  --title-font: "Hina Mincho", serif;
-  --text-font: "Noto Serif JP", serif;
-  --my-font: 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN",
-    "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
-  --clr-black: #222222;
-  --clr-gray: #6c6c6c;
-  --clr-white: #fff;
-  --clr-primary-01: rgba(117, 159, 238, 0.57);
-  --clr-primary-01-02: rgba(117, 159, 238, 0.3);
-  --clr-primary-02: #7daaff;
-  --clr-primary-03: #5c8fed;
-  --clr-accent-01: #e1644d;
-  --transition: all 0.3s linear;
-  --h1-right: 137px;
-  --slideR-width: 180px;
-  --slideR-height: 400px;
-  --slideR-right: -140px;
-}
-
-/*
-=============== 
-Reset
-===============
-*/
-/* * {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-} */
-*,
-::after,
-::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-}
-
-/*
-=============== 
-common parts
-===============
-*/
-
-/* 
-@media (max-height: 600px) {
-  html,
-  body {
-    overflow-x: visible;
-    overflow-y: hidden;
-    width: 100%;
-    height: 100%;
-  }
-} */
-
-body {
-  font-family: var(--my-font);
-  font-size: 16px;
-  color: var(--clr-black);
-}
-
-.contents {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  width: 100vw;
-  height: 100vh;
-}
-.contents.sp {
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.section {
-  height: 100%;
-}
-.image-container {
-  height: 100%;
-}
-
-.off {
-  display: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-}
-img {
-  height: 100%;
-}
-
-h1 {
-  font-size: 24px;
-}
-
-.sp {
-  display: block;
-}
-
-.pc {
-  display: none;
-}
-.header.pc {
-  display: none;
-}
-
-@media (min-height: 600px) {
-  .sp {
-    display: none;
-  }
-  .contents.sp {
-    display: none;
-  }
-  .pc {
-    display: block;
-  }
-  .contents.pc {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  .header.pc {
-    display: flex;
-  }
-}
 
 .header,
 .footer {
@@ -139,25 +10,20 @@ h1 {
   width: 100%;
   position: fixed;
   left: 0;
-  z-index: 99;
+  z-index: 2;
 }
 
-/*
-=============== 
-header/footer
-===============
-*/
-
 .header {
-  top: 12px;
+  top: 6px;
   /* display: flex; */
   justify-content: center;
   column-gap: 5px;
 }
+.header .toggle-icon,
 .header a {
-  width: 2rem;
-  height: 2rem;
-  border: 1px solid var(--clr-primary-01-02);
+  width: 4rem;
+  height: 4rem;
+  border: none;
   border-radius: 50%;
   display: grid;
   place-content: center;
@@ -165,17 +31,47 @@ header/footer
   background: var(--clr-primary-01-02);
   padding: 4px;
   color: var(--clr-gray);
+  cursor: pointer;
 }
-
+.header .toggle-icon .fa-plus {
+  display: block;
+}
+.header .toggle-icon .fa-minus {
+  display: none;
+}
+.header .open-text.toggle-icon .fa-plus {
+  display: none;
+}
+.header .open-text.toggle-icon .fa-minus {
+  display: block;
+}
 .header i {
   font-size: 21px;
   transition: var(--transition);
 }
-
+.header .toggle-icon:hover,
 .header a:hover {
-  background: var(--clr-accent-01);
-  color: var(--clr-white);
-  border: 1px solid var(--clr-accent-01);
+  opacity: 0.6;
+}
+
+.header .toggle-text {
+  writing-mode: horizontal-tb;
+  display: flex;
+}
+.header.toggle-text .active-color {
+  color: var(--clr-btn-02);
+}
+.header .toggle-text .toggle-text-btn {
+  color: var(--clr-btn);
+}
+.header .toggle-text p {
+  font-size: 1.5rem;
+}
+.header .toggle-text .toggle-icon i {
+  transition: var(--transition);
+}
+.rotate {
+  transform: rotate(90deg);
 }
 
 .footer {
@@ -188,12 +84,24 @@ header/footer
   color: var(--clr-gray);
 }
 
-/*
-=============== 
-slider-Right(nav)
-===============
-*/
+.header.pc {
+  display: none;
+}
 
+@media (min-height: 600px) {
+  .contents.sp {
+    display: none;
+  }
+  .contents.pc {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .header.pc {
+    display: flex;
+  }
+}
+
+/* 
 .slideR {
   z-index: 99;
   cursor: pointer;
@@ -237,6 +145,95 @@ slider-Right(nav)
 }
 .slideR a:hover {
   color: var(--clr-accent-01);
+}
+ */
+
+/*
+=============== 
+Sidebar
+===============
+*/
+.sidebar-open-btn,
+.sidebar-close-btn {
+  font-size: 3rem;
+  background: transparent;
+  border-color: transparent;
+  color: #d6d6d6;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.sidebar-open-btn {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+}
+.sidebar {
+  display: none;
+  writing-mode: horizontal-tb;
+  padding: 2rem;
+  position: absolute;
+  z-index: 99;
+}
+.translate-sidebar.sidebar {
+  display: block;
+}
+/* sidebarR */
+.sidebarR h4 {
+  color: var(--clr-bcg);
+}
+.sidebarR .mokuji-title {
+  margin-bottom: 2rem;
+}
+.sidebar .mokuji {
+  font-size: 2rem;
+  color: var(--clr-black);
+}
+.sidebarR .mokuji li a {
+  transition: var(--transition);
+  color: var(--clr-bcg);
+}
+.sidebarR .sidebar-close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.sidebarR {
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 40%;
+  background: plum;
+}
+/* sidebarL */
+.sidebarL {
+  bottom: 0;
+  height: 40%;
+  width: 100%;
+  background: plum;
+  text-align: right;
+}
+.sidebarL-word-box {
+  text-align: left;
+}
+.sidebarL .sidebar-close-btn {
+  color: #fff;
+}
+.sidebarL h4 {
+  color: var(--clr-font);
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    width: 400px;
+  }
+  .sidebarL {
+    left: 0;
+    top: 0%;
+    height: 100%;
+    background: rgb(155, 136, 155);
+    text-align: right;
+  }
 }
 
 /*
@@ -305,4 +302,3 @@ slider-Bottom
 .red {
   color: red;
 }
-
