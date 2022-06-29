@@ -7,14 +7,9 @@ const data = datas[id];
 
 const { title, author, edition, emakis, backgroundImage } = data;
 
-console.log(backgroundImage);
-
 $(function () {
   const contentsPc = document.querySelector(".contents.pc");
   const contentsSp = document.querySelector(".contents.sp");
-  const slideInnerB = document.querySelector(".slide-innerB");
-  const slideRTitle = document.querySelector(".slideR-title");
-  const slideRNav = document.querySelector(".slideR-nav");
   const sidebarOpenBtn = document.querySelector(".sidebar-open-btn");
   const sidebarCloseBtn = document.querySelector(
     ".sidebarR .sidebar-close-btn"
@@ -22,52 +17,7 @@ $(function () {
   const sidebarR = document.querySelector(".sidebarR");
   const mokujiText = document.querySelector(".mokuji");
 
-  // const header = document.querySelector(".header.pc");
-
-  // const targetEmakis = { cat: "ekotoba" };
-  // const some = emakis.some((e) => e.cat === targetEmakis.cat);
-
-  // console.log(some);
-
-  // header.innerHTML = `${
-  //   some
-  //     ? `
-  // <a class="header-end" href="#s${
-  //   emakis.length - 1
-  // }" title="end"><i class="fa-solid fa-backward-fast"></i></a>
-  // <span class="home-icon">
-  //   <a href="/index.html">
-  //     <i class="fa-solid fa-house"></i>
-  //   </a>
-  // </span>
-  // <span class="toggle-icon">
-  //   <i class="fa-solid fa-minus"></i>
-  //   <i class="fa-solid fa-plus"></i>
-  // </span>
-  // <div class="toggle-text">
-  //   <button type="button" class="btn toggle-text-btn">
-  //     <span class="toggle-icon">
-  //       <i class="fas fa-sync"></i>
-  //     </span>
-  //   </button>
-  // </div>
-  // <a id="ekotoba" title="explain"><i class="fas fa-scroll fa-rotate-90"></i></a>
-  // <a href="#s0" title="top"><i class="fa-solid fa-forward-fast"></i> </a>
-  // `
-  //     : `
-  //     <a class="header-end"ref="#s${
-  //       emakis.length - 1
-  //     }" title="end"><i class="fa-solid fa-backward-fast"></i></a>
-  // <span class="home-icon">
-  //   <a href="/index.html">
-  //     <i class="fa-solid fa-house"></i>
-  //   </a>
-  // </span>
-  // <a id="ekotoba" title="explain"><i class="fas fa-scroll fa-rotate-90"></i></a>
-  // <a href="#s0" title="top"><i class="fa-solid fa-forward-fast"></i> </a>
-  //     `
-  // }`;
-
+  // get header-end
   document.querySelector(".header-end").href = `#s${emakis.length - 1}`;
 
   // get title
@@ -100,7 +50,7 @@ $(function () {
             return `
             ${
               chapter
-                ? `<li><a href="#s${index}"  class="mokuji-link">${chapter}</a></li>`
+                ? `<li><a href="#s${index}"  class="mokuji-link js-smooth-scroll">${chapter}</a></li>`
                 : ""
             }
           `;
@@ -111,28 +61,10 @@ $(function () {
 
   const mokujiLink = document.querySelectorAll(".mokuji-link");
   mokujiLink.forEach(function (btn) {
-    btn.addEventListener("click", function () {
+    btn.addEventListener("click", function (e) {
       sidebarR.classList.remove("translate-sidebar");
     });
   });
-
-  // slideRTitle.textContent = `${title} ${edition ? edition : ""}`;
-
-  // slideRNav.innerHTML = emakis
-  //   .map((emaki, index) => {
-  //     const { chapter } = emaki;
-  //     return `
-  //       ${chapter ? `<li><a href="#s${index}">${chapter}</a></li>` : ""}
-
-  //   `;
-  //   })
-  //   .join("");
-
-  // // toggle slideR
-  // const slideR = document.querySelector(".slideR");
-  // slideR.addEventListener("click", function () {
-  //   slideR.classList.toggle("animateSlideR");
-  // });
 
   // slideInnerB.innerHTML = ekotobas
   //   .map((ekotoba, index) => {
@@ -261,7 +193,6 @@ $(function () {
   // toggle-text
   const toggleTextBtn = document.querySelector(".toggle-text-btn");
   const kobunTextP = contentsPc.querySelectorAll(".kobun-text p");
-  console.log(kobunTextP);
   const toggleTextP = document.querySelectorAll(".toggle-text p");
   const translateTextP = contentsPc.querySelectorAll(".gendaibun-text");
   const toggleIcon = document.querySelector(".toggle-text .toggle-icon i");
@@ -290,7 +221,6 @@ $(function () {
 
     kobunTextP.forEach(function (kobun, i) {
       if (result) {
-        console.log(fileterEmakis[i].gendaibun);
         kobun.innerHTML = `${fileterEmakis[i].gendaibun}`;
       } else {
         kobun.innerHTML = `${fileterEmakis[i].kobun}`;
@@ -325,10 +255,8 @@ $(function () {
   }
 
   const sections = contentsPc.querySelectorAll(".section");
-  console.log(sections);
   sections.forEach(function (item, i) {
     const phrases = emakis[i].phrase;
-    console.log(phrases);
     const word = item.querySelectorAll(".word");
     word.forEach(function (item, i) {
       item.addEventListener("click", function (e) {
@@ -363,52 +291,8 @@ $(function () {
     });
   });
 
-  // closeText.addEventListener("click", function () {
-  //   sections.forEach(function (section) {
-  //     if (section.classList.contains("show-text")) {
-  //       section.classList.remove("show-text");
-  //     }
-  //   });
-  // });
-
   const date = document.getElementById("year");
   date.innerHTML = new Date().getFullYear();
-
-  // 横スクロール
-  // window.addEventListener(
-  //   "mousewheel",
-  //   (e) => {
-  //     if (e.deltaX === 0) {
-  //       // e.stopPropagation();
-  //       // e.preventDefault();
-  //       // noinspection JSSuspiciousNameCombination
-  //       window.scrollBy(e.deltaY, 0);
-  //     }
-  //   },
-  //   { passive: false }
-
-  // );
-
-  // 1スクロールの移動距離
-  var speed = 30;
-  $(document).mousewheel(function (event, mov) {
-    //  スクロール後の位置の算出
-    var moving = $(this).scrollLeft() - mov * speed;
-    // スクロールする
-    $(this).scrollLeft(moving);
-    // 縦スクロールさせない
-    return true;
-  });
-  var speed = 50;
-  //マウスホイールで横移動
-  $("html").mousewheel(function (event, mov) {
-    //ie firefox
-    $(this).scrollLeft($(this).scrollLeft() - mov * speed);
-    //webkit
-    $(".contents").scrollLeft($(".contents").scrollLeft() - mov * speed);
-    //return false(縦スクロール付加)にするとUnable to preventDefault...というエラーがでたため、処理を書き換え
-    return true;
-  });
 
   const sectionBox = document.querySelectorAll(".section.image");
 
@@ -438,4 +322,28 @@ $(function () {
       scrollZoom: true,
     });
   }
+});
+
+var speed = 50;
+//マウスホイールで横移動
+$("html").mousewheel(function (event, mov) {
+  //ie firefox
+  $(this).scrollLeft($(this).scrollLeft() - mov * speed);
+  //webkit
+  $(".contents").scrollLeft($(".contents").scrollLeft() - mov * speed);
+  //return false(縦スクロール付加)にするとUnable to preventDefault...というエラーがでたため、処理を書き換え
+  return true;
+});
+
+
+document.addEventListener("click", (e) => {
+  const target = e.target;
+  // clickした要素がclass属性、js-smooth-scrollを含まない場合は処理を中断
+  if (!target.classList.contains("js-smooth-scroll")) return;
+  e.preventDefault();
+  const targetId = target.hash;
+  document.querySelector(targetId).scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  });
 });
