@@ -84,11 +84,12 @@ body {
 }
 
 .contents {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  width: 100vw;
   height: 100vh;
+  width: 100vw;
+  overflow-y: hidden;
+  overflow-x: scroll;
 }
+
 .contents.sp {
   display: flex;
   flex-direction: row-reverse;

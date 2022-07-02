@@ -12,7 +12,7 @@ ekotoba
   position: relative;
 }
 .section.ekotoba h3 {
-  margin: 3rem 2rem;
+  margin: 0 2rem;
   font-size: 3.4rem;
   font-family: "Kaisei Decol", serif;
   font-weight: 500;
@@ -41,6 +41,7 @@ ekotoba
   transition: var(--transition);
   overflow: hidden;
 }
+
 .section.ekotoba.show-text .translate-text {
   display: block;
   opacity: 1;

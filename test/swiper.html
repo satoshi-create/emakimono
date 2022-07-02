@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+<style>
+  .swiper--wrapper {
+    /* wrapperのサイズを調整 */
+    width: 100%;
+    height: 300px;
+  }
+
+  .swiper-slide {
+    /* スライドのサイズを調整、中身のテキスト配置調整、背景色 */
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 300px;
+    text-align: center;
+  }
+
+  .swiper-slide:nth-child(3n + 1) {
+    /*1、4、7、3n+1枚目の背景色 */
+    background-color: #de4439;
+  }
+
+  .swiper-slide:nth-child(3n + 2) {
+    /*2、5、8、3n+2枚目の背景色 */
+    background-color: #fcd500;
+  }
+
+  .swiper-slide:nth-child(3n + 3) {
+    /*3、6、9、3n+3枚目の背景色 */
+    background-color: #53c638;
+  }
+</style>
+
+<body>
+  <!-- スライダーのコンテナ -->
+  <div class="swiper">
+    <!-- 必要に応じたwrapper -->
+    <div class="swiper-wrapper">
+      <!-- スライド -->
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+
+    });
+
+  </script>
+</body>
+
+</html>

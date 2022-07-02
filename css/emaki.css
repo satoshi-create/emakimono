@@ -19,6 +19,7 @@ header/footer
   justify-content: center;
   column-gap: 5px;
 }
+.header .pen-icon,
 .header .toggle-icon,
 .header a {
   width: 4rem;
@@ -95,6 +96,10 @@ header/footer
   .contents.pc {
     display: flex;
     flex-direction: row-reverse;
+    transition: var(--transition);
+  }
+  .animateContentsPc {
+    height: 72vh;
   }
   .header.pc {
     display: flex;
@@ -248,8 +253,9 @@ slider-Bottom
   right: 0;
   bottom: -30%;
   height: 30%;
-  box-shadow: 10px -5px 20px #9f9c9c;
+  /* box-shadow: 10px -5px 20px #9f9c9c; */
   writing-mode: vertical-rl;
+  transition: var(--transition);
 }
 .animateSlideB {
   bottom: 0%;
@@ -301,4 +307,11 @@ slider-Bottom
 
 .red {
   color: red;
+}
+
+.sliderbox {
+  border: 2px solid red;
+  overflow: hidden;
+  /* width: 100vw; */
+  height: 100vh;
 }

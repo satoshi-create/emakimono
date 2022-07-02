@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .outer {
+    background-color: skyblue;
+    width: 200px;
+    height: 200px;
+    overflow-y: scroll;
+  }
+
+  .outer div {
+    background-color: pink;
+    width: 50px;
+    height: 200px;
+  }
+
+  .outer div:nth-child(even) {
+    background-color: gray;
+    width: 50px;
+    height: 200px;
+  }
+</style>
+
+<body>
+  <div class="outer" id="target">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <button id="actionButton">スクロールの真ん中に移動する</button>
+  <script>
+    //スクロール量をコンソールに表示する処理
+    let target = document.getElementById('target');
+    target.onscroll = () => console.log(target.scrollTop);
+
+    //ボタンを押したらスクロール位置400に移動する処理
+    let actionButton = document.getElementById('actionButton');
+    actionButton.onclick = () => target.scrollTop = 400;
+  </script>
+</body>
+
+</html>

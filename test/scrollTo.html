@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    overflow-y: hidden;
+  }
+
+  .container {
+    writing-mode: vertical-rl;
+  }
+
+  button {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  #content1,
+  #content2,
+  #content3 {
+    width: 1000px;
+    height: 900px;
+    background-color: #ccc;
+  }
+
+  #content2 {
+    background-color: #ddd;
+  }
+</style>
+
+<body>
+  <h1>JS Test</h1>
+  <button id="button1">コンテンツ3へ移動</button>
+  <div class="container">
+    <div id="content1">コンテンツ1</div>
+    <div id="content2">コンテンツ2</div>
+    <div id="content3">コンテンツ3</div>
+  </div>
+  <script>
+    window.addEventListener('load', (event) => {
+
+      let count = 0;
+
+      document.getElementById('button1').addEventListener('click', () => {
+
+        count++;
+
+        // content3へ移動
+        window.scrollTo(100, 0);
+
+      });
+
+    });
+  </script>
+</body>
+
+</html>

@@ -66,51 +66,53 @@ $(function () {
     });
   });
 
-  // slideInnerB.innerHTML = ekotobas
-  //   .map((ekotoba, index) => {
-  //     const { title, edition, chapter, link, desc } = ekotoba;
-  //     return `
-  //   <section>
-  //         <h2 class="title">${title ? title : ""}</h2>
-  //         <h2 class="edition">${edition ? edition : ""}</h2>
-  //         <article>
-  //           <a href="#${link}">
-  //             <h3>${chapter}</h3>
-  //           </a>
-  //           <p>
-  //             ${desc}
-  //           </p>
-  //         </article>
-  //       </section>
-  //   `;
-  //   })
-  //   .join("");
+  const slideInnerB = document.querySelector(".slide-innerB");
+
+  slideInnerB.innerHTML = emakis
+    .map((emaki, index) => {
+      const { cat, chapter, kobun, gendaibun } = emaki;
+      if (cat == "ekotoba") {
+        return `
+        <section>
+        <article>
+              <h3>${chapter}</h3>
+          <p>
+            ${kobun}
+          </p>
+          <p>
+          ${gendaibun}
+          </p>
+        </article>
+      </section>
+        `;
+      }
+    })
+    .join();
 
   // 絵詞の幅を取得
-  // window.addEventListener("resize", fit());
-  // function fit() {
-  //   var w = window.innerWidth;
-  //   document.querySelector(".slide-innerB").style.width = `${w}px`;
-  // }
+  window.addEventListener("resize", fit());
+  function fit() {
+    var w = window.innerWidth;
+    document.querySelector(".slide-innerB").style.width = `${w}px`;
+  }
 
   // toggle ekotoba
-  // const ekotoba = document.getElementById("ekotoba");
-  // const slideB = document.querySelector(".slideB");
-  // ekotoba.addEventListener("click", function () {
-  //   slideB.classList.toggle("animateSlideB");
-  // });
+  const ekotoba = document.getElementById("ekotoba");
+  const slideB = document.querySelector(".slideB");
+  ekotoba.addEventListener("click", function () {
+    slideB.classList.toggle("animateSlideB");
+    contentsPc.classList.toggle("animateContentsPc");
+  });
 
   contentsPc.innerHTML = emakis
     .map((emaki, index) => {
       const { cat, kobun, gendaibun, src, name, chapter } = emaki;
       if (cat == "ekotoba") {
         return `
-        <div class="section ${cat}" id=s${index} style="background:url(${backgroundImage})"> 
-        ${chapter ? `<h3 id="s${index}">${chapter}</h3>` : ""}
+        <div class="section section${index} ${cat}" id=s${index} style="background:url(${backgroundImage})"> 
         <div class="kobun-text">
-  <p>
-    ${kobun}
-  </p>
+        ${chapter ? `<h3 id="s${index}">${chapter}</h3>` : ""}
+        ${kobun ? `<p id="s${index}">${kobun}</p>` : ""}
   <div class="translate">
     <!-- question button -->
     <button type="button" class="btn translate-btn section-btn">
@@ -124,12 +126,15 @@ $(function () {
   </div>
 </div>
 <div class="translate-text">
-  <p class="gendaibun-text">${gendaibun}</p>
+${gendaibun ? `<p  class="gendaibun-text">${gendaibun}</p>` : ""}
+</div>
+<div class="figure off">
+<img src=${src}>
 </div>
 </div>`;
       } else {
         return `
-      <div class="section ${cat}" id="s${index}" >
+      <div class="section section${index} ${cat}" id="s${index}" >
         <div class="image-container image1-container">
           <img src=${src} alt=${name}
             title="click = zoom-in" />
@@ -143,41 +148,41 @@ $(function () {
     })
     .join("");
 
-  contentsSp.innerHTML = emakis
-    .map((emaki, index) => {
-      const { cat, kobun, gendaibun, src, name } = emaki;
-      if (cat == "ekotoba") {
-        return `<div class="section ${cat}"> 
-        <div class="kobun-text">
-  <p>
-    ${kobun}
-  </p>
-  <div class="translate">
-    <!-- question button -->
-    <button type="button" class="btn translate-btn section-btn">
-      <span class="plus-icon">
-        <i class="far fa-plus-square"></i>
-      </span>
-      <span class="minus-icon">
-        <i class="far fa-minus-square"></i>
-      </span>
-    </button>
-  </div>
-</div>
-<div class="translate-text">
-  <p class="gendaibun-text">${gendaibun}</p>
-</div>
-</div>`;
-      } else {
-        return `
-<div id="s${index}"></div>
-<div class="section section${index + 1}">
-<img src=${src} alt=${name} />
-</div>
-`;
-      }
-    })
-    .join("");
+  //   contentsSp.innerHTML = emakis
+  //     .map((emaki, index) => {
+  //       const { cat, kobun, gendaibun, src, name } = emaki;
+  //       if (cat == "ekotoba") {
+  //         return `<div class="section ${cat}">
+  //         <div class="kobun-text">
+  //   <p>
+  //     ${kobun}
+  //   </p>
+  //   <div class="translate">
+  //     <!-- question button -->
+  //     <button type="button" class="btn translate-btn section-btn">
+  //       <span class="plus-icon">
+  //         <i class="far fa-plus-square"></i>
+  //       </span>
+  //       <span class="minus-icon">
+  //         <i class="far fa-minus-square"></i>
+  //       </span>
+  //     </button>
+  //   </div>
+  // </div>
+  // <div class="translate-text">
+  //   <p class="gendaibun-text">${gendaibun}</p>
+  // </div>
+  // </div>`;
+  //       } else {
+  //         return `
+  // <div id="s${index}"></div>
+  // <div class="section section${index + 1}">
+  // <img src=${src} alt=${name} />
+  // </div>
+  // `;
+  //       }
+  //     })
+  //     .join("");
 
   const sectionsEkotobas = document.querySelectorAll(".section.ekotoba");
 
@@ -311,6 +316,34 @@ $(function () {
     });
   });
 
+  const penIcon = document.querySelector(".pen-icon");
+  penIcon.addEventListener("click", function () {
+    sectionsEkotobas.forEach(function (sectionsEkotoba, i) {
+      const result = sectionsEkotoba.classList.toggle("result");
+      const figure = sectionsEkotoba.querySelector(".figure");
+      const kobun = sectionsEkotoba.querySelector(".kobun-text");
+      const gendaibun = sectionsEkotoba.querySelector(".gendaibun-text");
+      console.log(fileterEmakis[i].src);
+      if (result) {
+        if (fileterEmakis[i].src) {
+          figure.classList.remove("off");
+        }
+        kobun.classList.add("off");
+        if (fileterEmakis[i].gendaibun) {
+          gendaibun.classList.add("off");
+        }
+      } else {
+        if (fileterEmakis[i].src) {
+          figure.classList.add("off");
+        }
+        kobun.classList.remove("off");
+        if (fileterEmakis[i].gendaibun) {
+          gendaibun.classList.remove("off");
+        }
+      }
+    });
+  });
+
   // elevateZoom
   const isSmartPhone = () => window.matchMedia("(min-height: 600px)").matches;
 
@@ -322,28 +355,84 @@ $(function () {
       scrollZoom: true,
     });
   }
-});
 
-var speed = 50;
-//マウスホイールで横移動
-$("html").mousewheel(function (event, mov) {
-  //ie firefox
-  $(this).scrollLeft($(this).scrollLeft() - mov * speed);
-  //webkit
-  $(".contents").scrollLeft($(".contents").scrollLeft() - mov * speed);
-  //return false(縦スクロール付加)にするとUnable to preventDefault...というエラーがでたため、処理を書き換え
-  return true;
-});
-
-
-document.addEventListener("click", (e) => {
-  const target = e.target;
-  // clickした要素がclass属性、js-smooth-scrollを含まない場合は処理を中断
-  if (!target.classList.contains("js-smooth-scroll")) return;
-  e.preventDefault();
-  const targetId = target.hash;
-  document.querySelector(targetId).scrollIntoView({
-    behavior: "smooth",
-    block: "start",
+  var speed = 50;
+  //マウスホイールで横移動
+  $("html").mousewheel(function (event, mov) {
+    //ie firefox
+    $(this).scrollLeft($(this).scrollLeft() - mov * speed);
+    //webkit
+    $(".contents").scrollLeft($(".contents").scrollLeft() - mov * speed);
+    //return false(縦スクロール付加)にするとUnable to preventDefault...というエラーがでたため、処理を書き換え
+    return true;
   });
+
+  document.addEventListener("click", (e) => {
+    const target = e.target;
+    // clickした要素がclass属性、js-smooth-scrollを含まない場合は処理を中断
+    if (!target.classList.contains("js-smooth-scroll")) return;
+    e.preventDefault();
+    const targetId = target.hash;
+    document.querySelector(targetId).scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  });
+
+  // let count = 0;
+
+  // const headerPrevNext = document.querySelectorAll(".scroll-btns");
+  // const headerPrev = document.querySelector(".header-prev");
+  // const headerNext = document.querySelector(".header-next");
+
+  // console.log(emakis.length - 1);
+
+  // headerPrevNext.forEach(function (btn) {
+  //   btn.addEventListener("click", function (e) {
+  //     const styles = e.currentTarget.classList;
+  //     if (styles.contains("header-prev")) {
+  //       count--;
+  //       headerPrev.href = `#s${count}`;
+  //     } else if (styles.contains("header-next")) {
+  //       count++;
+  //       console.log(count);
+  //       headerNext.href = `#s${count}`;
+  //     } else {
+  //       count = 0;
+  //     }
+  //     if (count < 0) {
+  //       count = 0;
+  //     }
+  //     if (count === 0) {
+  //       count = 0;
+  //     }
+  //     if (count > emakis.length - 1) {
+  //       count = emakis.length - 1;
+  //     }
+  //   });
+  // });
+
+  // const sliderbox = document.querySelector(".sliderbox");
+
+  // let size = 0;
+  // sections.forEach(function (section) {
+  //   console.log(section.scrollWidth);
+  //   size += section.scrollWidth;
+  //   console.log(size);
+  //   contentsPc.style.width = `${size}px`;
+  // });
+
+  // const prev = document.querySelector(".header-prev");
+  // const next = document.querySelector(".header-next");
+
+  // let width = window.innerWidth;
+
+  // let counter = 0;
+
+  // next.addEventListener("click", function () {
+  //   console.log("next");
+  //   contentsPc.style.transition = ".3s";
+  //   counter++;
+  //   contentsPc.style.transform = `translateX(${width * counter}px)`;
+  // });
 });

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    position: relative;
+    /* width: 500px;
+      height: 300px;
+      margin: 100px auto 0; */
+    /* width: 100vw;
+    height: 100vh; */
+  }
+
+  /* 
+  .sliderbox {
+    border: 2px solid red;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+  } */
+
+  .contents {
+    display: flex;
+    flex-direction: row-reverse;
+    list-style: none;
+    height: 100vh;
+    /* width: 100vw; */
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+
+  .section {
+    /* width: 100%; */
+    height: 100%;
+  }
+
+  .section img {
+    /* width: 500px;
+    height: 300px; */
+    height: 100%;
+  }
+
+  /* 矢印 */
+
+  .prev,
+  .next {
+    position: fixed;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+
+    z-index: 99;
+  }
+
+  .next {
+    left: 5%;
+    border-left: 2px solid black;
+    transform: translateY(-50%) rotate(45deg);
+
+  }
+
+  .prev {
+    right: 5%;
+    border-right: 2px solid black;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+</style>
+
+<body>
+  <div class="container">
+    <div class="prev"></div>
+    <!-- <div class="sliderbox"> -->
+    <div class="contents">
+      <div class="section">
+        <img src="/img/cyoujyuu_yamazaki_kou_01.jpg">
+      </div>
+      <div class="section ">
+        <img src="/img/cyoujyuu_yamazaki_kou_02.jpg">
+      </div>
+      <div class="section">
+        <img src="/img/cyoujyuu_yamazaki_kou_03.jpg">
+      </div>
+      <div class="section">
+        <img src="/img/cyoujyuu_yamazaki_kou_04.jpg">
+      </div>
+      <div class="section">
+        <img src="/img/cyoujyuu_yamazaki_kou_05.jpg">
+      </div>
+      <div class="section">
+        <img src="/img/cyoujyuu_yamazaki_kou_06.jpg">
+      </div>
+      <div class="section">
+        <img src="/img/cyoujyuu_yamazaki_kou_07.jpg">
+      </div>
+      <div class="section">
+        <img src="/img/cyoujyuu_yamazaki_kou_08.jpg">
+      </div>
+    </div>
+    <!-- </div> -->
+    <div class="next"></div>
+  </div>
+  <script src="/js/jquery-3.3.1.min.js"></script>
+
+  <script>
+
+    const prev = document.querySelector(".prev");
+    const next = document.querySelector(".next");
+
+    const contents = document.querySelector(".contents")
+
+    const sliderWidth = document.querySelector(".section");
+
+    const sections = document.querySelectorAll(".section")
+
+    const sliderbox = document.querySelector('.sliderbox')
+
+    let width = window.innerWidth;
+
+    let counter = 0;
+
+    next.addEventListener("click", function () {
+      counter++;
+      window.scrollTo(10 * counter, 0);
+    });
+
+
+    // prev.addEventListener('click', function () {
+    //   contents.style.transition = '.3s';
+    //   counter--;
+    //   console.log(counter);
+    //   contents.style.transform = `translateX(${+width * counter}px)`
+    // })
+  </script>
+</body>
+
+</html>
