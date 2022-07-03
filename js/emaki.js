@@ -141,7 +141,7 @@ ${gendaibun ? `<p  class="gendaibun-text">${gendaibun}</p>` : ""}
         return `
       <div class="section section${index} ${cat}" id="s${index}" >
         <div class="image-container image1-container">
-          <img src=${src} alt=${name} loading="lazy"
+          <img class="lazyload" data-src=${src} alt=${name} 
             title="click = zoom-in" />
         </div>
         <div class="image-container image2-container off">
@@ -152,6 +152,8 @@ ${gendaibun ? `<p  class="gendaibun-text">${gendaibun}</p>` : ""}
       }
     })
     .join("");
+
+  lazyload();
 
   //   contentsSp.innerHTML = emakis
   //     .map((emaki, index) => {
