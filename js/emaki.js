@@ -1,9 +1,14 @@
-// import data from "../data/data.js";
-
 import datas from "../data/data.js";
+
 const params = new URLSearchParams(window.location.search);
+// console.log(window.location.hash);
+// const hash = window.location.hash.replace("#", "");
+// console.log(hash);
 const id = params.get("id");
+// import datas from "../data/${hash}.js";
+// console.log(datas);
 const data = datas[id];
+console.log(data);
 
 const { title, author, edition, emakis, backgroundImage } = data;
 
@@ -136,7 +141,7 @@ ${gendaibun ? `<p  class="gendaibun-text">${gendaibun}</p>` : ""}
         return `
       <div class="section section${index} ${cat}" id="s${index}" >
         <div class="image-container image1-container">
-          <img src=${src} alt=${name}
+          <img src=${src} alt=${name} loading="lazy"
             title="click = zoom-in" />
         </div>
         <div class="image-container image2-container off">
