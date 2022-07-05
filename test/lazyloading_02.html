@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <img src="https://via.placeholder.com/300x300/?text=02" />
+  <button>画像読み込み</button>
+  <script src="/js/jquery-3.3.1.min.js"></script>
+  <script>
+    $(function () {
+      $('button').click(function () {
+        $('img').attr('src', 'https://via.placeholder.com/300x300/?text=03')
+      })
+    })
+  </script>
+</body>
+
+</html>

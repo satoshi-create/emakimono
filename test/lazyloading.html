@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <ul style="list-style-type: none;">
+    <li><img class="lazyload" src="https://via.placeholder.com/300x300/?text=02"
+        data-src="https://via.placeholder.com/300x300/?text=01" alt="image" width="200" height="200" /></li>
+    <li><img class="lazyload" src="https://via.placeholder.com/300x300/?text=02"
+        data-src="https://via.placeholder.com/300x300/?text=01" alt="image" width="200" height="200" /></li>
+    <li><img class="lazyload" src="https://via.placeholder.com/300x300/?text=02"
+        data-src="https://via.placeholder.com/300x300/?text=01" alt="image" width="200" height="200" /></li>
+    <li><img class="lazyload" src="https://via.placeholder.com/300x300/?text=02"
+        data-src="https://via.placeholder.com/300x300/?text=01" alt="image" width="200" height="200" /></li>
+    <li><img class="lazyload" src="https://via.placeholder.com/300x300/?text=02"
+        data-src="https://via.placeholder.com/300x300/?text=01" alt="image" width="200" height="200" /></li>
+    <li><img class="lazyload" src="https://via.placeholder.com/300x300/?text=02"
+        data-src="https://via.placeholder.com/300x300/?text=01" alt="image" width="200" height="200" /></li>
+    <li><img class="lazyload" src="https://via.placeholder.com/300x300/?text=02"
+        data-src="https://via.placeholder.com/300x300/?text=01" alt="image" width="200" height="200" /></li>
+  </ul>
+  <script src="/js/jquery-3.3.1.min.js"></script>
+  <script>
+    $(function () {
+
+      let posData = null;
+      let makePosData = () => {
+        let posData = {}
+        $.each($('img.lazyload'), function () {
+          let $img = $(this);
+          let pos = $img.offset().top;
+          if (!(pos in posData)) {
+            posData[pos] = []
+          }
+          posData[pos].push($img)
+        })
+        return posData
+      }
+      posData = makePosData();
+      console.log(posData);
+
+
+      $(window).bind('load scroll resize', function () {
+        // ブラウザ下端の位置
+        let windowBottom = $(this).scrollTop() + $(this).height()
+
+        let keys = Object.keys(posData);
+        console.log(keys);
+        for (let index1 = 0; index1 < keys.length; index1++) {
+          let pos = keys[index1];
+          console.log(pos);
+          // 画像の位置 < ブラウザ下端の位置 
+          if (pos <= windowBottom) {
+            let imgList = posData[pos];
+            console.log(imgList);
+            for (let index2 = 0; index2 < imgList.length; index2++) {
+              imgList[index2].trigger('appeared')
+            }
+          }
+
+        }
+      })
+
+      $('img.lazyload').on('appeared', function () {
+        let $img = $(this);
+
+        if ($img.attr('data-lazyloaded') === undefined) {
+          setTimeout(function () {
+            $img.attr('src', $img.attr('data-src'));
+          }, 500);
+
+          $img.attr('data-lazyloaded', true)
+        }
+      })
+    })
+
+
+  </script>
+</body>
+
+</html>
