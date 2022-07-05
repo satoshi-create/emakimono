@@ -137,7 +137,7 @@ ${gendaibun ? `<p  class="gendaibun-text">${gendaibun}</p>` : ""}
       return `
       <div class="section section${index} ${cat}" id="s${index}" >
         <div class="image-container image1-container">
-          <img  src="/img/110310200304.png" data-src=${src} alt=${name} class="lazyload fade-in"
+          <img  src="/img/cursor.svg" data-src=${src} alt=${name} class="lazyload fade-in"
             title="click = zoom-in" />
         </div>
         <div class="image-container image2-container off">
