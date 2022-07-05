@@ -110,7 +110,7 @@ contentsPc.innerHTML = emakis
     const { cat, kobun, gendaibun, src, name, chapter } = emaki;
     if (cat == "ekotoba") {
       return `
-        <div class="section section${index} ${cat}" id=s${index} style="background:url(${backgroundImage})"> 
+        <div class="section section${index} ${cat} bgimg lazyload fade-in" id=s${index} data-bg=${backgroundImage}> 
         <div class="kobun-text">
         ${chapter ? `<h3 id="s${index}">${chapter}</h3>` : ""}
         ${kobun ? `<p id="s${index}">${kobun}</p>` : ""}
@@ -137,7 +137,7 @@ ${gendaibun ? `<p  class="gendaibun-text">${gendaibun}</p>` : ""}
       return `
       <div class="section section${index} ${cat}" id="s${index}" >
         <div class="image-container image1-container">
-          <img  src="/img/spinner.svg" data-src=${src} alt=${name} loading="lazy"
+          <img  src="/img/110310200304.png" data-src=${src} alt=${name} class="lazyload fade-in"
             title="click = zoom-in" />
         </div>
         <div class="image-container image2-container off">
@@ -434,14 +434,14 @@ document.addEventListener("click", (e) => {
 //   contentsPc.style.transform = `translateX(${width * counter}px)`;
 // });
 
-window.addEventListener("load", function () {
-  const img = document.querySelectorAll("img[data-src]");
-  console.log(img);
-  for (let index = 0; index < img.length; index++) {
-    img[index].setAttribute("src", img[index].getAttribute("data-src"));
-    img[index].onload = function () {
-      img[index].removeAttribute("data-src");
-    };
-  }
-  console.log("ページが完全に読み込まれました");
-});
+// window.addEventListener("load", function () {
+//   const img = document.querySelectorAll("img[data-src]");
+//   console.log(img);
+//   for (let index = 0; index < img.length; index++) {
+//     img[index].setAttribute("src", img[index].getAttribute("data-src"));
+//     img[index].onload = function () {
+//       img[index].removeAttribute("data-src");
+//     };
+//   }
+//   console.log("ページが完全に読み込まれました");
+// });

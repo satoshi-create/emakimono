@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .fade-in {
+    opacity: 0;
+    transition: opacity 3s;
+  }
+
+  .fade-in.lazyloaded {
+    opacity: 1;
+  }
+
+  .bgimg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    max-width: 960px;
+    margin: 50px 0;
+  }
+</style>
+
+<body>
+  <p>
+    <img data-src="/img/cyoujyuu_yamazaki_kou_01.jpg" src="/img/cyoujyuu_yamazaki_kou_01_sp.jpg"
+      class="lazyload fade-in" alt="" width="960" height="593" data-expand="-20">
+  </p>
+
+  <div class="bgimg lazyload fade-in" data-bg="/img/tesukiwashi-pattern-04.jpg"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/plugins/unveilhooks/ls.unveilhooks.min.js"></script>
+
+</body>
+
+</html>
