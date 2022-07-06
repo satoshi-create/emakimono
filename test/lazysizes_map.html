@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      writing-mode: vertical-rl;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transition: opacity 3s;
+    }
+
+    .fade-in.lazyloaded {
+      opacity: 1;
+    }
+
+    .bgimg {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 600px;
+      max-width: 960px;
+      margin: 50px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/plugins/unveilhooks/ls.unveilhooks.min.js"></script>
+  <script>
+    const data = [
+      {
+        src: "/img/cyoujyuu_yamazaki_kou_01.jpg",
+        datasrc: "/img/esi_ecotoba_01.jpg",
+      },
+      {
+        src: "/img/cyoujyuu_yamazaki_kou_01.jpg",
+        datasrc: "/img/esi_ecotoba_02.jpg",
+      },
+      {
+        src: "/img/cyoujyuu_yamazaki_kou_01.jpg",
+        datasrc: "/img/esi_ecotoba_03.jpg",
+      },
+
+    ]
+    const container = document.querySelector('.container')
+    container.innerHTML = data.map((item) => {
+      return `
+      <p>
+    <img data-src=${item.datasrc} src=${item.src} class="lazyload fade-in" alt=""
+      width="960" height="593" data-expand="-20">
+  </p>
+      
+      `
+    }).join()
+  </script>
+
+</body>
+
+</html>

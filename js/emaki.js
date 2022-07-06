@@ -107,7 +107,8 @@ ekotoba.addEventListener("click", function () {
 
 contentsPc.innerHTML = emakis
   .map((emaki, index) => {
-    const { cat, kobun, gendaibun, src, name, chapter } = emaki;
+    const { cat, kobun, gendaibun, src, name, chapter, load } = emaki;
+    console.log(emakis);
     if (cat == "ekotoba") {
       return `
         <div class="section section${index} ${cat} bgimg lazyload fade-in" id=s${index} data-bg=${backgroundImage}> 
@@ -135,16 +136,31 @@ ${gendaibun ? `<p  class="gendaibun-text">${gendaibun}</p>` : ""}
 </div>`;
     } else {
       return `
+      ${
+        load
+          ? `
+          <div class="section section${index} ${cat}" id="s${index}" >
+          <div class="image-container image1-container">
+            <img  src=${src} alt=${name}
+              title="click = zoom-in" />
+          </div>
+          <div class="image-container image2-container off">
+            <img class="mainimage" src=${src} alt=${name}" />
+          </div>
+        </div>
+      `
+          : `
       <div class="section section${index} ${cat}" id="s${index}" >
-        <div class="image-container image1-container">
-          <img  src="/img/cursor.svg" data-src=${src} alt=${name} class="lazyload fade-in"
-            title="click = zoom-in" />
-        </div>
-        <div class="image-container image2-container off">
-          <img class="mainimage" src=${src} alt=${name}" />
-        </div>
+      <div class="image-container image1-container">
+        <img  src="/img/cursor.svg" data-src=${src} alt=${name} class="lazyload fade-in"
+          title="click = zoom-in" />
       </div>
-      `;
+      <div class="image-container image2-container off">
+        <img class="mainimage" src=${src} alt=${name}" />
+      </div>
+    </div>
+      `
+      }`;
     }
   })
   .join("");

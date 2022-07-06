@@ -6,6 +6,7 @@ const data = [
     pathname: "esi",
     emakis: [
       {
+        load: true,
         cat: "ekotoba",
         chapter: "第一段 絵師一家、知行の宣旨に喜ぶ",
         kobun:
@@ -25,6 +26,7 @@ const data = [
         ],
       },
       {
+        load: true,
         cat: "image",
         src: "img/esi_01.jpg",
         name: "esi_01.jpg",
@@ -36,6 +38,7 @@ const data = [
         ],
       },
       {
+        load: false,
         cat: "image",
         src: "img/esi_02.jpg",
         name: "esi_02.jpg",
@@ -47,6 +50,7 @@ const data = [
         ],
       },
       {
+        load: false,
         cat: "image",
         src: "img/esi_03.jpg",
         name: "esi_03.jpg",
@@ -58,6 +62,7 @@ const data = [
         ],
       },
       {
+        load: false,
         cat: "image",
         src: "img/esi_04.jpg",
         name: "esi_04.jpg",
@@ -69,6 +74,7 @@ const data = [
         ],
       },
       {
+        load: false,
         cat: "ekotoba",
         chapter: "第二段 ぬか喜びの宣旨の内容 ",
         kobun:
@@ -84,6 +90,7 @@ const data = [
         ],
       },
       {
+        load: false,
         cat: "image",
         src: "img/esi_05.jpg",
         name: "esi_05.jpg",
@@ -95,6 +102,7 @@ const data = [
         ],
       },
       {
+        load: false,
         cat: "image",
         src: "img/esi_06.jpg",
         name: "esi_06.jpg",
@@ -106,6 +114,7 @@ const data = [
         ],
       },
       {
+        load: false,
         cat: "ekotoba",
         chapter: "第三段 絵師の愁訴 ",
         kobun:
@@ -121,6 +130,7 @@ const data = [
         ],
       },
       {
+        load: false,
         cat: "image",
         src: "img/esi_07.jpg",
         name: "esi_07.jpg",
@@ -132,6 +142,7 @@ const data = [
         ],
       },
       {
+        load: false,
         cat: "image",
         src: "img/esi_08.jpg",
         name: "esi_08.jpg",
@@ -143,6 +154,7 @@ const data = [
         ],
       },
       {
+        load: false,
         cat: "image",
         src: "img/esi_09.jpg",
         name: "esi_09.jpg",
@@ -154,6 +166,7 @@ const data = [
         ],
       },
       {
+        load: false,
         cat: "image",
         src: "img/esi_10.jpg",
         name: "esi_10.jpg",
@@ -173,6 +186,7 @@ const data = [
     backgroundImage: "img/110310200304.png",
     emakis: [
       {
+        load: true,
         cat: "ekotoba",
         chapter: "兎と猿の水遊び ",
         kobun:
@@ -180,6 +194,7 @@ const data = [
         gendaibun: "",
       },
       {
+        load: true,
         cat: "image",
         src: "img/cyoujyuu_yamazaki_kou_01.jpg",
         srcSp: "img/cyoujyuu_yamazaki_kou_01_sp.jpg",
@@ -188,6 +203,7 @@ const data = [
       },
 
       {
+        load: false,
         cat: "image",
         src: "img/cyoujyuu_yamazaki_kou_02.jpg",
         srcSp: "img/cyoujyuu_yamazaki_kou_02_sp.jpg",
@@ -195,6 +211,7 @@ const data = [
         nameSp: "cyoujyuu_yamazaki_kou_02_sp.jpg",
       },
       {
+        load: false,
         cat: "image",
         src: "img/cyoujyuu_yamazaki_kou_03.jpg",
         srcSp: "img/cyoujyuu_yamazaki_kou_03_sp.jpg",
@@ -202,6 +219,7 @@ const data = [
         nameSp: "cyoujyuu_yamazaki_kou_03_sp.jpg",
       },
       {
+        load: false,
         cat: "image",
         src: "img/cyoujyuu_yamazaki_kou_04.jpg",
         srcSp: "img/cyoujyuu_yamazaki_kou_04_sp.jpg",
@@ -209,6 +227,7 @@ const data = [
         nameSp: "cyoujyuu_yamazaki_kou_04_sp.jpg",
       },
       {
+        load: false,
         cat: "ekotoba",
         chapter: "賭弓 ",
         kobun:
@@ -216,6 +235,7 @@ const data = [
         gendaibun: "",
       },
       {
+        load: false,
         cat: "image",
         src: "img/cyoujyuu_yamazaki_kou_05.jpg",
         srcSp: "img/cyoujyuu_yamazaki_kou_05_sp.jpg",
@@ -223,6 +243,7 @@ const data = [
         nameSp: "cyoujyuu_yamazaki_kou_05_sp.jpg",
       },
       {
+        load: false,
         cat: "image",
         src: "img/cyoujyuu_yamazaki_kou_06.jpg",
         srcSp: "img/cyoujyuu_yamazaki_kou_06_sp.jpg",
@@ -230,6 +251,7 @@ const data = [
         nameSp: "cyoujyuu_yamazaki_kou_06_sp.jpg",
       },
       {
+        load: false,
         cat: "image",
         src: "img/cyoujyuu_yamazaki_kou_07.jpg",
         srcSp: "img/cyoujyuu_yamazaki_kou_07_sp.jpg",
@@ -237,6 +259,7 @@ const data = [
         nameSp: "cyoujyuu_yamazaki_kou_07_sp.jpg",
       },
       {
+        load: false,
         cat: "image",
         src: "img/cyoujyuu_yamazaki_kou_08.jpg",
         srcSp: "img/cyoujyuu_yamazaki_kou_08_sp.jpg",
@@ -244,6 +267,7 @@ const data = [
         nameSp: "cyoujyuu_yamazaki_kou_08_sp.jpg",
       },
       {
+        load: false,
         cat: "image",
         src: "img/cyoujyuu_yamazaki_kou_09.jpg",
         srcSp: "img/cyoujyuu_yamazaki_kou_09_sp.jpg",
@@ -251,6 +275,7 @@ const data = [
         nameSp: "cyoujyuu_yamazaki_kou_09_sp.jpg",
       },
       {
+        load: false,
         cat: "image",
         src: "img/cyoujyuu_yamazaki_kou_10.jpg",
         srcSp: "img/cyoujyuu_yamazaki_kou_10_sp.jpg",
@@ -258,6 +283,7 @@ const data = [
         nameSp: "cyoujyuu_yamazaki_kou_10_sp.jpg",
       },
       {
+        load: false,
         cat: "image",
         src: "img/cyoujyuu_yamazaki_kou_11.jpg",
         srcSp: "img/cyoujyuu_yamazaki_kou_11_sp.jpg",
@@ -265,6 +291,7 @@ const data = [
         nameSp: "cyoujyuu_yamazaki_kou_11_sp.jpg",
       },
       {
+        load: false,
         cat: "image",
         src: "img/cyoujyuu_yamazaki_kou_12.jpg",
         srcSp: "img/cyoujyuu_yamazaki_kou_12_sp.jpg",
@@ -272,6 +299,7 @@ const data = [
         nameSp: "cyoujyuu_yamazaki_kou_12_sp.jpg",
       },
       {
+        load: false,
         cat: "ekotoba",
         chapter: "蛙と猿の喧嘩 ",
         kobun:
@@ -279,6 +307,7 @@ const data = [
         gendaibun: "",
       },
       {
+        load: false,
         cat: "image",
         src: "img/cyoujyuu_yamazaki_kou_13.jpg",
         srcSp: "img/cyoujyuu_yamazaki_kou_13_sp.jpg",
@@ -286,6 +315,7 @@ const data = [
         nameSp: "cyoujyuu_yamazaki_kou_13_sp.jpg",
       },
       {
+        load: false,
         cat: "image",
         src: "img/cyoujyuu_yamazaki_kou_14.jpg",
         srcSp: "img/cyoujyuu_yamazaki_kou_14_sp.jpg",
@@ -293,6 +323,7 @@ const data = [
         nameSp: "cyoujyuu_yamazaki_kou_14_sp.jpg",
       },
       {
+        load: false,
         cat: "image",
         src: "img/cyoujyuu_yamazaki_kou_15.jpg",
         srcSp: "img/cyoujyuu_yamazaki_kou_15_sp.jpg",
@@ -300,6 +331,7 @@ const data = [
         nameSp: "cyoujyuu_yamazaki_kou_15_sp.jpg",
       },
       {
+        load: false,
         cat: "image",
         src: "img/cyoujyuu_yamazaki_kou_16.jpg",
         srcSp: "img/cyoujyuu_yamazaki_kou_16_sp.jpg",
@@ -307,6 +339,7 @@ const data = [
         nameSp: "cyoujyuu_yamazaki_kou_16_sp.jpg",
       },
       {
+        load: false,
         cat: "ekotoba",
         chapter: "相撲 ",
         kobun:
@@ -314,6 +347,7 @@ const data = [
         gendaibun: "",
       },
       {
+        load: false,
         cat: "image",
         src: "img/cyoujyuu_yamazaki_kou_17.jpg",
         srcSp: "img/cyoujyuu_yamazaki_kou_17_sp.jpg",
@@ -321,6 +355,7 @@ const data = [
         nameSp: "cyoujyuu_yamazaki_kou_17_sp.jpg",
       },
       {
+        load: false,
         cat: "image",
         src: "img/cyoujyuu_yamazaki_kou_18.jpg",
         srcSp: "img/cyoujyuu_yamazaki_kou_18_sp.jpg",
@@ -328,6 +363,7 @@ const data = [
         nameSp: "cyoujyuu_yamazaki_kou_18_sp.jpg",
       },
       {
+        load: false,
         cat: "image",
         src: "img/cyoujyuu_yamazaki_kou_19.jpg",
         srcSp: "img/cyoujyuu_yamazaki_kou_19_sp.jpg",
@@ -335,6 +371,7 @@ const data = [
         nameSp: "cyoujyuu_yamazaki_kou_19_sp.jpg",
       },
       {
+        load: false,
         cat: "image",
         src: "img/cyoujyuu_yamazaki_kou_20.jpg",
         srcSp: "img/cyoujyuu_yamazaki_kou_20_sp.jpg",
@@ -342,6 +379,7 @@ const data = [
         nameSp: "cyoujyuu_yamazaki_kou_20_sp.jpg",
       },
       {
+        load: false,
         cat: "ekotoba",
         chapter: "法会 ",
         kobun:
@@ -349,6 +387,7 @@ const data = [
         gendaibun: "",
       },
       {
+        load: false,
         cat: "image",
         src: "img/cyoujyuu_yamazaki_kou_21.jpg",
         srcSp: "img/cyoujyuu_yamazaki_kou_21_sp.jpg",
@@ -356,6 +395,7 @@ const data = [
         nameSp: "cyoujyuu_yamazaki_kou_21_sp.jpg",
       },
       {
+        load: false,
         cat: "image",
         src: "img/cyoujyuu_yamazaki_kou_22.jpg",
         srcSp: "img/cyoujyuu_yamazaki_kou_22_sp.jpg",
@@ -363,6 +403,7 @@ const data = [
         nameSp: "cyoujyuu_yamazaki_kou_22_sp.jpg",
       },
       {
+        load: false,
         cat: "image",
         src: "img/cyoujyuu_yamazaki_kou_23.jpg",
         srcSp: "img/cyoujyuu_yamazaki_kou_23_sp.jpg",
