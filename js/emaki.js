@@ -108,10 +108,9 @@ ekotoba.addEventListener("click", function () {
 contentsPc.innerHTML = emakis
   .map((emaki, index) => {
     const { cat, kobun, gendaibun, src, name, chapter, load } = emaki;
-    console.log(emakis);
     if (cat == "ekotoba") {
       return `
-        <div class="section section${index} ${cat} bgimg lazyload fade-in" id=s${index} data-bg=${backgroundImage}> 
+        <div class="section section${index} ${cat}" id=s${index} style=background-image:url(${backgroundImage})> 
         <div class="kobun-text">
         ${chapter ? `<h3 id="s${index}">${chapter}</h3>` : ""}
         ${kobun ? `<p id="s${index}">${kobun}</p>` : ""}

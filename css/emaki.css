@@ -323,8 +323,8 @@ slider-Bottom
 .fade-in.lazyloaded {
   opacity: 1;
 }
-.bgimg {
+/* .bgimg {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
+} */
