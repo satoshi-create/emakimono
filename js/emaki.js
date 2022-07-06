@@ -135,31 +135,31 @@ ${gendaibun ? `<p  class="gendaibun-text">${gendaibun}</p>` : ""}
 </div>`;
     } else {
       return `
-      ${
-        load
-          ? `
-          <div class="section section${index} ${cat}" id="s${index}" >
-          <div class="image-container image1-container">
-            <img  src=${src} alt=${name}
-              title="click = zoom-in" />
+        ${
+          load
+            ? `
+            <div class="section section${index} ${cat}" id="s${index}" >
+            <div class="image-container image1-container">
+              <img  src=${src} alt=${name}
+                title="click = zoom-in" />
+            </div>
+            <div class="image-container image2-container off">
+              <img class="mainimage" src=${src} alt=${name}" />
+            </div>
           </div>
-          <div class="image-container image2-container off">
-            <img class="mainimage" src=${src} alt=${name}" />
-          </div>
+        `
+            : `
+        <div class="section section${index} ${cat}" id="s${index}" >
+        <div class="image-container image1-container">
+          <img  src="/img/cursor.svg" data-src=${src} alt=${name} class="lazyload fade-in"
+            title="click = zoom-in" />
         </div>
-      `
-          : `
-      <div class="section section${index} ${cat}" id="s${index}" >
-      <div class="image-container image1-container">
-        <img  src="/img/cursor.svg" data-src=${src} alt=${name} class="lazyload fade-in"
-          title="click = zoom-in" />
+        <div class="image-container image2-container off">
+          <img class="mainimage" src="/img/cursor.svg" data-src=${src} alt=${name} class="lazyload fade-in"/>
+        </div>
       </div>
-      <div class="image-container image2-container off">
-        <img class="mainimage" src=${src} alt=${name}" />
-      </div>
-    </div>
-      `
-      }`;
+        `
+        }`;
     }
   })
   .join("");
@@ -358,16 +358,16 @@ penIcon.addEventListener("click", function () {
 });
 
 // elevateZoom
-// const isSmartPhone = () => window.matchMedia("(min-height: 600px)").matches;
+const isSmartPhone = () => window.matchMedia("(min-height: 600px)").matches;
 
-// if (isSmartPhone() == true) {
-//   $(".mainimage").elevateZoom({
-//     zoomType: "lens",
-//     lensShape: "round",
-//     lensSize: 400,
-//     scrollZoom: true,
-//   });
-// }
+if (isSmartPhone() == true) {
+  $(".mainimage").elevateZoom({
+    zoomType: "lens",
+    lensShape: "round",
+    lensSize: 400,
+    scrollZoom: true,
+  });
+}
 
 var speed = 50;
 //マウスホイールで横移動
