@@ -122,7 +122,8 @@ a {
   color: inherit;
   cursor: pointer;
 }
-img {
+img,
+.mainimage {
   height: 100%;
 }
 

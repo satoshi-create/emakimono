@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      display: none;
+      padding: 10px;
+      overflow: auto;
+      resize: both;
+      background-color: gainsboro;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <button class="btn">画像を表示する</button>
+  <div class="container">
+    <img style="content: url(/img/cyoujyuu_yamazaki_kou_01.jpg);" aria-label="cyoujyuu_yamazaki_kou_01" class="image"
+      width="500" height="400">
+  </div>
+  <!-- <button class="btn">画像を表示する</button>
+  <div class="container">
+    <img src="/img/cyoujyuu_yamazaki_kou_01.jpg" class="image" width="500" height="400">
+  </div> -->
+  <script>
+    const btn = document.querySelector('.btn')
+    btn.addEventListener('click', function () {
+      const container = document.querySelector(".container")
+      container.style.display = "block";
+      // btnをクリック不可にする
+      this.disabled = true;
+    })
+  </script>
+</body>
+
+</html>

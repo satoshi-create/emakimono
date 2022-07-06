@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    overflow-y: hidden;
+  }
+
+  .off {
+    display: none;
+  }
+</style>
+
+<body>
+  <div class="section enabled">
+    <!-- <div class="image-container image1-container">
+      <img src="/img/cyoujyuu_yamazaki_kou_01.jpg" class="image" />
+    </div> -->
+    <div class="image-container image2-container">
+      <img src="/img/cyoujyuu_yamazaki_kou_02.jpg" class="mainimage">
+      <!-- <div style="content: url(/img/cyoujyuu_yamazaki_kou_02.jpg);" class="mainimage"></div> -->
+    </div>
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/js/jquery.elevatezoom.js"></script>
+<script>
+
+  // const sectionBox = document.querySelectorAll(".section");
+  // sectionBox.forEach(function (section, index) {
+  //   const image1Container = section.querySelector(".image1-container");
+  //   const image2Container = section.querySelector(".image2-container");
+
+  //   section.addEventListener("click", function () {
+  //     if (image2Container.classList.contains("off")) {
+  //       image2Container.classList.remove("off");
+  //       image1Container.classList.add("off")
+
+  //     } else {
+  //       image2Container.classList.add("off");
+  //       image1Container.classList.remove("off");
+  //     }
+  //   });
+  // });
+
+  // $(".mainimage").elevateZoom({
+  //   zoomType: "lens",
+  //   lensShape: "round",
+  //   lensSize: 400,
+  //   scrollZoom: true,
+  // });
+
+
+  $('.section').on('click', function () {
+    if ($('.enabled').length === 0) {
+      if ($(".image2-container").length) {
+        $(".image2-container").show()
+      } else {
+        $(".mainimage").elevateZoom({
+          zoomType: "lens",
+          lensShape: "round",
+          lensSize: 400,
+          scrollZoom: true,
+        });
+      }
+    } else {
+      $(this).toggleClass('enabled');
+      $(".image2-container").hide()
+    }
+  });
+
+
+
+  // $('#zoom_01').on('click', function () {
+  //   if ($('.enabled').length === 0) {
+  //     if ($('.zoomContainer').length) {
+  //       $('.zoomContainer').show();
+  //       $(this).toggleClass('enabled');
+  //     } else {
+  //       $('#zoom_01').elevateZoom({
+  //         zoomType: "inner",
+  //         cursor: "crosshair",
+  //         zoomWindowFadeIn: 500,
+  //         zoomWindowFadeOut: 750
+  //       });
+  //     }
+  //   } else {
+  //     $(this).toggleClass('enabled');
+  //     $('.zoomContainer').hide();
+  //   }
+  // });
+
+</script>
+
+</html>

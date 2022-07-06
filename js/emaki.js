@@ -155,7 +155,7 @@ ${gendaibun ? `<p  class="gendaibun-text">${gendaibun}</p>` : ""}
             title="click = zoom-in" />
         </div>
         <div class="image-container image2-container off">
-          <img class="mainimage" src="/img/cursor.svg" data-src=${src} alt=${name}/>
+        <div style="content: url(${src});" aria-label=${name} class="mainimage"></div>
         </div>
       </div>
         `
@@ -315,7 +315,7 @@ date.innerHTML = new Date().getFullYear();
 
 const sectionBox = document.querySelectorAll(".section.image");
 
-sectionBox.forEach(function (section) {
+sectionBox.forEach(function (section, index) {
   const image1Container = section.querySelector(".image1-container");
   const image2Container = section.querySelector(".image2-container");
 
@@ -329,6 +329,45 @@ sectionBox.forEach(function (section) {
     }
   });
 });
+
+
+// sectionBox.forEach(function (section, index) {
+//   const image1Container = section.querySelector(".image1-container");
+//   const image2Container = section.querySelector(".image2-container");
+
+//   section.addEventListener("click", function () {
+//     if (image2Container.classList.contains("off")) {
+//       image2Container.classList.remove("off");
+//       image1Container.classList.add("off");
+//     } else {
+//       image2Container.classList.add("off");
+//       image1Container.classList.remove("off");
+//     }
+//   });
+// });
+
+// const isSmartPhone = () => window.matchMedia("(min-height: 600px)").matches;
+
+// if (isSmartPhone() == true) {
+//   $(".mainimage").elevateZoom({
+//     zoomType: "lens",
+//     lensShape: "round",
+//     lensSize: 400,
+//     scrollZoom: true,
+//   });
+// }
+
+// window.addEventListener("load", function () {
+//   const img = document.querySelectorAll(".image2-container img[data-src]");
+//   console.log(img);
+//   for (let index = 0; index < img.length; index++) {
+//     img[index].setAttribute("src", img[index].getAttribute("data-src"));
+//     img[index].onload = function () {
+//       img[index].removeAttribute("data-src");
+//     };
+//   }
+//   console.log("ページが完全に読み込まれました");
+// });
 
 const penIcon = document.querySelector(".pen-icon");
 penIcon.addEventListener("click", function () {
@@ -356,18 +395,6 @@ penIcon.addEventListener("click", function () {
     }
   });
 });
-
-// elevateZoom
-const isSmartPhone = () => window.matchMedia("(min-height: 600px)").matches;
-
-if (isSmartPhone() == true) {
-  $(".mainimage").elevateZoom({
-    zoomType: "lens",
-    lensShape: "round",
-    lensSize: 400,
-    scrollZoom: true,
-  });
-}
 
 var speed = 50;
 //マウスホイールで横移動
@@ -448,15 +475,3 @@ document.addEventListener("click", (e) => {
 //   counter++;
 //   contentsPc.style.transform = `translateX(${width * counter}px)`;
 // });
-
-window.addEventListener("load", function () {
-  const img = document.querySelectorAll(".image2-container img[data-src]");
-  console.log(img);
-  for (let index = 0; index < img.length; index++) {
-    img[index].setAttribute("src", img[index].getAttribute("data-src"));
-    img[index].onload = function () {
-      img[index].removeAttribute("data-src");
-    };
-  }
-  console.log("ページが完全に読み込まれました");
-});
