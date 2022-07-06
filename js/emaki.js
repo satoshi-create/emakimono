@@ -155,7 +155,7 @@ ${gendaibun ? `<p  class="gendaibun-text">${gendaibun}</p>` : ""}
             title="click = zoom-in" />
         </div>
         <div class="image-container image2-container off">
-          <img class="mainimage" src="/img/cursor.svg" data-src=${src} alt=${name} class="lazyload fade-in"/>
+          <img class="mainimage" src="/img/cursor.svg" data-src=${src} alt=${name}/>
         </div>
       </div>
         `
@@ -449,14 +449,14 @@ document.addEventListener("click", (e) => {
 //   contentsPc.style.transform = `translateX(${width * counter}px)`;
 // });
 
-// window.addEventListener("load", function () {
-//   const img = document.querySelectorAll("img[data-src]");
-//   console.log(img);
-//   for (let index = 0; index < img.length; index++) {
-//     img[index].setAttribute("src", img[index].getAttribute("data-src"));
-//     img[index].onload = function () {
-//       img[index].removeAttribute("data-src");
-//     };
-//   }
-//   console.log("ページが完全に読み込まれました");
-// });
+window.addEventListener("load", function () {
+  const img = document.querySelectorAll(".image2-container img[data-src]");
+  console.log(img);
+  for (let index = 0; index < img.length; index++) {
+    img[index].setAttribute("src", img[index].getAttribute("data-src"));
+    img[index].onload = function () {
+      img[index].removeAttribute("data-src");
+    };
+  }
+  console.log("ページが完全に読み込まれました");
+});
