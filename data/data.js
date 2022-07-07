@@ -28,8 +28,9 @@ const data = [
       {
         load: true,
         cat: "image",
-        src: "img/esi_01.jpg",
-        srcSP:"img/esi_01_sp.jpg",
+        srcSp: "img/esi_02.jpg",
+        srcTb: "img/esi_02@2x.jpg",
+        src: "img/esi_02@3x.jpg",
         name: "esi_01.jpg",
         phrase: [
           {
@@ -41,8 +42,10 @@ const data = [
       {
         load: false,
         cat: "image",
-        src: "img/esi_02.jpg",
-        name: "esi_02.jpg",
+        srcSp: "img/esi_03.jpg",
+        srcTb: "img/esi_03@2x.jpg",
+        src: "img/esi_03@3x.jpg",
+        name: "esi_03.jpg",
         phrase: [
           {
             phrasekobun: "",
@@ -53,8 +56,10 @@ const data = [
       {
         load: false,
         cat: "image",
-        src: "img/esi_03.jpg",
-        name: "esi_03.jpg",
+        srcSp: "img/esi_04.jpg",
+        srcTb: "img/esi_04@2x.jpg",
+        src: "img/esi_04@3x.jpg",
+        name: "esi_04.jpg",
         phrase: [
           {
             phrasekobun: "",
