@@ -107,7 +107,7 @@ ekotoba.addEventListener("click", function () {
 
 contentsPc.innerHTML = emakis
   .map((emaki, index) => {
-    const { cat, kobun, gendaibun, src, name, chapter, load } = emaki;
+    const { cat, kobun, gendaibun, src, name, chapter, load, srcSP } = emaki;
     if (cat == "ekotoba") {
       return `
         <div class="section section${index} ${cat} bgimg lazyload fade-in" id=s${index} data-bg=${backgroundImage}> 
@@ -135,19 +135,57 @@ ${gendaibun ? `<p  class="gendaibun-text">${gendaibun}</p>` : ""}
 </div>`;
     } else {
       return `
-
+      
         <div class="section section${index} ${cat}" id="s${index}" >
         <div class="image-container image1-container">
-          <img  src="/img/cursor.svg" data-src=${src} alt=${name} class="lazyload fade-in"
-            title="click = zoom-in" />
-        </div>
-        <div class="image-container image2-container off">
-        <div style="content: url(${src});" aria-label=${name} class="mainimage"></div>
-        </div>
-      </div>}`;
+        <picture>
+          <source data-srcset=${srcSP} media="(max-width: 500px)" />
+          <source data-srcset=${src} />
+          <img src="/img/cursor.svg" data-src="/img/cursor.svg" class="lazyload fade-in" alt=${name} />
+        </picture>
+      </div>
+      </div>
+        
+      `;
     }
   })
   .join("");
+
+// const sectionBox = document.querySelectorAll(".section.image");
+
+// sectionBox.forEach(function (section) {
+//   const image1Container = section.querySelector(".image1-container");
+//   const image2Container = section.querySelector(".image2-container");
+//   const image1ContainerImg = document.querySelector(".image1-container img");
+//   const image2ContainerImg = document.querySelector(".image2-container img");
+
+//   section.addEventListener("click", function () {
+//     if (section.classList.contains("active")) {
+//       section.classList.remove("active");
+//       image1Container.classList.remove("off");
+//       image2Container.classList.add("off");
+//     } else {
+//       image1Container.classList.add("off");
+//       image2Container.classList.remove("off");
+//       section.classList.add("active");
+//       // image2ContainerImg.setAttribute(
+//       //   "src",
+//       //   image1ContainerImg.getAttribute("src")
+//       // );
+//     }
+//   });
+// });
+
+// const isSmartPhone = () => window.matchMedia("(min-height: 600px)").matches;
+
+// if (isSmartPhone() == true) {
+//   $(".mainimage").elevateZoom({
+//     zoomType: "lens",
+//     lensShape: "round",
+//     lensSize: 400,
+//     scrollZoom: true,
+//   });
+// }
 
 //   contentsSp.innerHTML = emakis
 //     .map((emaki, index) => {
@@ -298,61 +336,6 @@ toggleText.addEventListener("click", function () {
 const date = document.getElementById("year");
 date.innerHTML = new Date().getFullYear();
 
-const sectionBox = document.querySelectorAll(".section.image");
-
-sectionBox.forEach(function (section, index) {
-  const image1Container = section.querySelector(".image1-container");
-  const image2Container = section.querySelector(".image2-container");
-
-  section.addEventListener("click", function () {
-    if (image2Container.classList.contains("off")) {
-      image2Container.classList.remove("off");
-      image1Container.classList.add("off");
-    } else {
-      image2Container.classList.add("off");
-      image1Container.classList.remove("off");
-    }
-  });
-});
-
-// sectionBox.forEach(function (section, index) {
-//   const image1Container = section.querySelector(".image1-container");
-//   const image2Container = section.querySelector(".image2-container");
-
-//   section.addEventListener("click", function () {
-//     if (image2Container.classList.contains("off")) {
-//       image2Container.classList.remove("off");
-//       image1Container.classList.add("off");
-//     } else {
-//       image2Container.classList.add("off");
-//       image1Container.classList.remove("off");
-//     }
-//   });
-// });
-
-// const isSmartPhone = () => window.matchMedia("(min-height: 600px)").matches;
-
-// if (isSmartPhone() == true) {
-//   $(".mainimage").elevateZoom({
-//     zoomType: "lens",
-//     lensShape: "round",
-//     lensSize: 400,
-//     scrollZoom: true,
-//   });
-// }
-
-// window.addEventListener("load", function () {
-//   const img = document.querySelectorAll(".image2-container img[data-src]");
-//   console.log(img);
-//   for (let index = 0; index < img.length; index++) {
-//     img[index].setAttribute("src", img[index].getAttribute("data-src"));
-//     img[index].onload = function () {
-//       img[index].removeAttribute("data-src");
-//     };
-//   }
-//   console.log("ページが完全に読み込まれました");
-// });
-
 const penIcon = document.querySelector(".pen-icon");
 penIcon.addEventListener("click", function () {
   sectionsEkotobas.forEach(function (sectionsEkotoba, i) {
@@ -458,4 +441,16 @@ document.addEventListener("click", (e) => {
 //   contentsPc.style.transition = ".3s";
 //   counter++;
 //   contentsPc.style.transform = `translateX(${width * counter}px)`;
+// });
+
+// window.addEventListener("load", function () {
+//   const img = document.querySelectorAll(".image2-container img[data-src]");
+//   console.log(img);
+//   for (let index = 0; index < img.length; index++) {
+//     img[index].setAttribute("src", img[index].getAttribute("data-src"));
+//     img[index].onload = function () {
+//       img[index].removeAttribute("data-src");
+//     };
+//   }
+//   console.log("ページが完全に読み込まれました");
 // });

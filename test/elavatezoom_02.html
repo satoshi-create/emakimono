@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  img {
+    width: 400px;
+  }
+
+  .off {
+    display: none;
+  }
+</style>
+
+<body>
+  <div class="container" onclick="setImage()">
+    <div class="image-container image1-container">
+      <img src="https://s3-eu-west-1.amazonaws.com/lovealetter/white-t-shirt.jpg" />
+    </div>
+    <div class="image-container image2-container off">
+      <img src="" data-zoom-image="https://s3-eu-west-1.amazonaws.com/lovealetter/white-t-shirt.jpg">
+    </div>
+  </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/js/jquery.elevatezoom.js"></script>
+  <script src="/js/okzoom.min.js"></script>
+  <script>
+    const image1Container = document.querySelector('.image1-container')
+    const image1ContainerImg = document.querySelector('.image1-container img')
+    const image2Container = document.querySelector('.image2-container')
+    const image2ContainerImg = document.querySelector('.image2-container img')
+    const container = document.querySelector('.container')
+
+  const setImage = () => {
+      if (image2Container.classList.contains('off')) {
+        console.log("off");
+        image2Container.classList.remove("off")
+        image1Container.classList.add("off")
+        image2ContainerImg.setAttribute('src', image1ContainerImg.getAttribute("src"))
+
+      } else {
+        console.log("on");
+        image2Container.classList.add("off");
+        image1Container.classList.remove("off");
+        // image2ContainerImg.removeAttribute('src', image1ContainerImg.getAttribute("src"))
+      }
+
+     }
+
+     $('.image2-container img').okzoom({
+          width: 250,  // ルーペの幅
+          height: 250,  // ルーペの高さ
+          round: true,  // ルーペの形
+          border: "1px solid black", // ルーペのボーダー指定
+          shadow: "0 0 5px #ffffff"  // ルーペの影指定
+        });
+
+  </script>
+</body>
+
+</html>

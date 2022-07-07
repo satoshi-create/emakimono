@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  /* Styles go here */
+
+  #tee {
+    width: 400px;
+  }
+</style>
+
+<body>
+  <div class="img">
+    <img id="tee" src="https://s3-eu-west-1.amazonaws.com/lovealetter/white-t-shirt.jpg"
+      data-zoom-image="https://s3-eu-west-1.amazonaws.com/lovealetter/white-t-shirt.jpg" />
+  </div>
+  <div class="colourpicker">
+    Available colours:<br>
+    <label><input type="radio" name="option" value="white" id="whiteTee" onclick="javascript:chooseTee();"
+        checked />White</label>
+    <label><input type="radio" name="option" value="grey" id="greyTee" onclick="javascript:chooseTee();" />Grey</label>
+    <label><input type="radio" name="option" value="navy" id="navyTee" onclick="javascript:chooseTee();" />Navy</label>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/js/jquery.elevatezoom.js"></script>
+    <script src="/js/okzoom.min.js"></script>
+  <script>
+    function chooseTee() {
+      var image_src;
+      if (document.getElementById('whiteTee').checked) {
+        image_src = "https://s3-eu-west-1.amazonaws.com/lovealetter/white-t-shirt.jpg";
+
+      } else if (document.getElementById('greyTee').checked) {
+        image_src = "https://s3-eu-west-1.amazonaws.com/lovealetter/grey-t-shirt.jpg";
+      } else {
+        image_src = "https://s3-eu-west-1.amazonaws.com/lovealetter/navy-t-shirt.jpg";
+      }
+      $('#tee').attr('src', image_src);
+      $('#tee').data('zoom-image', image_src).elevateZoom({
+        zoomType: "inner",
+        cursor: "crosshair",
+        responsive: "True",
+      });
+    }
+
+  </script>
+</body>
+
+
+</html>

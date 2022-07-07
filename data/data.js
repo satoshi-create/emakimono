@@ -29,6 +29,7 @@ const data = [
         load: true,
         cat: "image",
         src: "img/esi_01.jpg",
+        srcSP:"img/esi_01_sp.jpg",
         name: "esi_01.jpg",
         phrase: [
           {

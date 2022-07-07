@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      width: 500px;
+      height: 500px;
+      /* position: absolute;
+      top: 50%;
+      left: 50%; */
+      /* overflow: hidden; */
+    }
+
+    .image {
+      width: 500px;
+      height: 500px;
+      transition: all .3s;
+      transform: translate(-50%, -50%);
+      cursor: zoom-in;
+    }
+
+    .zoomed {
+      transform: translate(-50%, -50%) scale(1.65);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="/img/cyoujyuu_yamazaki_kou_01.jpg" class="image">
+  </div>
+  <script>
+    const img = document.querySelector('.image')
+    img.addEventListener("click", () => {
+      img.classList.toggle("zoomed")
+    })
+  </script>
+</body>
+
+</html>
