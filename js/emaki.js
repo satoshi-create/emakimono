@@ -140,8 +140,8 @@ ${gendaibun ? `<p  class="gendaibun-text">${gendaibun}</p>` : ""}
         <div class="section section${index} ${cat}" id="s${index}" >
         <div class="image-container image1-container">
         <picture>
-          <source data-srcset=${srcSp} media="(max-width: 375px)" />
-          <source data-srcset=${srcTb} media="(max-width: 800px)" />
+          <source data-srcset=${srcSp} media="(max-height: 375px)" />
+          <source data-srcset=${srcTb} media="(max-height: 800px)" />
           <source data-srcset=${src} />
           <img src="/img/cursor.svg" data-src="/img/cursor.svg" class="lazyload fade-in" alt=${name} />
         </picture>
