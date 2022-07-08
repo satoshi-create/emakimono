@@ -111,6 +111,7 @@ body {
 }
 .image-container {
   height: 100%;
+  position: relative; 
 }
 
 .off {

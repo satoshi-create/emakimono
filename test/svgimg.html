@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      position: relative;
+    }
+
+    svg {
+      z-index: 2;
+      position: absolute;
+      opacity: .2;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container"></div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js"></script>
+  <script>
+    const data = [
+      {
+        svg: `  <svg width="100%" height="100%" viewBox="0 0 1127 375">
+    <rect x="701" y="198" width="103" height="94" style="fill:rgb(255,0,0);" />
+    <ellipse cx="528.5" cy="149.5" rx="64.5" ry="61.5" style="fill:rgb(255,0,0);" />
+  </svg>`,
+        src: "/img/esi_02@3x.jpg",
+        srcSp: "/img/esi_02.jpg",
+        srcTb: "/img/esi_02@2x.jpg",
+      },
+    ]
+
+    document.querySelector('.container').innerHTML = data.map((item) => {
+      return `
+      ${item.svg}
+      <picture>
+        <source data-srcset=${item.srcSp} media="(max-height: 375px)" />
+        <source data-srcset=${item.srcTb} media="(max-height: 800px)" />
+        <source data-srcset=${item.src} />
+        <img src="/img/cursor.svg" data-src="/img/cursor.svg" class="lazyload fade-in"/>
+        </picture>
+      `
+    })
+  </script>
+</body>
+
+</html>

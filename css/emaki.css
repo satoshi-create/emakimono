@@ -10,7 +10,7 @@ header/footer
   width: 100%;
   position: fixed;
   left: 0;
-  z-index: 2;
+  z-index: 10;
 }
 
 .header {
@@ -21,6 +21,7 @@ header/footer
 }
 .header .pen-icon,
 .header .toggle-icon,
+.header .zoom-icon,
 .header a {
   width: 4rem;
   height: 4rem;
@@ -324,4 +325,13 @@ slider-Bottom
 
 .image2-container img {
   filter: brightness(0.8);
+}
+svg {
+  z-index: 2;
+  position: absolute;
+  opacity: 0.6;
+  cursor: pointer;
+}
+rect:hover {
+  opacity: 0.2;
 }

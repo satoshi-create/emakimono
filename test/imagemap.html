@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #image_map {
+      max-width: 100%;
+      width: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <img src="https://sses-tokyo.github.io/github-pages/image_map/assets/images/figure_tousenbo.png" usemap="#ImageMap"
+    id="image_map" alt="" />
+  <map name="ImageMap">
+    <area onmouseover="changeMapImage(e)" shape="rect" coords="255,2,477,81" href="#" alt="頭部" />
+    <area shape="rect" coords="257,84,479,132" href="#" alt="眼" />
+    <area shape="rect" coords="260,168,473,239" href="#" alt="首・頸部" />
+    <area shape="rect" coords="261,247,470,365" href="#" alt="胸部" />
+    <area shape="rect" coords="264,425,471,553" href="#" alt="腹部" />
+    <area shape="rect" coords="15,193,126,304" href="#" alt="手足" />
+    <area shape="rect" coords="131,209,258,308" href="#" alt="腕" />
+    <area shape="rect" coords="244,561,492,726" href="#" alt="脚" />
+  </map>
+  <script src="/js/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
+  <script>
+    $('#image_map').rwdImageMaps();
+
+    // $('area').on('click', function () {
+    //   alert($(this).attr('alt'))
+    // })
+
+    // $('area').hover(
+    //   function () { $(this).focus().css('outline', '10px solid #000'); },
+    //   function () { $(this).blur().css('outline', 'none'); }
+    // )
+
+    const areas = document.querySelectorAll('area')
+    areas.forEach(function (area) {
+      area.addEventListener('mouseover', () => {
+        area.focus().style.background = "red"
+        alert(area.getAttribute("alt"))
+      })
+    })
+
+  </script>
+</body>
+
+</html>

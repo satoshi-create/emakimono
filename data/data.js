@@ -32,6 +32,20 @@ const data = [
         srcTb: "img/esi_02@2x.jpg",
         src: "img/esi_02@3x.jpg",
         name: "esi_01.jpg",
+        viewBoxW: "1127",
+        viewBoxH: "375",
+        clickImg: [
+          {
+            shape:
+              '<rect x="701" y="198" width="103" height="94" style="fill:rgb(255,0,0);"/>',
+            text: "駆け寄る子供",
+          },
+          {
+            shape:
+              '<rect x="440" y="70" width="103" height="94" style="fill:rgb(255,0,0);"/>',
+            text: "縁側に駆け上がる親族",
+          },
+        ],
         phrase: [
           {
             phrasekobun: "",
@@ -46,6 +60,20 @@ const data = [
         srcTb: "img/esi_03@2x.jpg",
         src: "img/esi_03@3x.jpg",
         name: "esi_03.jpg",
+        viewBoxW: "1127",
+        viewBoxH: "375",
+        clickImg: [
+          {
+            shape:
+              '<rect x="701" y="198" width="103" height="94" style="fill:rgb(255,0,0);"/>',
+            text: "宴会に興じる絵師一族",
+          },
+          {
+            shape:
+              '<rect x="440" y="70" width="103" height="94" style="fill:rgb(255,0,0);"/>',
+            text: "踊る男",
+          },
+        ],
         phrase: [
           {
             phrasekobun: "",

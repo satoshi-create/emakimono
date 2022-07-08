@@ -107,8 +107,19 @@ ekotoba.addEventListener("click", function () {
 
 contentsPc.innerHTML = emakis
   .map((emaki, index) => {
-    const { cat, kobun, gendaibun, src, name, chapter, load, srcSp, srcTb } =
-      emaki;
+    const {
+      cat,
+      kobun,
+      gendaibun,
+      src,
+      name,
+      chapter,
+      srcSp,
+      srcTb,
+      viewBoxW,
+      viewBoxH,
+      clickImg,
+    } = emaki;
     if (cat == "ekotoba") {
       return `
         <div class="section section${index} ${cat} bgimg lazyload fade-in" id=s${index} data-bg=${backgroundImage}> 
@@ -139,19 +150,46 @@ ${gendaibun ? `<p  class="gendaibun-text">${gendaibun}</p>` : ""}
       
         <div class="section section${index} ${cat}" id="s${index}" >
         <div class="image-container image1-container">
+        ${
+          viewBoxW
+            ? `
+        <svg width="100%" height="100%" viewBox="0 0 ${viewBoxW} ${viewBoxH}">
+        ${clickImg.map((item) => item.shape).join("")}
+      </svg>
+        `
+            : ""
+        }
+    
         <picture>
           <source data-srcset=${srcSp} media="(max-height: 375px)" />
           <source data-srcset=${srcTb} media="(max-height: 800px)" />
           <source data-srcset=${src} />
-          <img src="/img/cursor.svg" data-src="/img/cursor.svg" class="lazyload fade-in" alt=${name} />
-        </picture>
+          <img src=${src} data-src=${src} class="lazyload fade-in" alt=${name} />
+          </picture>
+          </div>
       </div>
-      </div>
-        
       `;
     }
   })
   .join("");
+
+const zoom = document.querySelector(".zoom-icon");
+const svg = document.querySelector("svg");
+
+zoom.addEventListener("click", function () {
+  svg.classList.toggle("off");
+});
+
+const sections = contentsPc.querySelectorAll(".section");
+
+sections.forEach(function (section, index) {
+  const rects = section.querySelectorAll("rect");
+  rects.forEach(function (rect, i) {
+    rect.addEventListener("click", function () {
+      alert(emakis[index].clickImg[i].text);
+    });
+  });
+});
 
 // const sectionBox = document.querySelectorAll(".section.image");
 
@@ -300,7 +338,6 @@ function wordLink(data, i) {
   });
 }
 
-const sections = contentsPc.querySelectorAll(".section");
 sections.forEach(function (item, i) {
   const phrases = emakis[i].phrase;
   const word = item.querySelectorAll(".word");
