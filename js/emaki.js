@@ -146,7 +146,7 @@ ${gendaibun ? `<p  class="gendaibun-text">${gendaibun}</p>` : ""}
 <source data-srcset=${srcSp} media="(max-height: 375px)" />
 <source data-srcset=${srcTb} media="(max-height: 800px)" />
 <source data-srcset=${src} />
-<img src=${src} data-src=${src} class="lazyload fade-in" alt=${name} />
+<img src="/img/cursor.svg" data-src=${src} class="lazyload fade-in" alt=${name} />
 </picture>
 </div>
 </div>`;
@@ -169,8 +169,8 @@ ${gendaibun ? `<p  class="gendaibun-text">${gendaibun}</p>` : ""}
           <source data-srcset=${srcSp} media="(max-height: 375px)" />
           <source data-srcset=${srcTb} media="(max-height: 800px)" />
           <source data-srcset=${src} />
-          <img src=${src} data-src=${src} class="lazyload fade-in" alt=${name} />
-          </picture>
+          <img src="/img/cursor.svg" data-src="/img/cursor.svg" class="lazyload fade-in" alt=${name} />
+          </picture>  
           </div>
       </div>
       `;
@@ -377,8 +377,8 @@ toggleText.addEventListener("click", function () {
   });
 });
 
-const date = document.getElementById("year");
-date.innerHTML = new Date().getFullYear();
+// const date = document.getElementById("year");
+// date.innerHTML = new Date().getFullYear();
 
 const penIcon = document.querySelector(".pen-icon");
 penIcon.addEventListener("click", function () {

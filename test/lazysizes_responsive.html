@@ -20,46 +20,50 @@
 
 <body>
 
-  <div class="box" data-expand="-40">
-    <img alt="Jellyfish" sizes="(min-width: 1000px) 930px, 90vw" data-srcset="https://images.unsplash.com/photo-1543264629844-40dd6bf17c2b?ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=60 240w, 
-	https://images.unsplash.com/photo-1523264629844-40dd6bf17c2b?ixlib=rb-1.2.1&auto=format&fit=crop&w=320&q=60 320w,
-	https://images.unsplash.com/photo-1523264629844-40dd6bf17c2b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60 500w,
-	https://images.unsplash.com/photo-1523264629844-40dd6bf17c2b?ixlib=rb-1.2.1&auto=format&fit=crop&w=640&q=60 640w,
-	https://images.unsplash.com/photo-1523264629844-40dd6bf17c2b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1024&q=60 1024w"
-      data-src="https://images.unsplash.com/photo-1523264629844-40dd6bf17c2b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1024&q=60"
-      class="lazyload" />
-  </div>
+  <picture>
+    <source data-srcset=/img/esi_01-375.jpg media="(max-height: 375px)" />
+    <source data-srcset=/img/esi_01-800.jpg media="(max-height: 800px)" />
+    <source data-srcset=/img/esi_01-1080.jpg />
+    <img src=/img/esi_01-1080.jpg data-src=/img/esi_01-1080.jpg class="lazyload fade-in" alt=${name} />
+  </picture>
+  <picture>
+    <source data-srcset=/img/esi_02-375.jpg media="(max-height: 375px)" />
+    <source data-srcset=/img/esi_02-800.jpg media="(max-height: 800px)" />
+    <source data-srcset=/img/esi_02-1080.jpg />
+    <img src=/img/esi_01-1080.jpg data-src=/img/esi_01-1080.jpg class="lazyload fade-in" alt=${name} />
+  </picture>
+  <picture>
+    <source data-srcset=/img/esi_03-375.jpg media="(max-height: 375px)" />
+    <source data-srcset=/img/esi_03-800.jpg media="(max-height: 800px)" />
+    <source data-srcset=/img/esi_03-1080.jpg />
+    <img src=/img/esi_01-1080.jpg data-src=/img/esi_01-1080.jpg class="lazyload fade-in" alt=${name} />
+  </picture>
+  <picture>
+    <source data-srcset=/img/esi_04-375.jpg media="(max-height: 375px)" />
+    <source data-srcset=/img/esi_04-800.jpg media="(max-height: 800px)" />
+    <source data-srcset=/img/esi_04-1080.jpg />
+    <img src=/img/esi_01-1080.jpg data-src=/img/esi_01-1080.jpg class="lazyload fade-in" alt=${name} />
+  </picture>
+  <picture>
+    <source data-srcset=/img/esi_05-375.jpg media="(max-height: 375px)" />
+    <source data-srcset=/img/esi_05-800.jpg media="(max-height: 800px)" />
+    <source data-srcset=/img/esi_05-1080.jpg />
+    <img src=/img/esi_01-1080.jpg data-src=/img/esi_01-1080.jpg class="lazyload fade-in" alt=${name} />
+  </picture>
 
-  <!-- 
-  <img alt="Jellyfish" sizes="(min-width: 1000px) 930px, 90vw"
-    data-srcset="/img/esi_01_sp.jpg 500w, /img/esi_01.jpg 1024w" src="/img/cursor.svg" class="lazyload fade-in" />
-
-  <img alt="Jellyfish" sizes="(min-width: 1000px) 930px, 90vw"
-    data-srcset="/img/esi_02_sp.jpg 500w,/img/esi_02.jpg 1024w" src="/img/cursor.svg" class="lazyload fade-in" />
-  <img alt="Jellyfish" sizes="(min-width: 1000px) 930px, 90vw"
-    data-srcset="/img/esi_03_sp.jpg 500w,/img/esi_03.jpg 1024w" src="/img/cursor.svg" class="lazyload fade-in" />
-  <img alt="Jellyfish" sizes="(min-width: 1000px) 930px, 90vw"
-    data-srcset="/img/esi_04_sp.jpg 500w,/img/esi_04.jpg 1024w" src="/img/cursor.svg" class="lazyload fade-in" /> -->
-
-  <img alt="Jellyfish" data-size="auto" data-srcset="/img/esi_04_sp.jpg 500w,/img/esi_04.jpg 1024w"
-    data-src="/img/cursor.svg" class="lazyload" />
-
-  <img alt="Jellyfish" data-size="auto" data-srcset="/img/esi_05_sp.jpg 500w,/img/esi_05.jpg 1024w"
-    data-src="/img/cursor.svg" class="lazyload" />
-
-  <img alt="Jellyfish" data-size="auto" data-srcset="/img/esi_06_sp.jpg 500w,/img/esi_06.jpg 1024w"
-    data-src="/img/cursor.svg" class="lazyload" />
-
-  <img alt="Jellyfish" data-size="auto" data-srcset="/img/esi_04_sp.jpg 500w,/img/esi_04.jpg 1024w"
-    data-src="/img/cursor.svg" class="lazyload" />
-
-  <img alt="Jellyfish" data-size="auto" data-srcset="/img/esi_04_sp.jpg 500w,/img/esi_04.jpg 1024w"
-    data-src="/img/cursor.svg" class="lazyload" />
-
-  <div class="section section${index} ${cat}" id="s${index}">
-    <img alt=${name} data-size="(min-width: 500px) 100vw" data-srcset="${srcSP} 500w,${src} 1024w"
-      data-src="/img/cursor.svg" class="lazyload" />
-  </div>
+  <!-- <img alt="Jellyfish" data-size="auto" data-srcset="/img/esi_01-375.jpg" data-src="/img/cursor.svg" class="lazyload" />
+  <img alt="Jellyfish" data-size="auto" data-srcset="/img/esi_02-375.jpg" data-src="/img/cursor.svg" class="lazyload" />
+  <img alt="Jellyfish" data-size="auto" data-srcset="/img/esi_03-375.jpg" data-src="/img/cursor.svg" class="lazyload" />
+  <img alt="Jellyfish" data-size="auto" data-srcset="/img/esi_04-375.jpg" data-src="/img/cursor.svg" class="lazyload" />
+  <img alt="Jellyfish" data-size="auto" data-srcset="/img/esi_05-375.jpg" data-src="/img/cursor.svg" class="lazyload" />
+  <img alt="Jellyfish" data-size="auto" data-srcset="/img/esi_06-375.jpg" data-src="/img/cursor.svg" class="lazyload" />
+  <img alt="Jellyfish" data-size="auto" data-srcset="/img/esi_07-375.jpg" data-src="/img/cursor.svg" class="lazyload" />
+  <img alt="Jellyfish" data-size="auto" data-srcset="/img/esi_08-375.jpg" data-src="/img/cursor.svg" class="lazyload" />
+  <img alt="Jellyfish" data-size="auto" data-srcset="/img/esi_09-375.jpg" data-src="/img/cursor.svg" class="lazyload" />
+  <img alt="Jellyfish" data-size="auto" data-srcset="/img/esi_10-375.jpg" data-src="/img/cursor.svg" class="lazyload" />
+  <img alt="Jellyfish" data-size="auto" data-srcset="/img/esi_11-375.jpg" data-src="/img/cursor.svg" class="lazyload" />
+  <img alt="Jellyfish" data-size="auto" data-srcset="/img/esi_12-375.jpg" data-src="/img/cursor.svg" class="lazyload" />
+  <img alt="Jellyfish" data-size="auto" data-srcset="/img/esi_13-375.jpg" data-src="/img/cursor.svg" class="lazyload" /> -->
 
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
