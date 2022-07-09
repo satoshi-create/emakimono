@@ -3,6 +3,28 @@
 ekotoba
 ===============
 */
+@media (max-height: 375px) {
+  .section.ekotoba h3 {
+    font-size: 3rem;
+  }
+  .section.ekotoba .kobun-text p {
+    font-size: 2.8rem;
+  }
+  .section.ekotoba .translate-text p {
+    font-size: 2.8rem;
+  }
+}
+@media (min-height: 376px) {
+  .section.ekotoba h3 {
+    font-size: 3.5rem;
+  }
+  .section.ekotoba .kobun-text p {
+    font-size: 3.5rem;
+  }
+  .section.ekotoba .translate-text p {
+    font-size: 3.5rem;
+  }
+}
 
 .section.ekotoba {
   writing-mode: vertical-rl;
@@ -13,7 +35,6 @@ ekotoba
 }
 .section.ekotoba h3 {
   margin: 0 2rem;
-  font-size: 3.4rem;
   font-family: "Kaisei Decol", serif;
   font-weight: 500;
   color: #4a4f9f;
@@ -27,7 +48,6 @@ ekotoba
 }
 .section.ekotoba .kobun-text p {
   font-family: "Zen Kurenaido", sans-serif;
-  font-size: 35px;
 }
 .section.ekotoba .translate {
   position: absolute;
@@ -50,7 +70,6 @@ ekotoba
 .section.ekotoba .translate-text p {
   font-family: "Zen Kurenaido", sans-serif;
   margin: 4rem 0 3rem 2rem;
-  font-size: 3.4rem;
 }
 .section.ekotoba .translate-btn {
   color: #d6d6d6;

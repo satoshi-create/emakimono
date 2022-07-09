@@ -142,7 +142,12 @@ contentsPc.innerHTML = emakis
 ${gendaibun ? `<p  class="gendaibun-text">${gendaibun}</p>` : ""}
 </div>
 <div class="figure off">
-<img src=${src}>
+<picture>
+<source data-srcset=${srcSp} media="(max-height: 375px)" />
+<source data-srcset=${srcTb} media="(max-height: 800px)" />
+<source data-srcset=${src} />
+<img src=${src} data-src=${src} class="lazyload fade-in" alt=${name} />
+</picture>
 </div>
 </div>`;
     } else {
