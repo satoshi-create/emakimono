@@ -306,7 +306,7 @@ slider-Bottom
   height: 100vh;
 }
 .fade-in {
-  filter: blur(10px);
+  filter: blur(4px);
   transition: opacity 3s;
 }
 
