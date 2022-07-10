@@ -35,26 +35,6 @@ const data = [
         srcTb: "/img/esi_02-800.jpg",
         src: "/img/esi_02-1080.jpg",
         name: "esi_02.jpg",
-        viewBoxW: "1127",
-        viewBoxH: "375",
-        clickImg: [
-          {
-            shape:
-              '<rect x="701" y="198" width="103" height="94" style="fill:rgb(255,0,0);"/>',
-            text: "駆け寄る子供",
-          },
-          {
-            shape:
-              '<rect x="440" y="70" width="103" height="94" style="fill:rgb(255,0,0);"/>',
-            text: "縁側に駆け上がる親族",
-          },
-        ],
-        phrase: [
-          {
-            phrasekobun: "",
-            transphrase: "",
-          },
-        ],
       },
       {
         load: false,
@@ -63,18 +43,20 @@ const data = [
         srcTb: "img/esi_03-800.jpg",
         src: "img/esi_03-1080.jpg",
         name: "esi_03.jpg",
-        viewBoxW: "1127",
+        viewBoxW: "669",
         viewBoxH: "375",
         clickImg: [
           {
             shape:
-              '<rect x="701" y="198" width="103" height="94" style="fill:rgb(255,0,0);"/>',
+              '<circle cx="334.5" cy="174" r="33" style="fill:rgb(255,0,0);fill-opacity:0.42;"/>',
+            partImg: "img/esi_03_partimage_01.png",
             text: "宴会に興じる絵師一族",
           },
           {
             shape:
-              '<rect x="440" y="70" width="103" height="94" style="fill:rgb(255,0,0);"/>',
-            text: "踊る男",
+              '<rect x="130" y="159" width="62" height="41" style="fill:rgb(255,0,0);fill-opacity:0.42;"/>',
+            partImg: "img/esi_03_partimage_01.png",
+            text: "宴会に興じる絵師一族",
           },
         ],
         phrase: [

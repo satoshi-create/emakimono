@@ -105,7 +105,7 @@ ekotoba.addEventListener("click", function () {
   contentsPc.classList.toggle("animateContentsPc");
 });
 
-contentsPc.innerHTML = emakis
+contentsPc.innerHTML = `<div class="modal-wrapper"></div>${emakis
   .map((emaki, index) => {
     const {
       cat,
@@ -164,7 +164,6 @@ ${gendaibun ? `<p  class="gendaibun-text">${gendaibun}</p>` : ""}
         `
             : ""
         }
-    
         <picture>
           <source data-srcset=${srcSp} media="(max-height: 375px)" />
           <source data-srcset=${srcTb} media="(max-height: 800px)" />
@@ -176,24 +175,48 @@ ${gendaibun ? `<p  class="gendaibun-text">${gendaibun}</p>` : ""}
       `;
     }
   })
-  .join("");
+  .join("")}`;
 
-const zoom = document.querySelector(".zoom-icon");
-const svg = document.querySelector("svg");
+const modal = document.querySelector(".modal-wrapper");
 
-zoom.addEventListener("click", function () {
-  svg.classList.toggle("off");
-});
+modal.innerHTML = `<div class="modal-overlay"></div><div class="modal-container"><div class="modal-box"></div> <button class="modal-close-btn">
+<i class="fa-solid fa-xmark"></i>
+</button></div>`;
+
+// const zoom = document.querySelector(".zoom-icon");
+// const svg = document.querySelector("svg");
+
+// zoom.addEventListener("click", function () {
+//   svg.classList.toggle("off");
+// });
 
 const sections = contentsPc.querySelectorAll(".section");
+const modalConteiner = document.querySelector(".modal-container");
+const modalBox = document.querySelector(".modal-box");
+const modalOverlay = document.querySelector(".modal-overlay");
 
 sections.forEach(function (section, index) {
-  const rects = section.querySelectorAll("rect");
-  rects.forEach(function (rect, i) {
-    rect.addEventListener("click", function () {
-      alert(emakis[index].clickImg[i].text);
+  const shapes = section.querySelectorAll("svg > *");
+  shapes.forEach(function (shape, i) {
+    shape.addEventListener("click", function () {
+      modal.classList.add("open-modal");
+      const { text, partImg } = emakis[index].clickImg[i];
+      modalBox.innerHTML = `<div>
+      <h3>${text}</h3>
+      <img src=${partImg} alt=${text}/>
+      </div>`;
     });
   });
+});
+
+const closeModal = document.querySelector(".modal-close-btn");
+
+closeModal.addEventListener("click", function () {
+  modal.classList.remove("open-modal");
+});
+
+modalOverlay.addEventListener("click", function () {
+  modal.classList.remove("open-modal");
 });
 
 // const sectionBox = document.querySelectorAll(".section.image");
@@ -231,42 +254,6 @@ sections.forEach(function (section, index) {
 //     scrollZoom: true,
 //   });
 // }
-
-//   contentsSp.innerHTML = emakis
-//     .map((emaki, index) => {
-//       const { cat, kobun, gendaibun, src, name } = emaki;
-//       if (cat == "ekotoba") {
-//         return `<div class="section ${cat}">
-//         <div class="kobun-text">
-//   <p>
-//     ${kobun}
-//   </p>
-//   <div class="translate">
-//     <!-- question button -->
-//     <button type="button" class="btn translate-btn section-btn">
-//       <span class="plus-icon">
-//         <i class="far fa-plus-square"></i>
-//       </span>
-//       <span class="minus-icon">
-//         <i class="far fa-minus-square"></i>
-//       </span>
-//     </button>
-//   </div>
-// </div>
-// <div class="translate-text">
-//   <p class="gendaibun-text">${gendaibun}</p>
-// </div>
-// </div>`;
-//       } else {
-//         return `
-// <div id="s${index}"></div>
-// <div class="section section${index + 1}">
-// <img src=${src} alt=${name} />
-// </div>
-// `;
-//       }
-//     })
-//     .join("");
 
 const sectionsEkotobas = document.querySelectorAll(".section.ekotoba");
 
