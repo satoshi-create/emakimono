@@ -96,7 +96,6 @@ header/footer
   height: 72vh;
 }
 
-
 /* 
 .slideR {
   z-index: 99;
@@ -307,12 +306,12 @@ slider-Bottom
   height: 100vh;
 }
 .fade-in {
-  opacity: 0.6;
+  filter: blur(10px);
   transition: opacity 3s;
 }
 
 .fade-in.lazyloaded {
-  opacity: 1;
+  filter: blur(0);
 }
 .bgimg {
   background-size: cover;
