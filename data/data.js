@@ -50,7 +50,8 @@ const data = [
             shape:
               '<circle cx="334.5" cy="174" r="33" style="fill:rgb(255,0,0);fill-opacity:0.42;"/>',
             partImg: "img/esi_03_partimage_01.png",
-            text: "宴会に興じる絵師一族",
+            title: "宣旨を読み上げる絵師",
+            text:"「伊予国・・・令知行・・・天気（によって執達件の如し）」と書いてある。"
           },
           {
             shape:

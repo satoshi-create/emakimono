@@ -350,12 +350,11 @@ svg > *:hover {
   background: white;
   border-radius: 0.5rem;
   width: 90vw;
-  height: 30vh;
-  max-width: 620px;
-  text-align: center;
+  height: 60vh;
+  max-width: 900px;
+  position: relative;
   display: grid;
   place-items: center;
-  position: relative;
 }
 .modal-close-btn {
   position: absolute;
@@ -379,4 +378,27 @@ svg > *:hover {
   height: 100%;
   z-index: -1;
   background-color: rgba(0, 0, 0, 0.72);
+}
+.modal-box {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  width: 70vw;
+  gap: 2rem;
+  max-width: 800px;
+}
+.modal-box h3 {
+  grid-area: 1 / 1 / auto / span 2;
+  justify-self: center;
+  font-family: "Kaisei Decol", serif;
+  font-size: 3rem;
+}
+.modal-box img {
+  grid-area: 2 /1 / span1/span1;
+  height: auto;
+  align-self: center;
+}
+.modal-box p {
+  grid-area: 2 /2;
+  font-family: "Zen Kurenaido", sans-serif;
+  font-size: 2rem;
 }

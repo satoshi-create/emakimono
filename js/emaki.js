@@ -158,7 +158,7 @@ ${gendaibun ? `<p  class="gendaibun-text">${gendaibun}</p>` : ""}
         ${
           viewBoxW
             ? `
-        <svg width="100%" height="100%" viewBox="0 0 ${viewBoxW} ${viewBoxH}">
+        <svg width="100%" height="100%" viewBox="0 0 ${viewBoxW} ${viewBoxH}" class="off">
         ${clickImg.map((item) => item.shape).join("")}
       </svg>
         `
@@ -179,16 +179,16 @@ ${gendaibun ? `<p  class="gendaibun-text">${gendaibun}</p>` : ""}
 
 const modal = document.querySelector(".modal-wrapper");
 
-modal.innerHTML = `<div class="modal-overlay"></div><div class="modal-container"><div class="modal-box"></div> <button class="modal-close-btn">
+modal.innerHTML = `<div class="modal-overlay"></div><div class="modal-container"><div class="modal-box"></div><button class="modal-close-btn">
 <i class="fa-solid fa-xmark"></i>
-</button></div>`;
+</button>`;
 
-// const zoom = document.querySelector(".zoom-icon");
-// const svg = document.querySelector("svg");
+const zoom = document.querySelector(".zoom-icon");
+const svg = document.querySelector("svg");
 
-// zoom.addEventListener("click", function () {
-//   svg.classList.toggle("off");
-// });
+zoom.addEventListener("click", function () {
+  svg.classList.toggle("off");
+});
 
 const sections = contentsPc.querySelectorAll(".section");
 const modalConteiner = document.querySelector(".modal-container");
@@ -200,11 +200,13 @@ sections.forEach(function (section, index) {
   shapes.forEach(function (shape, i) {
     shape.addEventListener("click", function () {
       modal.classList.add("open-modal");
-      const { text, partImg } = emakis[index].clickImg[i];
-      modalBox.innerHTML = `<div>
-      <h3>${text}</h3>
-      <img src=${partImg} alt=${text}/>
-      </div>`;
+      const { text, partImg, title } = emakis[index].clickImg[i];
+      modalBox.innerHTML = `
+      <h3>${title}</h3>
+      <img src=${partImg} alt=${title}/>
+      <p>${text}</p>
+      
+      `;
     });
   });
 });
