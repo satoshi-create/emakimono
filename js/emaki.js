@@ -169,7 +169,7 @@ ${gendaibun ? `<p  class="gendaibun-text">${gendaibun}</p>` : ""}
           <source data-srcset=${srcSp} media="(max-height: 375px)" />
           <source data-srcset=${srcTb} media="(max-height: 800px)" />
           <source data-srcset=${src} />
-          <img src="/img/cursor.svg" data-src="/img/cursor.svg" class="lazyload fade-in" alt=${name} />
+          <img src="/img/spinner.svg" data-src="/img/spinner.svg" class="lazyload fade-in" alt=${name} />
           </picture>  
           </div>
       </div>
