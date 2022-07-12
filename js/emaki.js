@@ -1,3 +1,4 @@
+import headerDatas from "../data/header.js";
 import datas from "../data/data.js";
 
 const params = new URLSearchParams(window.location.search);
@@ -18,11 +19,30 @@ const sidebarCloseBtn = document.querySelector(".sidebarR .sidebar-close-btn");
 const sidebarR = document.querySelector(".sidebarR");
 const mokujiText = document.querySelector(".mokuji");
 
-// get header-end
-document.querySelector(".header-end").href = `#s${emakis.length - 1}`;
-
 // get title
 document.title = `${title} ${edition ? edition : ""} ${author}`;
+
+const header = document.querySelector(".header");
+console.log(headerDatas);
+header.innerHTML = headerDatas
+  .map((item) => {
+    const { className, link, icon, title } = item;
+    if (link) {
+      return `
+      <a class="${className}" href=${
+        title == "end" ? `#s${emakis.length - 1}` : link
+      } title=${title}>
+      <i class="${icon}"></i>
+      </a>
+      `;
+    } else {
+      return `
+      <span class=${className} title=${title}>
+      <i class="${icon}"></i>
+      </span>      `;
+    }
+  })
+  .join("");
 
 // toggle sidebarR
 sidebarOpenBtn.addEventListener("click", function () {
@@ -98,7 +118,7 @@ function fit() {
 }
 
 // toggle ekotoba
-const ekotoba = document.getElementById("ekotoba");
+const ekotoba = document.querySelector(".ekotoba-icon");
 const slideB = document.querySelector(".slideB");
 ekotoba.addEventListener("click", function () {
   slideB.classList.toggle("animateSlideB");
@@ -271,12 +291,12 @@ const fileterEmakis = emakis.filter((item) => item.cat == "ekotoba");
 // toggle-text
 const toggleTextBtn = document.querySelector(".toggle-text-btn");
 const kobunTextP = contentsPc.querySelectorAll(".kobun-text p");
-const toggleTextP = document.querySelectorAll(".toggle-text p");
+// const toggleTextP = document.querySelectorAll(".toggle-text p");
 const translateTextP = contentsPc.querySelectorAll(".gendaibun-text");
-const toggleIcon = document.querySelector(".toggle-text .toggle-icon i");
+const toggleIcon = document.querySelector(".toggle-text-icon");
 const sidebarL = document.querySelector(".sidebarL");
 
-toggleTextBtn.addEventListener("click", function () {
+toggleIcon.addEventListener("click", function () {
   const result = contentsPc.classList.toggle("result");
 
   toggleIcon.classList.toggle("rotate");
@@ -289,13 +309,13 @@ toggleTextBtn.addEventListener("click", function () {
 
   sidebarL.classList.remove("translate-sidebar");
 
-  toggleTextP.forEach(function (item) {
-    if (item.classList.contains("active-color")) {
-      item.classList.remove("active-color");
-    } else {
-      item.classList.add("active-color");
-    }
-  });
+  // toggleTextP.forEach(function (item) {
+  //   if (item.classList.contains("active-color")) {
+  //     item.classList.remove("active-color");
+  //   } else {
+  //     item.classList.add("active-color");
+  //   }
+  // });
 
   kobunTextP.forEach(function (kobun, i) {
     if (result) {
@@ -358,10 +378,12 @@ toggleText.addEventListener("click", function () {
   sections.forEach(function (section) {
     if (section.classList.contains("show-text")) {
       section.classList.remove("show-text");
-      toggleText.classList.remove("open-text");
+      // toggleText.classList.remove("open-text");
+      toggleText.innerHTML = ' <i class="fa-solid fa-plus"></i>';
     } else {
       section.classList.add("show-text");
-      toggleText.classList.add("open-text");
+      // toggleText.classList.add("open-text");
+      toggleText.innerHTML = ' <i class="fa-solid fa-minus"></i>';
     }
   });
 });

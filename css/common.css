@@ -111,7 +111,7 @@ body {
 }
 .image-container {
   height: 100%;
-  position: relative; 
+  position: relative;
 }
 
 .off {
@@ -126,6 +126,13 @@ a {
 img,
 .mainimage {
   height: 100%;
+}
+/* firefoxでheight100%にすると余白ができる不具合を修正 */
+@-moz-document url-prefix() {
+  img,
+  .mainimage {
+    height: auto;
+  }
 }
 
 h1 {

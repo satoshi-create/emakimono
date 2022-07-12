@@ -18,9 +18,7 @@ header/footer
   justify-content: center;
   column-gap: 5px;
 }
-.header .pen-icon,
-.header .toggle-icon,
-.header .zoom-icon,
+.header span,
 .header a {
   width: 4rem;
   height: 4rem;
@@ -34,18 +32,18 @@ header/footer
   color: var(--clr-gray);
   cursor: pointer;
 }
-.header .toggle-icon .fa-plus {
+/* .header .toggle-icon .fa-plus {
   display: block;
 }
 .header .toggle-icon .fa-minus {
   display: none;
-}
-.header .open-text.toggle-icon .fa-plus {
+} */
+/* .header .open-text.toggle-icon .fa-plus {
   display: none;
 }
 .header .open-text.toggle-icon .fa-minus {
   display: block;
-}
+} */
 .header i {
   font-size: 21px;
   transition: var(--transition);
