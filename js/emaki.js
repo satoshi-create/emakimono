@@ -172,7 +172,6 @@ ${gendaibun ? `<p  class="gendaibun-text">${gendaibun}</p>` : ""}
 </div>`;
     } else {
       return `
-      
         <div class="section section${index} ${cat}" id="s${index}" >
         <div class="image-container image1-container">
         ${
