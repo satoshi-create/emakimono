@@ -183,6 +183,7 @@ const data = [
     author: "鳥羽僧正覚猷",
     edition: "甲巻",
     backgroundImage: "img/110310200304.png",
+    video:"https://youtu.be/Si8NzY2drSg",
     emakis: [
       {
         load: true,
@@ -227,7 +228,7 @@ const data = [
       {
         load: false,
         cat: "ekotoba",
-        chapter: "賭弓 ",
+        chapter: "兎と蛙の賭弓 ",
         kobun: "",
         gendaibun: "",
       },
