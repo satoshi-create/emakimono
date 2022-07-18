@@ -29,9 +29,9 @@ ekotoba
   }
 }
 @media (min-height: 800px) {
-  /* .header {
+  .header {
     display: flex;
-  } */
+  }
 }
 
 .section.ekotoba {
