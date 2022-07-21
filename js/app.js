@@ -5,11 +5,26 @@ $(function () {
 
   contentsList.innerHTML = data
     .map((item, index) => {
-      const { id, title, edition, author } = item;
+      const { id, era, gif, thumb, desc, title, edition, author, video } = item;
       return `
-    <a class="single-contaier"  href="emaki.html?id=${index}">
-    <h1>${title} ${edition ? edition : ""}</h1>
-    <h3>${author}</h3>
+      <div class="emaki-card">
+      <div class="single-img-container">
+      <a href=${video} target="_blank">
+      <img class="single-img-thumb"src=${thumb}>
+      <img class="single-img-gif" src=${gif}>
+      </a>
+      </div>
+      <div class="emaki-info">
+      <div class="emaki-header">
+      <h3>${title} ${edition ? edition : ""}</h3>
+      <h4 class="author">${author}</h4>
+      <h4 class="era">${era}</h4>
+      </div>
+      <div class="emaki-desc">
+      <p>${desc}</p> 
+      </div>
+      </div>
+      </div>
     </a>
     `;
     })
