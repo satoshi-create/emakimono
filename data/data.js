@@ -9,6 +9,7 @@ const data = [
     gif: "/img/cyoujyuu_yamazaki_kou.gif",
     era: "明治22年以前",
     desc: "平安時代（12世紀）に描かれた鳥獣人物戯画絵巻 甲巻の摸本。有名な猿と蛙の喧嘩、兎と蛙の相撲のほか、田楽、賭弓など、当時ミヤコで流行っていた様々な遊びに動物が興じる姿が、表情豊かに描かれている。",
+    readMore: false,
     emakis: [
       {
         load: true,
@@ -834,7 +835,7 @@ const data = [
     thumb: "/img/cyoujyuu_yamazaki_tei_thumb.jpg",
     desc: "平安時代（12世紀）に描かれた鳥獣人物戯画絵巻 甲巻の摸本。有名な猿と蛙の喧嘩、兎と蛙の相撲のほか、田楽、賭弓など、当時ミヤコで流行っていた様々な遊びに動物が興じる姿が、表情豊かに描かれている",
     era: "明治22年以前",
-    gif:"/img/cyoujyuu_yamazaki_tei.gif",
+    gif: "/img/cyoujyuu_yamazaki_tei.gif",
     emakis: [
       {
         load: true,
