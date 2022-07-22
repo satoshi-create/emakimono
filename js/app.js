@@ -51,7 +51,7 @@ $(function () {
     .join("");
   $(".emaki-desc p").readmore({
     collapsedHeight: 100,
-    // moreLink: '<a class="btn" href="#"><span>続きを読む</span></a>',
-    // lessLink: '<a class="btn_close" href="#"><span>閉じる</span></a>',
+    moreLink: '<a class="btn" href="#"><span>...続きを読む</span></a>',
+    lessLink: '<a class="btn btn_close" href="#"><span>...閉じる</span></a>',
   });
 });
