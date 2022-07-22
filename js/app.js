@@ -15,16 +15,17 @@ $(function () {
   });
 
   // fixed navbar
-  const navbar = document.querySelector("nav");
+  // const navbar = document.querySelector("nav");
 
-  window.addEventListener("scroll", function () {
-    const scrollHeight = window.pageYOffset;
-    const navHeight = navbar.getBoundingClientRect().height;
-    if (scrollHeight > navHeight) {
-      navbar.classList.add("fixed-nav");
-      console.log("helo");
-    } else {
-      navbar.classList.remove("fixed-nav");
-    }
-  });
+  // window.addEventListener("scroll", function () {
+  //   const scrollHeight = window.pageYOffset;
+  //   const navHeight = navbar.getBoundingClientRect().height;
+  //   if (scrollHeight > navHeight) {
+  //     navbar.classList.add("fixed-nav");
+  //     console.log("helo");
+  //   } else {
+  //     navbar.classList.remove("fixed-nav");
+  //   }
+  // });
+  
 });

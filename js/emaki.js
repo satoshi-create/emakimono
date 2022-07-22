@@ -10,7 +10,6 @@ const id = params.get("id");
 // console.log(datas);
 const data = datas[id];
 const { title, author, edition, emakis, backgroundImage } = data;
-console.log(emakis);
 
 const contentsPc = document.querySelector(".contents.pc");
 const contentsSp = document.querySelector(".contents.sp");
@@ -23,7 +22,6 @@ const mokujiText = document.querySelector(".mokuji");
 document.title = `${title} ${edition ? edition : ""} ${author}`;
 
 const header = document.querySelector(".header");
-console.log(headerDatas);
 header.innerHTML = headerDatas
   .map((item) => {
     const { className, link, icon, title } = item;

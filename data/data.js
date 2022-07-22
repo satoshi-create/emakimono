@@ -1058,7 +1058,60 @@ const data = [
         src: "/img/cyoujyuu_yamazaki_tei_18-1080.jpg",
         name: "cyoujyuu_yamazaki_tei_18.jpg",
       },
-      ,
+    ],
+  },
+  {
+    title: "直幹申文絵詞",
+    author: "源朝臣武智良",
+    backgroundImage: "img/110310200304.png",
+    video: "https://youtu.be/Qgc0lrTPkiY",
+    thumb: "/img/cyoujyuu_yamazaki_tei_thumb.jpg",
+    desc: "<ruby><rb>直幹申文絵詞</rb><rp>（</rp><rt>なおもともうしぶみえことば</rt><rp>）</rp></ruby>。",
+    era: "安政4（1857）年",
+    gif: "/img/cyoujyuu_yamazaki_tei.gif",
+    emakis: [
+      {
+        cat: "ekotoba",
+        chapter:
+          "第一段　<ruby><rb>橘直幹</rb><rp>（</rp><rt>たちばななおもと</rt><rp>）</rp></ruby>、兼官を望み申文を書く",
+        kobun:
+          "村上天皇の御時、<ruby><rb>長門守</rb><rp>（</rp><rt>ながとのかみ</rt><rp>）</rp></ruby>長盛が子にて、<ruby><rb>文章</rb><rp>（</rp><rt>もんじょう</rt><rp>）</rp></ruby>博士、<ruby><rb>橘直幹</rb><rp>（</rp><rt>たちばななおもと</rt><rp>）</rp></ruby>といふ儒者ありけり。風月に巧みなりけれども、官は凄まじく、文章には富めりしかども、家は貧しくして、<ruby><rb>顔淵</rb><rp>（</rp><rt>がんえん</rt><rp>）</rp></ruby>が巷にをなじく、<ruby><rb>閨</rb><rp>（</rp><rt>ねや</rt><rp>）</rp></ruby>は雨漏りて、<ruby><rb>原憲</rb><rp>（</rp><rt>げんけん</rt><rp>）</rp></ruby>が<ruby><rb>枢</rb><rp>（</rp><rt>とぼそ</rt><rp>）</rp></ruby>にかはらざりけり。僅かに<ruby><rb>民部大輔</rb><rp>（</rp><rt>みんぶのたいふ</rt><rp>）</rp></ruby>を望み申すとて、みづから<ruby><rb>申文</rb><rp>（</rp><rt>もうしぶみ</rt><rp>）</rp></ruby>をぞ書きける。",
+        gendaibun:
+          "村上天皇の天暦年間（九四七～九五七）のころ、<ruby><rb>長門守</rb><rp>（</rp><rt>ながとのかみ</rt><rp>）</rp></ruby>長盛の子に、文章博士<ruby><rb>橘直幹</rb><rp>（</rp><rt>たちばななおもと</rt><rp>）</rp></ruby>という漢学者があった。詩文に長じ、官途の昇進は目覚ましかった。<br>が、内実は苦しく、たとえば、あの中国・春秋時代の<ruby><rb>顔回</rb><rp>（</rp><rt>がんかい</rt><rp>）</rp></ruby>（字は<ruby><rb>子淵</rb><rp>（</rp><rt>しえん</rt><rp>）</rp></ruby>）の<span class='word'><ruby><rb>陋巷</rb><rp>（</rp><rt>ろうこう</rt><rp>）</rp></ruby></span>に同じであった。家は雨が漏って、<ruby><rb>原憲</rb><rp>（</rp><rt>げんけん</rt><rp>）</rp></ruby>（字は子思）の<ruby><rb>蓬戸</rb><rp>（</rp><rt>ほうこ</rt><rp>）</rp></ruby>とも変わらぬ、あばら屋であった。<br>少しでも家計の助けにもなれかしと、たまたま<span class='word'><ruby><rb>闕官</rb><rp>（</rp><rt>けっかん</rt><rp>）</rp></ruby></span>中の<span class='word'><ruby><rb>民部大輔</rb><rp>（</rp><rt>みんぶのたいふ</rt><rp>）</rp></ruby></span>の兼官を望んで、みずから申文を書いた。",
+        srcSp: "/img/naomoto_01-375.jpg",
+        srcTb: "/img/naomoto_01-800.jpg",
+        src: "/img/naomoto_01-1080.jpg",
+        phrase: [
+          {
+            phrasekobun: "【陋巷】（ろうこう）",
+            transphrase: "むさくるしく見苦しい町。狭くきたない町。狭い小路。",
+          },
+          {
+            phrasekobun: "【闕官】（けっかん）",
+            transphrase: "現任者のいない官",
+          },
+          {
+            phrasekobun: "【民部大輔】",
+            transphrase: "民部省の次官二人のうち、上位の者の官名",
+          },
+        ],
+      },
+      {
+        load: false,
+        cat: "image",
+        srcSp: "/img/naomoto_02-375.jpg",
+        srcTb: "/img/naomoto_02-800.jpg",
+        src: "/img/naomoto_02-1080.jpg",
+        name: "naomoto_02.jpg",
+      },
+      {
+        load: false,
+        cat: "image",
+        srcSp: "/img/naomoto_03-375.jpg",
+        srcTb: "/img/naomoto_03-800.jpg",
+        src: "/img/naomoto_03-1080.jpg",
+        name: "naomoto_03.jpg",
+      },
     ],
   },
 ];

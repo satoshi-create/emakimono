@@ -207,6 +207,7 @@ Sidebar
   text-align: right;
 }
 .sidebarL-word-box {
+  font-size: 2rem;
   text-align: left;
 }
 .sidebarL .sidebar-close-btn {

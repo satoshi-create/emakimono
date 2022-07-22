@@ -193,7 +193,7 @@ nav {
 }
 
 .footer {
-  background-color: var(--clr-primary-02);
+  background-color: var(--clr-gray);
   display: grid;
   height: 40vh;
   place-items: center;
