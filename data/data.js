@@ -1077,14 +1077,24 @@ const data = [
         kobun:
           "村上天皇の御時、<ruby><rb>長門守</rb><rp>（</rp><rt>ながとのかみ</rt><rp>）</rp></ruby>長盛が子にて、<ruby><rb>文章</rb><rp>（</rp><rt>もんじょう</rt><rp>）</rp></ruby>博士、<ruby><rb>橘直幹</rb><rp>（</rp><rt>たちばななおもと</rt><rp>）</rp></ruby>といふ儒者ありけり。風月に巧みなりけれども、官は凄まじく、文章には富めりしかども、家は貧しくして、<ruby><rb>顔淵</rb><rp>（</rp><rt>がんえん</rt><rp>）</rp></ruby>が巷にをなじく、<ruby><rb>閨</rb><rp>（</rp><rt>ねや</rt><rp>）</rp></ruby>は雨漏りて、<ruby><rb>原憲</rb><rp>（</rp><rt>げんけん</rt><rp>）</rp></ruby>が<ruby><rb>枢</rb><rp>（</rp><rt>とぼそ</rt><rp>）</rp></ruby>にかはらざりけり。僅かに<ruby><rb>民部大輔</rb><rp>（</rp><rt>みんぶのたいふ</rt><rp>）</rp></ruby>を望み申すとて、みづから<ruby><rb>申文</rb><rp>（</rp><rt>もうしぶみ</rt><rp>）</rp></ruby>をぞ書きける。",
         gendaibun:
-          "村上天皇の天暦年間（九四七～九五七）のころ、<ruby><rb>長門守</rb><rp>（</rp><rt>ながとのかみ</rt><rp>）</rp></ruby>長盛の子に、文章博士<ruby><rb>橘直幹</rb><rp>（</rp><rt>たちばななおもと</rt><rp>）</rp></ruby>という漢学者があった。詩文に長じ、官途の昇進は目覚ましかった。<br>が、内実は苦しく、たとえば、あの中国・春秋時代の<ruby><rb>顔回</rb><rp>（</rp><rt>がんかい</rt><rp>）</rp></ruby>（字は<ruby><rb>子淵</rb><rp>（</rp><rt>しえん</rt><rp>）</rp></ruby>）の<span class='word'><ruby><rb>陋巷</rb><rp>（</rp><rt>ろうこう</rt><rp>）</rp></ruby></span>に同じであった。家は雨が漏って、<ruby><rb>原憲</rb><rp>（</rp><rt>げんけん</rt><rp>）</rp></ruby>（字は子思）の<ruby><rb>蓬戸</rb><rp>（</rp><rt>ほうこ</rt><rp>）</rp></ruby>とも変わらぬ、あばら屋であった。<br>少しでも家計の助けにもなれかしと、たまたま<span class='word'><ruby><rb>闕官</rb><rp>（</rp><rt>けっかん</rt><rp>）</rp></ruby></span>中の<span class='word'><ruby><rb>民部大輔</rb><rp>（</rp><rt>みんぶのたいふ</rt><rp>）</rp></ruby></span>の兼官を望んで、みずから申文を書いた。",
+          "村上天皇の天暦年間（九四七～九五七）のころ、<ruby><rb>長門守</rb><rp>（</rp><rt>ながとのかみ</rt><rp>）</rp></ruby>長盛の子に、<span class='word'><ruby><rb>文章博士</rb><rp>（</rp><rt>もんじょうはかせ</rt><rp>）</rp></ruby></span><ruby><rb>橘直幹</rb><rp>（</rp><rt>たちばななおもと</rt><rp>）</rp></ruby>という漢学者があった。詩文に長じ、官途の昇進は目覚ましかった。<br>が、内実は苦しく、たとえば、あの中国・春秋時代の<ruby><rb>顔回</rb><rp>（</rp><rt>がんかい</rt><rp>）</rp></ruby>（字は<ruby><rb>子淵</rb><rp>（</rp><rt>しえん</rt><rp>）</rp></ruby>）の<span class='word'><ruby><rb>陋巷</rb><rp>（</rp><rt>ろうこう</rt><rp>）</rp></ruby></span>に同じであった。家は雨が漏って、<ruby><rb>原憲</rb><rp>（</rp><rt>げんけん</rt><rp>）</rp></ruby>（字は子思）の<span class='word'><ruby><rb>蓬戸</rb><rp>（</rp><rt>ほうこ</rt><rp>）</rp></ruby></span>とも変わらぬ、あばら屋であった。<br>少しでも家計の助けにもなればと、たまたま<span class='word'><ruby><rb>闕官</rb><rp>（</rp><rt>けっかん</rt><rp>）</rp></ruby></span>中の<span class='word'><ruby><rb>民部大輔</rb><rp>（</rp><rt>みんぶのたいふ</rt><rp>）</rp></ruby></span>の兼官を望んで、みずから<span class='word'><ruby><rb>申文</rb><rp>（</rp><rt>もうしぶみ</rt><rp>）</rp></ruby></span>を書いた。",
         srcSp: "/img/naomoto_01-375.jpg",
         srcTb: "/img/naomoto_01-800.jpg",
         src: "/img/naomoto_01-1080.jpg",
+        name: "naomoto_06.jpg",
         phrase: [
+          {
+            phrasekobun: "【文章博士】（もんじょうはかせ）",
+            transphrase:
+              "大学寮に属して詩文と歴史とを教授した教官。<br>大学寮は、中央官吏養成のための高等教育機関",
+          },
           {
             phrasekobun: "【陋巷】（ろうこう）",
             transphrase: "むさくるしく見苦しい町。狭くきたない町。狭い小路。",
+          },
+          {
+            phrasekobun: "【蓬戸】（ほうこ）",
+            transphrase: "粗末で貧しい家。",
           },
           {
             phrasekobun: "【闕官】（けっかん）",
@@ -1093,6 +1103,11 @@ const data = [
           {
             phrasekobun: "【民部大輔】",
             transphrase: "民部省の次官二人のうち、上位の者の官名",
+          },
+          {
+            phrasekobun: "【申文】（もうしぶみ）",
+            transphrase:
+              "1　下位の者から上位の者へ、願い事などを書いて差し出す文書。<br>2　  特に平安時代以後、官人が、叙任や官位の昇進を望むとき、その理由を書いて朝廷に上奏した文書。",
           },
         ],
       },
@@ -1111,6 +1126,206 @@ const data = [
         srcTb: "/img/naomoto_03-800.jpg",
         src: "/img/naomoto_03-1080.jpg",
         name: "naomoto_03.jpg",
+      },
+      {
+        load: false,
+        cat: "image",
+        srcSp: "/img/naomoto_04-375.jpg",
+        srcTb: "/img/naomoto_04-800.jpg",
+        src: "/img/naomoto_04-1080.jpg",
+        name: "naomoto_04.jpg",
+      },
+      {
+        load: false,
+        cat: "image",
+        srcSp: "/img/naomoto_05-375.jpg",
+        srcTb: "/img/naomoto_05-800.jpg",
+        src: "/img/naomoto_05-1080.jpg",
+        name: "naomoto_05.jpg",
+      },
+      {
+        cat: "ekotoba",
+        chapter: "第二段　直幹の申文に、村上天皇機嫌を損ずる",
+        kobun:
+          "この申文を小野道風に清書を誂へて、<ruby><rb>職事</rb><rp>（</rp><rt>しきじ</rt><rp>）</rp></ruby>に付けて奏聞したりければ、御門（帝）心憎くしや思し召しけん。御手づから取りて開き御覧ぜられける程に、「人に依りて事異なり」と書ける所に至りて、申文を差し置かせ賜（→給）ひて、<ruby><rb>天気快</rb><rp>（</rp><rt>てけこころよ</rt><rp>）</rp></ruby>からざりければ、人々<ruby><rb>懼</rb><rp>（</rp><rt>おそ</rt><rp>）</rp></ruby>れ思ひけり",
+        gendaibun:
+          "直幹は、申文の草案ができあがると、小野道風に清書を頼んだ。さっそくながら、<span class='word'><ruby><rb>職事</rb><rp>（</rp><rt>しきじ</rt><rp>）</rp></ruby>（蔵人）</span>に差し出して、帝の<ruby><rb>叡覧</rb><rp>（</rp><rt>えいらん</rt><rp>）</rp></ruby>を嘆願した。これを聞いた村上天皇は、気にかかったので、手ずからこれを開いてみた。<br>ところが、申文の初め近くに、「拝除之恩惟一。栄枯之分不同。依人此而異事」という文言をみると、とたんに顔を曇らせた。なに、「人により事異なり」とな。直幹め、生意気をいいおるわ。といい、手にした申文を床にたたきつけた。にわかに変わる、帝の<ruby><rb>御気色</rb><rp>（</rp><rt>みけしき</rt><rp>）</rp></ruby>に、並みいる延臣たちは、一様に恐れおののいた。",
+        srcSp: "/img/naomoto_06-375.jpg",
+        srcTb: "/img/naomoto_06-800.jpg",
+        src: "/img/naomoto_06-1080.jpg",
+        name: "naomoto_06.jpg",
+        phrase: [
+          {
+            phrasekobun: "【職事】（しきじ）",
+            transphrase:
+              "蔵人所の頭(とう)、および五位・六位の蔵人の総称。<br>蔵人所は、天皇と天皇家に関する私的な要件について、進奏、詔勅の伝宣を行ない、天皇身辺の雑事や宮中における物資の調達、儀式の奉行や宮中の整備取締りをするなど、昇殿者の統率と宮中諸雑事処理の中心であった。",
+          },
+          {
+            phrasekobun: "【蓬戸】（ほうこ）",
+            transphrase: "粗末で貧しい家。",
+          },
+          {
+            phrasekobun: "【闕官】（けっかん）",
+            transphrase: "現任者のいない官",
+          },
+          {
+            phrasekobun: "【民部大輔】",
+            transphrase: "民部省の次官二人のうち、上位の者の官名",
+          },
+          {
+            phrasekobun: "【申文】（もうしぶみ）",
+            transphrase:
+              "1　下位の者から上位の者へ、願い事などを書いて差し出す文書。<br>2　  特に平安時代以後、官人が、叙任や官位の昇進を望むとき、その理由を書いて朝廷に上奏した文書。",
+          },
+        ],
+      },
+      {
+        load: false,
+        cat: "image",
+        srcSp: "/img/naomoto_07-375.jpg",
+        srcTb: "/img/naomoto_07-800.jpg",
+        src: "/img/naomoto_07-1080.jpg",
+        name: "naomoto_07.jpg",
+      },
+      {
+        load: false,
+        cat: "image",
+        srcSp: "/img/naomoto_08-375.jpg",
+        srcTb: "/img/naomoto_08-800.jpg",
+        src: "/img/naomoto_08-1080.jpg",
+        name: "naomoto_08.jpg",
+      },
+      {
+        cat: "ekotoba",
+        chapter: "第三段　愁訴の情を書き連ねる直幹の申文",
+        kobun: "",
+        gendaibun:
+          "直幹の申文の内容<br>「直幹、謹んで先例を<ruby><rb>勘</rb><rp>（</rp><rt>かん</rt><rp>）</rp></ruby>がえてみますると、去る天暦二年、大学頭・<span class='word'>大内記</span>から、いまの職に任命された日に、私が身につけていた官は、両官ながら停止されました。わが国に文章博士を初めて置かれて以来、その例を知りません。また、同四年に至って、<span class='word'><ruby><rb>三統元夏</rb><rp>（</rp><rt>みむねのもとなつ</rt><rp>）</rp></ruby></span>は式部少輔から儒職に叙せられた日、少輔を辞めずに兼官をたまわりました。天恩による拝命は一つでありますが、人によって、差別があるようです。天に代わって官を授かる。これは、まことに、その人の運命にかかることであります。が、私は一職のみを守って、この七年間を過ごしてまいりました。」",
+        srcSp: "/img/naomoto_09-375.jpg",
+        srcTb: "/img/naomoto_09-800.jpg",
+        src: "/img/naomoto_09-1080.jpg",
+        name: "naomoto_09.jpg",
+        phrase: [
+          {
+            phrasekobun: "【大内記】（だいないき）",
+            transphrase:
+              "律令制で、内記のうち上位の官職。<br>内記は、朝廷の書記。中務(なかつかさ)省にあって詔勅(しょうちょく)の作成，宮中の記録を担当。",
+          },
+          {
+            phrasekobun: "【三統元夏】（みむねのもとなつ）",
+            transphrase:
+              "平安時代中期の官吏。<br>三統理平(まさひら)の子。文章博士,ついで式部少輔(しょう)となり,天徳元年(957)東宮学士をかねた。<br>（デジタル版 日本人名大辞典+Plus）",
+          },
+        ],
+      },
+      {
+        load: false,
+        cat: "image",
+        srcSp: "/img/naomoto_10-375.jpg",
+        srcTb: "/img/naomoto_10-800.jpg",
+        src: "/img/naomoto_10-1080.jpg",
+        name: "naomoto_10.jpg",
+      },
+      {
+        load: false,
+        cat: "image",
+        srcSp: "/img/naomoto_11-375.jpg",
+        srcTb: "/img/naomoto_11-800.jpg",
+        src: "/img/naomoto_11-1080.jpg",
+        name: "naomoto_11.jpg",
+      },
+      {
+        load: false,
+        cat: "image",
+        srcSp: "/img/naomoto_12-375.jpg",
+        srcTb: "/img/naomoto_12-800.jpg",
+        src: "/img/naomoto_12-1080.jpg",
+        name: "naomoto_12.jpg",
+      },
+      {
+        load: false,
+        cat: "image",
+        srcSp: "/img/naomoto_13-375.jpg",
+        srcTb: "/img/naomoto_13-800.jpg",
+        src: "/img/naomoto_13-1080.jpg",
+        name: "naomoto_13.jpg",
+      },
+      {
+        cat: "ekotoba",
+        chapter:
+          "第四段　内裏炎上に際し、帝、直幹の申文の安否を問う。また、内侍所の神鏡、紫宸殿の桜にかかる",
+        kobun: "",
+        gendaibun:
+          "その後、天徳四年（九六〇）九月二十三日の子刻（午前零時）に内裏で出火があった。帝は、難を逃れて中院の御所に渡御された。清涼殿の調度類も運びだすことができた。歴代伝世の重宝はむろんんのこと、<ruby><rb>御椅子</rb><rp>（</rp><rt>ごいし</rt><rp>）</rp></ruby>・<ruby><rb>時簡</rb><rp>（</rp><rt>ときのふだ</rt><rp>）</rp></ruby>・<ruby><rb>玄象</rb><rp>（</rp><rt>げんじょう</rt><rp>）</rp></ruby>（玄上）・<ruby><rb>鈴鹿</rb><rp>（</rp><rt>すずか</rt><rp>）</rp></ruby>（ともに琵琶の名器）以下、すべてを移した。帝は、満足の体であった。<br><br>が、ふと思い出したように、直幹の申文は取り出したであろうな、と問うた。その申文ではケチがついて、たれもそれに触れることは禁句にしていたのに。ところが、いま、帝のほうからそれをお尋ねになる。なんと、ありがたいことではないか。<br><br>そのときのことである。火事が左衛門の陣（建春門）から起こった。<span class='word'><ruby><rb>内侍所</rb><rp>（</rp><rt>ないしどころ</rt><rp>）</rp></ruby></span>（神鏡）の安置してある<span class='word'><ruby><rb>温明殿</rb><rp>（</rp><rt>うんめいでん</rt><rp>）</rp></ruby></span>も近く、しかも、折悪しく夜半過ぎのことであれば、だれ一人としていない。しぜん、<ruby><rb>賢所</rb><rp>（</rp><rt>かしこどころ</rt><rp>）</rp></ruby>（内侍所と同じ。神鏡）も出すことはできなかった。そこで、<span class='word'>小野宮左大臣藤原<ruby><rb>実頼</rb><rp>（</rp><rt>さねより</rt><rp>）</rp></ruby></span>（六十一歳）が、急ぎ行ってみた。が、すでにあたりは焼け落ちていた。実頼が、ふと紫宸殿の左近桜を見上げたところ、不思議にも、<ruby><rb>梢</rb><rp>（</rp><rt>こずえ</rt><rp>）</rp></ruby>のあたりに神鏡がかかっているではないか。<br><br>感涙にむせびながら、実頼は右のひざをつき、左の袖を広げて申した。「昔、天照大神は百王を守護しもうた。その御誓言に疑いなくば、どうか神鏡を実頼の袖に移してください、」と。<br>そのことばをいいも終わらぬうちに、鏡はその袖の中に飛んで入った。実頼は、さっそくながら太政官の朝所へ安置することができた。",
+        srcSp: "/img/naomoto_14-375.jpg",
+        srcTb: "/img/naomoto_14-800.jpg",
+        src: "/img/naomoto_14-1080.jpg",
+        name: "naomoto_14.jpg",
+        phrase: [
+          {
+            phrasekobun: "【内侍所】（ないしどころ）",
+            transphrase:
+              "三種の神器(じんぎ)の一つである神鏡を、天皇との日常の同座を避けるようになって以後、安置した場所。平安前期以降、蔵司に変わり内侍所に置かれるようになったので、この名がある。かしこどころ。（精選版 日本国語大辞典）",
+          },
+          {
+            phrasekobun: "【温明殿】（うんめいでん）",
+            transphrase:
+              "平安京の内裏(だいり)十七殿の一つ。紫宸殿(ししんでん)の東北にあたり、綾綺殿(りょうきでん)の東、宣陽門の内にあり、その南部を賢所とし、神鏡を安置した。また、内侍の候所ともなっていたため内侍所ともいう。（精選版 日本国語大辞典）",
+          },
+          {
+            phrasekobun: "【藤原実頼】（ふじわらさねより）",
+            transphrase:
+              "平安中期の公卿。藤原忠平と宇多天皇の娘源順子の子。右大臣,左大臣を経て,康保4(967)年冷泉天皇の即位により関白太政大臣,次いで安和2(969)年円融天皇の摂政となり,以後摂政,関白が常置される先例となった。",
+          },
+        ],
+      },
+      {
+        load: false,
+        cat: "image",
+        srcSp: "/img/naomoto_15-375.jpg",
+        srcTb: "/img/naomoto_15-800.jpg",
+        src: "/img/naomoto_15-1080.jpg",
+        name: "naomoto_15.jpg",
+      },
+      {
+        load: false,
+        cat: "image",
+        srcSp: "/img/naomoto_16-375.jpg",
+        srcTb: "/img/naomoto_16-800.jpg",
+        src: "/img/naomoto_16-1080.jpg",
+        name: "naomoto_16.jpg",
+      },
+      {
+        load: false,
+        cat: "image",
+        srcSp: "/img/naomoto_17-375.jpg",
+        srcTb: "/img/naomoto_17-800.jpg",
+        src: "/img/naomoto_17-1080.jpg",
+        name: "naomoto_17.jpg",
+      },
+      {
+        load: false,
+        cat: "image",
+        srcSp: "/img/naomoto_18-375.jpg",
+        srcTb: "/img/naomoto_18-800.jpg",
+        src: "/img/naomoto_18-1080.jpg",
+        name: "naomoto_18.jpg",
+      },
+      {
+        load: false,
+        cat: "image",
+        srcSp: "/img/naomoto_19-375.jpg",
+        srcTb: "/img/naomoto_19-800.jpg",
+        src: "/img/naomoto_19-1080.jpg",
+        name: "naomoto_19.jpg",
+      },
+      {
+        load: false,
+        cat: "image",
+        srcSp: "/img/naomoto_20-375.jpg",
+        srcTb: "/img/naomoto_20-800.jpg",
+        src: "/img/naomoto_20-1080.jpg",
+        name: "naomoto_20.jpg",
       },
     ],
   },

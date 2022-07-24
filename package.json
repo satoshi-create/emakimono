@@ -1,1 +1,6 @@
-{}
+{
+  "dependencies": {
+    "sitemap": "^7.1.1",
+    "sitemap-generator": "^8.5.1"
+  }
+}

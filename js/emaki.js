@@ -143,7 +143,7 @@ contentsPc.innerHTML = `<div class="modal-wrapper"></div>${emakis
         <div class="section section${index} ${cat} bgimg lazyload fade-in" id=s${index} data-bg=${backgroundImage}> 
         <div class="kobun-text">
         ${chapter ? `<h3 id="s${index}">${chapter}</h3>` : ""}
-        ${kobun ? `<p id="s${index}">${kobun}</p>` : ""}
+        ${gendaibun ? `<p  class="gendaibun-text">${gendaibun}</p>` : ""}
   <div class="translate">
     <!-- question button -->
     <button type="button" class="btn translate-btn section-btn">
@@ -157,7 +157,7 @@ contentsPc.innerHTML = `<div class="modal-wrapper"></div>${emakis
   </div>
 </div>
 <div class="translate-text">
-${gendaibun ? `<p  class="gendaibun-text">${gendaibun}</p>` : ""}
+${kobun ? `<p>${kobun}</p>` : ""}
 </div>
 <div class="figure off">
 <picture>
@@ -238,42 +238,6 @@ modalOverlay.addEventListener("click", function () {
   modal.classList.remove("open-modal");
 });
 
-// const sectionBox = document.querySelectorAll(".section.image");
-
-// sectionBox.forEach(function (section) {
-//   const image1Container = section.querySelector(".image1-container");
-//   const image2Container = section.querySelector(".image2-container");
-//   const image1ContainerImg = document.querySelector(".image1-container img");
-//   const image2ContainerImg = document.querySelector(".image2-container img");
-
-//   section.addEventListener("click", function () {
-//     if (section.classList.contains("active")) {
-//       section.classList.remove("active");
-//       image1Container.classList.remove("off");
-//       image2Container.classList.add("off");
-//     } else {
-//       image1Container.classList.add("off");
-//       image2Container.classList.remove("off");
-//       section.classList.add("active");
-//       // image2ContainerImg.setAttribute(
-//       //   "src",
-//       //   image1ContainerImg.getAttribute("src")
-//       // );
-//     }
-//   });
-// });
-
-// const isSmartPhone = () => window.matchMedia("(min-height: 600px)").matches;
-
-// if (isSmartPhone() == true) {
-//   $(".mainimage").elevateZoom({
-//     zoomType: "lens",
-//     lensShape: "round",
-//     lensSize: 400,
-//     scrollZoom: true,
-//   });
-// }
-
 const sectionsEkotobas = document.querySelectorAll(".section.ekotoba");
 
 sectionsEkotobas.forEach(function (sectionsEkotoba) {
@@ -289,7 +253,7 @@ const fileterEmakis = emakis.filter((item) => item.cat == "ekotoba");
 const toggleTextBtn = document.querySelector(".toggle-text-btn");
 const kobunTextP = contentsPc.querySelectorAll(".kobun-text p");
 // const toggleTextP = document.querySelectorAll(".toggle-text p");
-const translateTextP = contentsPc.querySelectorAll(".gendaibun-text");
+const translateTextP = contentsPc.querySelectorAll(".translate-text p");
 const toggleIcon = document.querySelector(".toggle-text-icon");
 const sidebarL = document.querySelector(".sidebarL");
 
@@ -306,28 +270,20 @@ toggleIcon.addEventListener("click", function () {
 
   sidebarL.classList.remove("translate-sidebar");
 
-  // toggleTextP.forEach(function (item) {
-  //   if (item.classList.contains("active-color")) {
-  //     item.classList.remove("active-color");
-  //   } else {
-  //     item.classList.add("active-color");
-  //   }
-  // });
-
   kobunTextP.forEach(function (kobun, i) {
     if (result) {
-      kobun.innerHTML = `${fileterEmakis[i].gendaibun}`;
-    } else {
       kobun.innerHTML = `${fileterEmakis[i].kobun}`;
+    } else {
+      kobun.innerHTML = `${fileterEmakis[i].gendaibun}`;
       wordLink(kobun, i);
     }
   });
   translateTextP.forEach(function (translate, i) {
     if (result) {
-      translate.innerHTML = `${fileterEmakis[i].kobun}`;
+      translate.innerHTML = `${fileterEmakis[i].gendaibun}`;
       wordLink(translate, i);
     } else {
-      translate.innerHTML = `${fileterEmakis[i].gendaibun}`;
+      translate.innerHTML = `${fileterEmakis[i].kobun}`;
     }
   });
 });
