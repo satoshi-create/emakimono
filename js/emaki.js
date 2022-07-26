@@ -9,7 +9,7 @@ const id = params.get("id");
 // import datas from "../data/${hash}.js";
 // console.log(datas);
 const data = datas[id];
-const { title, author, edition, emakis, backgroundImage,desc } = data;
+const { title, author, edition, emakis, backgroundImage,metadesc } = data;
 
 const contentsPc = document.querySelector(".contents.pc");
 const contentsSp = document.querySelector(".contents.sp");
@@ -22,7 +22,7 @@ const mokujiText = document.querySelector(".mokuji");
 document.title = `${title} ${
   edition ? edition : ""
 } ${author} | 横スクロールで楽しむ絵巻物`;
-document.querySelector('meta[name="description"]').content = `${desc}`;
+document.querySelector('meta[name="description"]').content = `${metadesc}`;
 
 const header = document.querySelector(".header");
 header.innerHTML = headerDatas
