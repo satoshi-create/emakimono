@@ -9,7 +9,8 @@ const id = params.get("id");
 // import datas from "../data/${hash}.js";
 // console.log(datas);
 const data = datas[id];
-const { title, author, edition, emakis, backgroundImage,metadesc } = data;
+const { title, author, edition, emakis, backgroundImage, metadesc, type } =
+  data;
 
 const contentsPc = document.querySelector(".contents.pc");
 const contentsSp = document.querySelector(".contents.sp");
@@ -25,25 +26,78 @@ document.title = `${title} ${
 document.querySelector('meta[name="description"]').content = `${metadesc}`;
 
 const header = document.querySelector(".header");
+
 header.innerHTML = headerDatas
   .map((item) => {
-    const { className, link, icon, title } = item;
+    const { className, title, link, icon } = item;
     if (link) {
       return `
-      <a class="${className}" href=${
-        title == "end" ? `#s${emakis.length - 1}` : link
+    <a class="${className}" href=${
+        title == "最後に進む" ? `#s${emakis.length - 1}` : link
       } title=${title}>
-      <i class="${icon}"></i>
-      </a>
-      `;
+    <i class="${icon}"></i>
+    </a>
+    `;
     } else {
       return `
-      <span class=${className} title=${title}>
-      <i class="${icon}"></i>
-      </span>      `;
+    <span class=${className} title=${title}>
+    <i class="${icon}"></i>
+    </span>      `;
     }
   })
   .join("");
+
+if (type == "連続式絵巻") {
+  header.classList.add("renzokusiki");
+  document.querySelector(".pen-icon").title = "チャプターの表示・非表示";
+}
+
+// header.innerHTML = headerDatas
+//   .map((item) => {
+//     const { ekotoba, nonekotoba } = item;
+//     if (type == "連続式絵巻") {
+//       return `
+//       ${ekotoba.map((item) => {
+//         const { link, className, title, icon } = item;
+//         if (link) {
+//           return `
+//           <a class="${className}" href=${
+//             title == "最後に進む" ? `#s${emakis.length - 1}` : link
+//           } title=${title}>
+//           <i class="${icon}"></i>
+//           </a>
+//           `;
+//         } else {
+//           return `
+//           <span class=${className} title=${title}>
+//           <i class="${icon}"></i>
+//           </span>      `;
+//         }
+//       }).join("")}
+//       `;
+//     } else {
+//       return `
+//       ${nonekotoba.map((item) => {
+//         const { link, className, title, icon } = item;
+//         if (link) {
+//           return `
+//           <a class="${className}" href=${
+//             title == "最後に進む" ? `#s${emakis.length - 1}` : link
+//           } title=${title}>
+//           <i class="${icon}"></i>
+//           </a>
+//           `;
+//         } else {
+//           return `
+//           <span class=${className} title=${title}>
+//           <i class="${icon}"></i>
+//           </span>      `;
+//         }
+//       }).join("")}
+//       `;
+//     }
+//   })
+//   .join("");
 
 // toggle sidebarR
 sidebarOpenBtn.addEventListener("click", function () {
@@ -66,18 +120,18 @@ mokujiText.innerHTML = `
     <h4>${author}</h4>
     </div>
     <ul>
-        ${emakis
-          .map((emaki, index) => {
-            const { chapter } = emaki;
-            return `
-            ${
-              chapter
-                ? `<li><a href="#s${index}"  class="mokuji-link js-smooth-scroll">${chapter}</a></li>`
-                : ""
-            }
-          `;
-          })
-          .join("")}
+    ${emakis
+      .map((emaki, index) => {
+        const { chapter } = emaki;
+        return `
+        ${
+          chapter
+            ? `<li><a href="#s${index}"  class="mokuji-link js-smooth-scroll">${chapter}</a></li>`
+            : ""
+        }
+      `;
+      })
+      .join("")}
     </ul>
 `;
 
@@ -88,28 +142,28 @@ mokujiLink.forEach(function (btn) {
   });
 });
 
-const slideInnerB = document.querySelector(".slide-innerB");
+// const slideInnerB = document.querySelector(".slide-innerB");
 
-slideInnerB.innerHTML = emakis
-  .map((emaki, index) => {
-    const { cat, chapter, kobun, gendaibun } = emaki;
-    if (cat == "ekotoba") {
-      return `
-        <section>
-        <article>
-              <h3>${chapter}</h3>
-          <p>
-            ${kobun}
-          </p>
-          <p>
-          ${gendaibun}
-          </p>
-        </article>
-      </section>
-        `;
-    }
-  })
-  .join();
+// slideInnerB.innerHTML = emakis
+//   .map((emaki, index) => {
+//     const { cat, chapter, kobun, gendaibun } = emaki;
+//     if (cat == "ekotoba") {
+//       return `
+//         <section>
+//         <article>
+//               <h3>${chapter}</h3>
+//           <p>
+//             ${kobun}
+//           </p>
+//           <p>
+//           ${gendaibun}
+//           </p>
+//         </article>
+//       </section>
+//         `;
+//     }
+//   })
+//   .join();
 
 // 絵詞の幅を取得
 window.addEventListener("resize", fit());
@@ -119,12 +173,12 @@ function fit() {
 }
 
 // toggle ekotoba
-const ekotoba = document.querySelector(".ekotoba-icon");
-const slideB = document.querySelector(".slideB");
-ekotoba.addEventListener("click", function () {
-  slideB.classList.toggle("animateSlideB");
-  contentsPc.classList.toggle("animateContentsPc");
-});
+// const ekotoba = document.querySelector(".ekotoba-icon");
+// const slideB = document.querySelector(".slideB");
+// ekotoba.addEventListener("click", function () {
+//   slideB.classList.toggle("animateSlideB");
+//   contentsPc.classList.toggle("animateContentsPc");
+// });
 
 contentsPc.innerHTML = `<div class="modal-wrapper"></div>${emakis
   .map((emaki, index) => {
@@ -175,15 +229,6 @@ ${kobun ? `<p>${kobun}</p>` : ""}
       return `
         <div class="section section${index} ${cat}" id="s${index}" >
         <div class="image-container image1-container">
-        ${
-          viewBoxW
-            ? `
-        <svg width="100%" height="100%" viewBox="0 0 ${viewBoxW} ${viewBoxH}" class="off">
-        ${clickImg.map((item) => item.shape).join("")}
-      </svg>
-        `
-            : ""
-        }
         <picture>
           <source data-srcset=${srcSp} media="(max-height: 375px)" />
           <source data-srcset=${srcTb} media="(max-height: 800px)" />
@@ -197,49 +242,59 @@ ${kobun ? `<p>${kobun}</p>` : ""}
   })
   .join("")}`;
 
-const modal = document.querySelector(".modal-wrapper");
+//   ${
+//     viewBoxW
+//       ? `
+//   <svg width="100%" height="100%" viewBox="0 0 ${viewBoxW} ${viewBoxH}" class="off">
+//   ${clickImg.map((item) => item.shape).join("")}
+// </svg>
+//   `
+//       : ""
+//   }
 
-modal.innerHTML = `<div class="modal-overlay"></div><div class="modal-container"><div class="modal-box"></div><button class="modal-close-btn">
-<i class="fa-solid fa-xmark"></i>
-</button>`;
+// const modal = document.querySelector(".modal-wrapper");
 
-const zoom = document.querySelector(".zoom-icon");
-const svg = document.querySelector("svg");
+// modal.innerHTML = `<div class="modal-overlay"></div><div class="modal-container"><div class="modal-box"></div><button class="modal-close-btn">
+// <i class="fa-solid fa-xmark"></i>
+// </button>`;
 
-zoom.addEventListener("click", function () {
-  svg.classList.toggle("off");
-});
+// const zoom = document.querySelector(".zoom-icon");
+// const svg = document.querySelector("svg");
+
+// zoom.addEventListener("click", function () {
+//   svg.classList.toggle("off");
+// });
 
 const sections = contentsPc.querySelectorAll(".section");
-const modalConteiner = document.querySelector(".modal-container");
-const modalBox = document.querySelector(".modal-box");
-const modalOverlay = document.querySelector(".modal-overlay");
+// const modalConteiner = document.querySelector(".modal-container");
+// const modalBox = document.querySelector(".modal-box");
+// const modalOverlay = document.querySelector(".modal-overlay");
 
-sections.forEach(function (section, index) {
-  const shapes = section.querySelectorAll("svg > *");
-  shapes.forEach(function (shape, i) {
-    shape.addEventListener("click", function () {
-      modal.classList.add("open-modal");
-      const { text, partImg, title } = emakis[index].clickImg[i];
-      modalBox.innerHTML = `
-      <h3>${title}</h3>
-      <img src=${partImg} alt=${title}/>
-      <p>${text}</p>
-      
-      `;
-    });
-  });
-});
+// sections.forEach(function (section, index) {
+//   const shapes = section.querySelectorAll("svg > *");
+//   shapes.forEach(function (shape, i) {
+//     shape.addEventListener("click", function () {
+//       modal.classList.add("open-modal");
+//       const { text, partImg, title } = emakis[index].clickImg[i];
+//       modalBox.innerHTML = `
+//       <h3>${title}</h3>
+//       <img src=${partImg} alt=${title}/>
+//       <p>${text}</p>
 
-const closeModal = document.querySelector(".modal-close-btn");
+//       `;
+//     });
+//   });
+// });
 
-closeModal.addEventListener("click", function () {
-  modal.classList.remove("open-modal");
-});
+// const closeModal = document.querySelector(".modal-close-btn");
 
-modalOverlay.addEventListener("click", function () {
-  modal.classList.remove("open-modal");
-});
+// closeModal.addEventListener("click", function () {
+//   modal.classList.remove("open-modal");
+// });
+
+// modalOverlay.addEventListener("click", function () {
+//   modal.classList.remove("open-modal");
+// });
 
 const sectionsEkotobas = document.querySelectorAll(".section.ekotoba");
 
@@ -357,6 +412,7 @@ penIcon.addEventListener("click", function () {
     if (result) {
       if (fileterEmakis[i].src) {
         figure.classList.remove("off");
+        document.querySelector(".pen-icon").title = "詞書の現代語訳を読む"; 
       }
       kobun.classList.add("off");
       if (fileterEmakis[i].gendaibun) {
@@ -365,6 +421,7 @@ penIcon.addEventListener("click", function () {
     } else {
       if (fileterEmakis[i].src) {
         figure.classList.add("off");
+        document.querySelector(".pen-icon").title = "詞書の書風を見る"; 
       }
       kobun.classList.remove("off");
       if (fileterEmakis[i].gendaibun) {

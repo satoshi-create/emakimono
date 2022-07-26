@@ -32,18 +32,21 @@ header/footer
   color: var(--clr-gray);
   cursor: pointer;
 }
-/* .header .toggle-icon .fa-plus {
-  display: block;
-}
-.header .toggle-icon .fa-minus {
-  display: none;
-} */
-/* .header .open-text.toggle-icon .fa-plus {
+.renzokusiki .toggle-icon {
   display: none;
 }
-.header .open-text.toggle-icon .fa-minus {
-  display: block;
-} */
+.renzokusiki .toggle-text-icon {
+  display: none;
+}
+.renzokusiki .toggle-text-icon {
+  display: none;
+}
+.renzokusiki .ekotoba-icon {
+  display: none;
+}
+.header .ekotoba-icon{
+  display: none;
+}
 .header i {
   font-size: 21px;
   transition: var(--transition);
@@ -151,7 +154,7 @@ Sidebar
   font-size: 3rem;
   background: transparent;
   border-color: transparent;
-  color: #d6d6d6;
+  color: #444444;
   transition: var(--transition);
   cursor: pointer;
 }
@@ -401,5 +404,3 @@ svg > *:hover {
   font-family: "Zen Kurenaido", sans-serif;
   font-size: 2rem;
 }
-
-

@@ -3,37 +3,31 @@ const header = [
     className: "end-icon js-smooth-scroll",
     link: "#s9",
     icon: "fa-solid fa-backward-fast",
-    title: "end",
+    title: "最後に進む",
   },
   {
     className: "home-icon",
     link: "/",
     icon: "fa-solid fa-house",
-    title: "home",
-  },
-  {
-    className: "zoom-icon",
-    link: "",
-    icon: "fa-solid fa-magnifying-glass",
-    title: "zoom",
+    title: "ホーム",
   },
   {
     className: "pen-icon",
     link: "",
     icon: "fa-solid fa-pen",
-    title: "pen",
+    title: "詞書の書風を見る",
   },
   {
     className: "toggle-icon",
     link: "",
     icon: "fa-solid fa-plus",
-    title: "add text",
+    title: "詞書（原文）の表示・非表示",
   },
   {
     className: "toggle-text-icon",
     link: "",
     icon: "fas fa-sync",
-    title: "toggle text",
+    title: "詞書の現代語訳と原文の表示位置を切り替え",
   },
   {
     className: "ekotoba-icon",
@@ -45,7 +39,7 @@ const header = [
     className: "start-icon js-smooth-scroll",
     link: "#s0",
     icon: "fa-solid fa-forward-fast",
-    title: "start",
+    title: "最初に戻る",
   },
 ];
 
