@@ -3,3 +3,7 @@
   width: 80vw;
   max-width: 1000px;
 }
+.article h1 {
+  text-align: center;
+  padding: 2rem;
+}

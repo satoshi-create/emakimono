@@ -6,7 +6,6 @@ $(function () {
   const footer = document.querySelector(".footer");
   footer.innerHTML = `<p>@${year} 横スクロールで楽しむ絵巻物 all right reserved</p> `;
 
-  
   const navToggle = document.querySelector(".nav-toggle");
   const links = document.querySelector(".links");
 
@@ -27,5 +26,4 @@ $(function () {
   //     navbar.classList.remove("fixed-nav");
   //   }
   // });
-  
 });
