@@ -21,7 +21,7 @@ const header = [
     className: "toggle-icon",
     link: "",
     icon: "fa-solid fa-plus",
-    title: "詞書（原文）の表示・非表示",
+    title: "詞書の現代語訳と原文を比べて読む",
   },
   {
     className: "toggle-text-icon",
