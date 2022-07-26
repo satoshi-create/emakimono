@@ -201,17 +201,16 @@ contentsPc.innerHTML = `<div class="modal-wrapper"></div>${emakis
         <div class="kobun-text">
         ${chapter ? `<h3 id="s${index}">${chapter}</h3>` : ""}
         ${gendaibun ? `<p  class="gendaibun-text">${gendaibun}</p>` : ""}
-  <div class="translate">
-    <!-- question button -->
-    <button type="button" class="btn translate-btn section-btn">
-      <span class="plus-icon">
-        <i class="far fa-plus-square"></i>
-      </span>
-      <span class="minus-icon">
-        <i class="far fa-minus-square"></i>
-      </span>
-    </button>
-  </div>
+        <div class="translate">
+        <button type="button" class="btn translate-btn section-btn">
+          <span class="plus-icon" title="詞書の現代語訳と原文を比べて読む">
+            <i class="far fa-plus-square"></i>
+          </span>
+          <span class="minus-icon" title="閉じる">
+            <i class="far fa-minus-square"></i>
+          </span>
+        </button>
+      </div>
 </div>
 <div class="translate-text">
 ${kobun ? `<p>${kobun}</p>` : ""}
@@ -412,7 +411,7 @@ penIcon.addEventListener("click", function () {
     if (result) {
       if (fileterEmakis[i].src) {
         figure.classList.remove("off");
-        document.querySelector(".pen-icon").title = "詞書の現代語訳を読む"; 
+        document.querySelector(".pen-icon").title = "詞書の現代語訳を読む";
       }
       kobun.classList.add("off");
       if (fileterEmakis[i].gendaibun) {
@@ -421,7 +420,7 @@ penIcon.addEventListener("click", function () {
     } else {
       if (fileterEmakis[i].src) {
         figure.classList.add("off");
-        document.querySelector(".pen-icon").title = "詞書の書風を見る"; 
+        document.querySelector(".pen-icon").title = "詞書の書風を見る";
       }
       kobun.classList.remove("off");
       if (fileterEmakis[i].gendaibun) {
