@@ -2,14 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://emakimono.com/</loc>
-    <lastmod>2022-07-24</lastmod>
+    <lastmod>2022-07-27</lastmod>
   </url>
   <url>
     <loc>https://emakimono.com/index.html</loc>
-    <lastmod>2022-07-24</lastmod>
+    <lastmod>2022-07-27</lastmod>
   </url>
   <url>
     <loc>https://emakimono.com/about.html</loc>
-    <lastmod>2022-07-24</lastmod>
+    <lastmod>2022-07-27</lastmod>
+  </url>
+  <url>
+    <loc>https://emakimono.com/emaki.html?id=0</loc>
+    <lastmod>2022-07-27</lastmod>
+  </url>
+  <url>
+    <loc>https://emakimono.com/emaki.html?id=1</loc>
+    <lastmod>2022-07-27</lastmod>
+  </url>
+  <url>
+    <loc>https://emakimono.com/emaki.html?id=2</loc>
+    <lastmod>2022-07-27</lastmod>
+  </url>
+  <url>
+    <loc>https://emakimono.com/emaki.html?id=3</loc>
+    <lastmod>2022-07-27</lastmod>
+  </url>
+  <url>
+    <loc>https://emakimono.com/emaki.html?id=4</loc>
+    <lastmod>2022-07-27</lastmod>
   </url>
 </urlset>

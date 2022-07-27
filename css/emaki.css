@@ -199,22 +199,21 @@ Sidebar
   top: 0;
   height: 100%;
   width: 40%;
-  background: plum;
+  box-shadow: var(--shadowR);
+  background: white;
 }
 /* sidebarL */
 .sidebarL {
   bottom: 0;
   height: 40%;
   width: 100%;
-  background: plum;
+  background: white;
   text-align: right;
+  box-shadow: var(--shadowL);
 }
 .sidebarL-word-box {
   font-size: 2rem;
   text-align: left;
-}
-.sidebarL .sidebar-close-btn {
-  color: #fff;
 }
 .sidebarL h4 {
   color: var(--clr-font);

@@ -50,6 +50,8 @@ Root
   --slideR-width: 180px;
   --slideR-height: 400px;
   --slideR-right: -140px;
+  --shadowR:  -10px 15px 10px rgba(0, 0, 0, 0.2);
+  --shadowL:  10px 15px 10px rgba(0, 0, 0, 0.2);
 }
 
 /*

@@ -19,6 +19,8 @@ const sidebarCloseBtn = document.querySelector(".sidebarR .sidebar-close-btn");
 const sidebarR = document.querySelector(".sidebarR");
 const mokujiText = document.querySelector(".mokuji");
 
+sidebarR.style.backgroundImage = `url(${backgroundImage})`;
+
 // get title
 document.title = `${title} ${
   edition ? edition : ""
@@ -313,6 +315,8 @@ const kobunTextP = contentsPc.querySelectorAll(".kobun-text p");
 const translateTextP = contentsPc.querySelectorAll(".translate-text p");
 const toggleIcon = document.querySelector(".toggle-text-icon");
 const sidebarL = document.querySelector(".sidebarL");
+
+sidebarL.style.backgroundImage = `url(${backgroundImage })`;
 
 toggleIcon.addEventListener("click", function () {
   const result = contentsPc.classList.toggle("result");
