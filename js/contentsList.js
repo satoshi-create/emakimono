@@ -24,8 +24,8 @@ $(function () {
       <div class="emaki-card">
       <div class="single-img-container">
       <img class="single-img-thumb"src=${thumb}>
-      <video preload="none" autoplay loop muted playsinline class="video">
-        <source  src=${gif} type="video/mp4" class="mp4">
+      <video autoplay loop muted playsinline class="video lazy" poster=${thumb} >
+        <source  data-src=${gif} type="video/mp4" class="mp4"> 
       </video>
       <a href=${video} target="_blank" class="video-icon">
       <i class="fa-brands fa-youtube"></i>
@@ -57,5 +57,38 @@ $(function () {
     collapsedHeight: 100,
     moreLink: '<a class="btn" href="#"><span>...続きを読む</span></a>',
     lessLink: '<a class="btn btn_close" href="#"><span>...閉じる</span></a>',
+  });
+
+  document.addEventListener("mouseover", function () {
+    var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
+
+    if ("IntersectionObserver" in window) {
+      var lazyVideoObserver = new IntersectionObserver(function (
+        entries,
+        observer
+      ) {
+        entries.forEach(function (video) {
+          if (video.isIntersecting) {
+            for (var source in video.target.children) {
+              var videoSource = video.target.children[source];
+              if (
+                typeof videoSource.tagName === "string" &&
+                videoSource.tagName === "SOURCE"
+              ) {
+                videoSource.src = videoSource.dataset.src;
+              }
+            }
+
+            video.target.load();
+            video.target.classList.remove("lazy");
+            lazyVideoObserver.unobserve(video.target);
+          }
+        });
+      });
+
+      lazyVideos.forEach(function (lazyVideo) {
+        lazyVideoObserver.observe(lazyVideo);
+      });
+    }
   });
 });
