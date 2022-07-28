@@ -6,8 +6,8 @@ Root
 
 :root {
   font-size: 10px;
-  --title-font: "Hina Mincho", serif;
-  --text-font: "Noto Serif JP", serif;
+  --title-font: "Kaisei Decol", serif;
+  --text-font: "Zen Kurenaido", sans-serif;
   --my-font: 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN",
     "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
   --clr-black: #222222;
