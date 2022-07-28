@@ -4,32 +4,6 @@ Root
 ===============
 */
 
-/* zen-kurenaido-regular - latin_japanese */
-@font-face {
-  font-family: "Zen Kurenaido";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local("Zen Kurenaido"),
-    url("../fonts/zen-kurenaido-v9-latin_japanese-regular.woff2")
-      format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/zen-kurenaido-v9-latin_japanese-regular.woff")
-      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* kaisei-decol-regular - latin_japanese */
-@font-face {
-  font-family: "Kaisei Decol";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local("Kaisei Decol"),
-    url("../fonts/kaisei-decol-v8-latin_japanese-regular.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/kaisei-decol-v8-latin_japanese-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
 :root {
   font-size: 10px;
   --title-font: "Hina Mincho", serif;
