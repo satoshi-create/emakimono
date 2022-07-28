@@ -24,7 +24,7 @@ $(function () {
       <div class="emaki-card">
       <div class="single-img-container">
       <img class="single-img-thumb"src=${thumb}>
-      <video autoplay loop muted playsinline class="video">
+      <video preload="none" autoplay loop muted playsinline class="video">
         <source  src=${gif} type="video/mp4" class="mp4">
       </video>
       <a href=${video} target="_blank" class="video-icon">
