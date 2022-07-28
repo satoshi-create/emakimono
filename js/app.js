@@ -1,5 +1,3 @@
-import data from "../data/data.js";
-
 $(function () {
   // footer
   const year = new Date().getFullYear();
@@ -26,4 +24,20 @@ $(function () {
   //     navbar.classList.remove("fixed-nav");
   //   }
   // });
+
+  // let images = [
+  //   "/img/cyoujyuu_yamazaki_kou_thumb.jpg",
+  //   "/img/cyoujyuu_yamazaki_otu_thumb.jpg",
+  //   "/img/cyoujyuu_yamazaki_hei_thumb.jpg",
+  //   "/img/cyoujyuu_yamazaki_tei_thumb.jpg",
+  // ];
+
+  // window.onload = function () {
+  //   // 画像プリロード
+  //   for (i = 0; i < images.length; i++) {
+  //     let img = document.createElement("img");
+  //     img.src = images[i];
+  //   }
+  //   console.log(img.src);
+  // };
 });

@@ -1,6 +1,7 @@
 import data from "../data/data.js";
 
 $(function () {
+  
   const contentsList = document.querySelector(".conteiner-list");
   window.showMore = () => {
     console.log("test");
