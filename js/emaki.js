@@ -222,7 +222,7 @@ ${kobun ? `<p>${kobun}</p>` : ""}
 <source data-srcset=${srcSp} media="(max-height: 375px)" />
 <source data-srcset=${srcTb} media="(max-height: 800px)" />
 <source data-srcset=${src} />
-<img src=${srcSp} data-src=${src} class="lazyload fade-in" alt=${name} />
+<img src="/img/cursor.png" data-src="/img/cursor.png" class="lazyload fade-in" alt=${name} />
 </picture>
 </div>
 </div>`;
@@ -234,7 +234,7 @@ ${kobun ? `<p>${kobun}</p>` : ""}
           <source data-srcset=${srcSp} media="(max-height: 375px)" />
           <source data-srcset=${srcTb} media="(max-height: 800px)" />
           <source data-srcset=${src} />
-          <img src=${srcSp}  data-src=${srcSp}  class="lazyload fade-in" alt=${name} />
+          <img src="/img/cursor.png"  data-src="/img/cursor.png"  class="lazyload fade-in" alt=${name} />
           </picture>  
           </div>
       </div>
@@ -316,7 +316,7 @@ const translateTextP = contentsPc.querySelectorAll(".translate-text p");
 const toggleIcon = document.querySelector(".toggle-text-icon");
 const sidebarL = document.querySelector(".sidebarL");
 
-sidebarL.style.backgroundImage = `url(${backgroundImage })`;
+sidebarL.style.backgroundImage = `url(${backgroundImage})`;
 
 toggleIcon.addEventListener("click", function () {
   const result = contentsPc.classList.toggle("result");
