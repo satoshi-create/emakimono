@@ -222,7 +222,7 @@ ${kobun ? `<p>${kobun}</p>` : ""}
 <source data-srcset=${srcSp} media="(max-height: 375px)" />
 <source data-srcset=${srcTb} media="(max-height: 800px)" />
 <source data-srcset=${src} />
-<img src="/img/cursor.png" data-src="/img/cursor.png" class="lazyload fade-in" alt=${name} />
+<img decoding="async" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="lazyload fade-in" alt=${name} />
 </picture>
 </div>
 </div>`;
@@ -234,7 +234,7 @@ ${kobun ? `<p>${kobun}</p>` : ""}
           <source data-srcset=${srcSp} media="(max-height: 375px)" />
           <source data-srcset=${srcTb} media="(max-height: 800px)" />
           <source data-srcset=${src} />
-          <img src="/img/cursor.png"  data-src="/img/cursor.png"  class="lazyload fade-in" alt=${name} />
+          <img decoding="async" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="lazyload fade-in" alt=${name} />
           </picture>  
           </div>
       </div>

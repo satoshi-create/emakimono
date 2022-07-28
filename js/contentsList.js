@@ -23,7 +23,7 @@ $(function () {
       return `
       <div class="emaki-card">
       <div class="single-img-container">
-      <img class="single-img-thumb"src=${thumb}>
+      <img decoding="async" class="single-img-thumb"src=${thumb}>
       <video autoplay loop muted playsinline class="video lazy" poster=${thumb} >
         <source  data-src=${gif} type="video/mp4" class="mp4"> 
       </video>
