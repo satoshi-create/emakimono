@@ -101,7 +101,7 @@ nav {
   position: relative;
   transition: var(--transition);
   background-color: #7c7c7cc9;
-  height: 20rem;
+  /* height: 20rem; */
 }
 
 .single-img-container img {
