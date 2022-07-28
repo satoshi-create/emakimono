@@ -1,7 +1,6 @@
 import data from "../data/data.js";
 
 $(function () {
-  
   const contentsList = document.querySelector(".conteiner-list");
   window.showMore = () => {
     console.log("test");
@@ -25,7 +24,9 @@ $(function () {
       <div class="emaki-card">
       <div class="single-img-container">
       <img class="single-img-thumb"src=${thumb}>
-      <img class="single-img-gif" src=${gif}>
+      <video autoplay loop muted playsinline class="video">
+        <source  src=${gif} type="video/mp4" class="mp4">
+      </video>
       <a href=${video} target="_blank" class="video-icon">
       <i class="fa-brands fa-youtube"></i>
       </a>

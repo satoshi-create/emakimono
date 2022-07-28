@@ -104,7 +104,8 @@ nav {
   /* height: 20rem; */
 }
 
-.single-img-container img {
+.single-img-container img,
+.single-img-container .video {
   width: 100%;
   object-fit: cover;
 }
@@ -112,14 +113,14 @@ nav {
 .single-img-container .single-img-thumb {
   display: block;
 }
-.single-img-container .single-img-gif {
+.single-img-container .video {
   display: none;
 }
 
 .single-img-container:hover .single-img-thumb {
   display: none;
 }
-.single-img-container:hover .single-img-gif {
+.single-img-container:hover .video {
   display: block;
   opacity: 0.6;
 }
