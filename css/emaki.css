@@ -170,11 +170,11 @@ Sidebar
   padding: 2rem;
   position: absolute;
   z-index: 99;
+  overflow: scroll;
 }
-.translate-sidebar.sidebar {
-  display: block;
-}
+
 /* sidebarR */
+
 .sidebarR h4 {
   color: var(--clr-bcg);
 }
@@ -210,6 +210,10 @@ Sidebar
   background: white;
   text-align: right;
   box-shadow: var(--shadowL);
+}
+.translate-sidebar.sidebarR,
+.translate-sidebar.sidebarL {
+  display: block;
 }
 .sidebarL-word-box {
   font-size: 2rem;
