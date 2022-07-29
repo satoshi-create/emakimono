@@ -1,6 +1,17 @@
 {
+  "name": "emakimono",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
   "dependencies": {
-    "sitemap": "^7.1.1",
+    "imagemin": "^8.0.1",
+    "imagemin-webp": "^7.0.0",
     "sitemap-generator": "^8.5.1"
-  }
+  },
+  "scripts": {
+    "start": "node convert_webp.js"
+  },
+  "author": "",
+  "license": "ISC"
 }

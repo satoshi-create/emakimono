@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      writing-mode: vertical-rl;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transition: opacity 3s;
+    }
+
+    .fade-in.lazyloaded {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <picture>
+    <source data-srcset="/img/cyoujyuu_yamazaki_kou_02-1080.webp" type="image/webp">
+    <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+      data-src="/img/cyoujyuu_yamazaki_kou_02-1080.jpg">  
+  </picture>
+
+  <picture>
+    <source type="image/webp" srcset="https://www.gstatic.com/webp/gallery/4.sm.webp" />
+    <img src="/img/cyoujyuu_yamazaki_kou_02-1080.jpg" width="640" height="360" alt="サンプル画像" />
+  </picture> -->
+
+
+  <picture>
+    <source data-srcset="/img/cyoujyuu_yamazaki_kou_02-1080.webp" media="(max-height: 375px)" />
+    <source data-srcset="/img/cyoujyuu_yamazaki_kou_02-1080.webp" media="(max-height: 800px)" />
+    <source data-srcset="/img/cyoujyuu_yamazaki_kou_02-1080.webp" />
+    <img decoding="async" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+      class="lazyload fade-in" alt=${name} />
+  </picture>
+  <picture>
+    <source data-srcset="/img/cyoujyuu_yamazaki_kou_02-1080.webp" media="(max-height: 375px)" />
+    <source data-srcset="/img/cyoujyuu_yamazaki_kou_02-1080.webp" media="(max-height: 800px)" />
+    <source data-srcset="/img/cyoujyuu_yamazaki_kou_02-1080.webp" />
+    <img decoding="async" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+      class="lazyload fade-in" alt=${name} />
+  </picture>
+<!-- 
+  <picture>
+    <source data-srcset="https://www.gstatic.com/webp/gallery/4.sm.webp" media="(max-height: 375px)" />
+    <source data-srcset="https://www.gstatic.com/webp/gallery/4.sm.webp" media="(max-height: 800px)" />
+    <source data-srcset="https://www.gstatic.com/webp/gallery/4.sm.webp" />
+    <img decoding="async" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+      class="lazyload fade-in" alt=${name} />
+  </picture> -->
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js"></script>
+
+</body>
+
+</html>
