@@ -2,7 +2,7 @@
 =============== 
 header/footer
 ===============
-*/ 
+*/
 
 .header,
 .footer {
@@ -44,7 +44,7 @@ header/footer
 .renzokusiki .ekotoba-icon {
   display: none;
 }
-.header .ekotoba-icon{
+.header .ekotoba-icon {
   display: none;
 }
 .header i {
@@ -306,8 +306,10 @@ slider-Bottom
   /* width: 100vw; */
   height: 100vh;
 }
-.lazyload {
+.fade-in {
   opacity: 0;
+  filter: blur(4px);
+  transition: opacity 3s;
 }
 
 .lazyloading {
@@ -319,6 +321,10 @@ slider-Bottom
   opacity: 1;
   transition: opacity 9ms;
 }
+.fade-in.lazyloaded {
+  filter: blur(0);
+}
+
 .bgimg {
   background-size: cover;
   background-repeat: no-repeat;
