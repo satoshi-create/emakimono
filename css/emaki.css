@@ -306,25 +306,20 @@ slider-Bottom
   /* width: 100vw; */
   height: 100vh;
 }
-.fade-in {
+
+.lazyload {
   opacity: 0;
-  filter: blur(4px);
-  transition: opacity 3s;
 }
 
 .lazyloading {
-  opacity: 1;
+  opacity: 0.3;
   transition: opacity 300ms;
   background: #f7f7f7 url(../img/loading.gif) no-repeat center;
 }
 .lazyloaded {
   opacity: 1;
-  transition: opacity 9ms;
+  transition: opacity 1s;
 }
-.fade-in.lazyloaded {
-  filter: blur(0);
-}
-
 .bgimg {
   background-size: cover;
   background-repeat: no-repeat;
