@@ -3,12 +3,12 @@
 ekotoba
 ===============
 */
-/* .contents h3 {
+.contents h3 {
   font-family: var(--title-font);
 }
 .contents p {
   font-family: var(--text-font);
-} */
+}
 @media (max-height: 375px) {
   .section.ekotoba h3 {
     font-size: 2.5rem;
