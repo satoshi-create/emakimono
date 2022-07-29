@@ -1082,7 +1082,7 @@ const data = [
     backgroundImage: "images/washi_green_03.webp",
     video: "https://youtu.be/Qgc0lrTPkiY",
     thumb: "/images/cyoujyuu_yamazaki_tei_thumb.webp",
-    thumb2:"/images/cyoujyuu_yamazaki_kou_thumb.jpegp",
+    thumb2:"/images/cyoujyuu_yamazaki_kou_thumb.jpeg",
     desc: "<ruby><rb>直幹申文絵詞</rb><rp>（</rp><rt>なおもともうしぶみえことば</rt><rp>）</rp></ruby>。",
     era: "安政4（1857）年",
     gif: "/images/cyoujyuu_yamazaki_kou.mp4",
