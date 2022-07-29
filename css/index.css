@@ -101,14 +101,14 @@ nav {
   position: relative;
   transition: var(--transition);
   background-color: #7c7c7cc9;
-  /* height: 20rem; */
+  aspect-ratio: 16/9;
 }
 
 .single-img-container img,
 .single-img-container .video {
   width: 100%;
   object-fit: cover;
-  /* height: 311px; */
+  position:absolute;
 }
 
 .single-img-container .single-img-thumb {

@@ -17,7 +17,7 @@ $(function () {
         edition,
         author,
         video,
-        thumb2,
+        thumb2
       } = item;
       return `
       <div class="emaki-card">

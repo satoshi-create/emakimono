@@ -231,9 +231,9 @@ ${kobun ? `<p>${kobun}</p>` : ""}
         <div class="section section${index} ${cat}" id="s${index}" >
         <div class="image-container image1-container">
         <picture>
-          <source data-srcset=${srcSp} media="(max-height: 375px)" />
-          <source data-srcset=${srcTb} media="(max-height: 800px)" />
-          <source data-srcset=${src} />
+          <source data-srcset=${srcSp} media="(max-height: 375px)" type="image/webp"/>
+          <source data-srcset=${srcTb} media="(max-height: 800px)" type="image/webp"/>
+          <source data-srcset=${src} type="image/webp"/>
           <img decoding="async" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="lazyload fade-in" alt=${name} />
           </picture>  
           </div>
