@@ -209,7 +209,7 @@ Sidebar
   width: 100%;
   background: white;
   text-align: right;
-  box-shadow: var(--shadowL);
+  box-shadow: var(--shadowB);
 }
 .translate-sidebar.sidebarR,
 .translate-sidebar.sidebarL {
@@ -233,6 +233,7 @@ Sidebar
     height: 100%;
     background: rgb(155, 136, 155);
     text-align: right;
+    box-shadow: var(--shadowL);
   }
 }
 
