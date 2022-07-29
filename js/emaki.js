@@ -222,7 +222,7 @@ ${kobun ? `<p>${kobun}</p>` : ""}
 <source data-srcset=${srcSp} media="(max-height: 375px)" type="image/webp"/>
 <source data-srcset=${srcTb} media="(max-height: 800px)" type="image/webp"/>
 <source data-srcset=${src} type="image/webp"/>
-<img decoding="async" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="lazyload" alt=${name} />
+<img decoding="async" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="lazyload fade-in" alt=${name} />
 </picture>
 </div>
 </div>`;
