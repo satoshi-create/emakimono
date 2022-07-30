@@ -308,7 +308,6 @@ slider-Bottom
 .sliderbox {
   border: 2px solid red;
   overflow: hidden;
-  /* width: 100vw; */
   height: 100vh;
 }
 
@@ -316,7 +315,7 @@ slider-Bottom
   opacity: 0;
 }
 
-.lazyloading {
+.loading.lazyloading {
   opacity: 0.3;
   transition: opacity 300ms;
   background: #f7f7f7 url(../img/loading.gif) no-repeat center;

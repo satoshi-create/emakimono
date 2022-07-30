@@ -23,7 +23,7 @@ const data = [
         gendaibun: "",
       },
       {
-        load: true,
+        load: false,
         cat: "image",
         srcSp: "/images/cyoujyuu_yamazaki_kou_01-375.webp",
         srcTb: "/images/cyoujyuu_yamazaki_kou_01-800.webp",
