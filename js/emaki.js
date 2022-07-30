@@ -184,19 +184,8 @@ function fit() {
 
 contentsPc.innerHTML = `<div class="modal-wrapper"></div>${emakis
   .map((emaki, index) => {
-    const {
-      cat,
-      kobun,
-      gendaibun,
-      src,
-      name,
-      chapter,
-      srcSp,
-      srcTb,
-      viewBoxW,
-      viewBoxH,
-      clickImg,
-    } = emaki;
+    const { cat, kobun, gendaibun, src, name, chapter, srcSp, srcTb, load } =
+      emaki;
     if (cat == "ekotoba") {
       return `
         <div class="section section${index} ${cat} bgimg lazyload fade-in" id=s${index} data-bg=${backgroundImage}> 
@@ -222,7 +211,11 @@ ${kobun ? `<p>${kobun}</p>` : ""}
 <source data-srcset=${srcSp} media="(max-height: 375px)" type="image/webp"/>
 <source data-srcset=${srcTb} media="(max-height: 800px)" type="image/webp"/>
 <source data-srcset=${src} type="image/webp"/>
-<img decoding="async" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="lazyload fade-in" alt=${name} />
+<img decoding="async" src=${
+        load
+          ? srcSp
+          : "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+      } class="lazyload fade-in" alt=${name} />
 </picture>
 </div>
 </div>`;
