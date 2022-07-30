@@ -16,14 +16,13 @@ const data = [
     type: "連続式絵巻",
     emakis: [
       {
-        load: true,
         cat: "ekotoba",
         chapter: "兎と猿の水遊び ",
         kobun: "",
         gendaibun: "",
       },
       {
-        load: false,
+        load: true,
         cat: "image",
         srcSp: "/images/cyoujyuu_yamazaki_kou_01-375.webp",
         srcTb: "/images/cyoujyuu_yamazaki_kou_01-800.webp",
@@ -56,7 +55,6 @@ const data = [
         name: "鳥獣人物戯画絵巻甲巻摸本の画像",
       },
       {
-        load: false,
         cat: "ekotoba",
         chapter: "兎と蛙の賭弓 ",
         kobun: "",
@@ -111,7 +109,6 @@ const data = [
         name: "鳥獣人物戯画絵巻甲巻摸本の画像",
       },
       {
-        load: false,
         cat: "ekotoba",
         chapter: "禄の物を受ける猿僧正",
         kobun: "",
@@ -134,7 +131,6 @@ const data = [
         name: "鳥獣人物戯画絵巻甲巻摸本の画像",
       },
       {
-        load: false,
         cat: "ekotoba",
         chapter: "猿と蛙の喧嘩",
         kobun: "",
@@ -157,7 +153,6 @@ const data = [
         name: "鳥獣人物戯画絵巻甲巻摸本の画像",
       },
       {
-        load: false,
         cat: "ekotoba",
         chapter: "田楽見物",
         kobun: "",
@@ -179,7 +174,6 @@ const data = [
         name: "鳥獣人物戯画絵巻甲巻摸本の画像",
       },
       {
-        load: false,
         cat: "ekotoba",
         chapter: "兎と蛙の相撲",
         kobun: "",
@@ -202,7 +196,6 @@ const data = [
         name: "鳥獣人物戯画絵巻甲巻摸本の画像",
       },
       {
-        load: false,
         cat: "ekotoba",
         chapter: "双六盤を運ぶ猿",
         kobun: "",
@@ -217,7 +210,6 @@ const data = [
         name: "鳥獣人物戯画絵巻甲巻摸本の画像",
       },
       {
-        load: false,
         cat: "ekotoba",
         chapter: "周忌法会の導師をつとめる猿僧正",
         kobun: "",
@@ -240,7 +232,6 @@ const data = [
         name: "鳥獣人物戯画絵巻甲巻摸本の画像",
       },
       {
-        load: false,
         cat: "ekotoba",
         chapter: "猿僧正への僧供",
         kobun: "",
@@ -580,7 +571,6 @@ const data = [
     type: "連続式絵巻",
     emakis: [
       {
-        load: true,
         cat: "ekotoba",
         chapter: "囲碁",
         kobun: "",
@@ -595,7 +585,7 @@ const data = [
         name: "鳥獣人物戯画絵巻丙巻摸本の画像",
       },
       {
-        load: true,
+        load: false,
         cat: "ekotoba",
         chapter: "双六",
         kobun: "",
