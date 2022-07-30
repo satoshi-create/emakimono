@@ -271,7 +271,6 @@ const data = [
     type: "連続式絵巻",
     emakis: [
       {
-        load: true,
         cat: "ekotoba",
         chapter: "馬",
         kobun: "",
@@ -311,7 +310,6 @@ const data = [
         name: "鳥獣人物戯画絵巻乙巻摸本の画像",
       },
       {
-        load: false,
         cat: "ekotoba",
         chapter: "牛",
         kobun: "",
@@ -350,7 +348,6 @@ const data = [
         name: "鳥獣人物戯画絵巻乙巻摸本の画像",
       },
       {
-        load: false,
         cat: "ekotoba",
         chapter: "鷹",
         kobun: "",
@@ -365,7 +362,6 @@ const data = [
         name: "鳥獣人物戯画絵巻乙巻摸本の画像",
       },
       {
-        load: false,
         cat: "ekotoba",
         chapter: "犬",
         kobun: "",
@@ -380,7 +376,6 @@ const data = [
         name: "鳥獣人物戯画絵巻乙巻摸本の画像",
       },
       {
-        load: false,
         cat: "ekotoba",
         chapter: "鶏",
         kobun: "",
@@ -404,7 +399,6 @@ const data = [
         name: "鳥獣人物戯画絵巻乙巻摸本の画像",
       },
       {
-        load: false,
         cat: "ekotoba",
         chapter: "鷲と隼",
         kobun: "",
@@ -419,7 +413,6 @@ const data = [
         name: "鳥獣人物戯画絵巻乙巻摸本の画像",
       },
       {
-        load: false,
         cat: "ekotoba",
         chapter: "玄武",
         kobun: "",
@@ -434,7 +427,6 @@ const data = [
         name: "鳥獣人物戯画絵巻乙巻摸本の画像",
       },
       {
-        load: false,
         cat: "ekotoba",
         chapter: "麒麟",
         kobun: "",
@@ -448,7 +440,6 @@ const data = [
         name: "鳥獣人物戯画絵巻乙巻摸本の画像",
       },
       {
-        load: false,
         cat: "ekotoba",
         chapter: "豹",
         kobun: "",
@@ -463,7 +454,6 @@ const data = [
         name: "鳥獣人物戯画絵巻乙巻摸本の画像",
       },
       {
-        load: false,
         cat: "ekotoba",
         chapter: "山羊",
         kobun: "",
@@ -478,7 +468,6 @@ const data = [
         name: "鳥獣人物戯画絵巻乙巻摸本の画像",
       },
       {
-        load: false,
         cat: "ekotoba",
         chapter: "虎",
         kobun: "",
@@ -493,7 +482,6 @@ const data = [
         name: "鳥獣人物戯画絵巻乙巻摸本の画像",
       },
       {
-        load: false,
         cat: "ekotoba",
         chapter: "獅子",
         kobun: "",
@@ -508,7 +496,6 @@ const data = [
         name: "鳥獣人物戯画絵巻乙巻摸本の画像",
       },
       {
-        load: false,
         cat: "ekotoba",
         chapter: "青竜",
         kobun: "",
@@ -523,7 +510,6 @@ const data = [
         name: "鳥獣人物戯画絵巻乙巻摸本の画像",
       },
       {
-        load: false,
         cat: "ekotoba",
         chapter: "象",
         kobun: "",
@@ -538,7 +524,6 @@ const data = [
         name: "鳥獣人物戯画絵巻乙巻摸本の画像",
       },
       {
-        load: false,
         cat: "ekotoba",
         chapter: "獏",
         kobun: "",
@@ -571,7 +556,6 @@ const data = [
     type: "連続式絵巻",
     emakis: [
       {
-        cat: "ekotoba",
         chapter: "囲碁",
         kobun: "",
         gendaibun: "",
@@ -585,7 +569,6 @@ const data = [
         name: "鳥獣人物戯画絵巻丙巻摸本の画像",
       },
       {
-        load: false,
         cat: "ekotoba",
         chapter: "双六",
         kobun: "",
@@ -600,7 +583,6 @@ const data = [
         name: "鳥獣人物戯画絵巻丙巻摸本の画像",
       },
       {
-        load: true,
         cat: "ekotoba",
         chapter: "将棋",
         kobun: "",
@@ -615,7 +597,6 @@ const data = [
         name: "鳥獣人物戯画絵巻丙巻摸本の画像",
       },
       {
-        load: true,
         cat: "ekotoba",
         chapter: "耳引き",
         kobun: "",
@@ -630,7 +611,6 @@ const data = [
         name: "鳥獣人物戯画絵巻丙巻摸本の画像",
       },
       {
-        load: false,
         cat: "ekotoba",
         chapter: "首引き",
         kobun: "",
@@ -645,7 +625,6 @@ const data = [
         name: "鳥獣人物戯画絵巻丙巻摸本の画像",
       },
       {
-        load: false,
         cat: "ekotoba",
         chapter: "目比べ",
         kobun: "",
@@ -660,7 +639,6 @@ const data = [
         name: "鳥獣人物戯画絵巻丙巻摸本の画像",
       },
       {
-        load: false,
         cat: "ekotoba",
         chapter: "腰引き",
         kobun: "",
@@ -675,7 +653,6 @@ const data = [
         name: "鳥獣人物戯画絵巻丙巻摸本の画像",
       },
       {
-        load: false,
         cat: "ekotoba",
         chapter: "鶏合せ",
         kobun: "",
@@ -690,7 +667,6 @@ const data = [
         name: "鳥獣人物戯画絵巻丙巻摸本の画像",
       },
       {
-        load: false,
         cat: "ekotoba",
         chapter: "闘犬",
         kobun: "",
@@ -705,7 +681,6 @@ const data = [
         name: "鳥獣人物戯画絵巻丙巻摸本の画像",
       },
       {
-        load: false,
         cat: "ekotoba",
         chapter: "猿の競馬",
         kobun: "",
@@ -736,7 +711,6 @@ const data = [
         name: "鳥獣人物戯画絵巻丙巻摸本の画像",
       },
       {
-        load: false,
         cat: "ekotoba",
         chapter: "山車の囃子方",
         kobun: "",
@@ -766,7 +740,6 @@ const data = [
         name: "鳥獣人物戯画絵巻丙巻摸本の画像",
       },
       {
-        load: false,
         cat: "ekotoba",
         chapter: "猿と蛙の蹴鞠",
         kobun: "",
@@ -781,7 +754,6 @@ const data = [
         name: "鳥獣人物戯画絵巻丙巻摸本の画像",
       },
       {
-        load: false,
         cat: "ekotoba",
         chapter: "猿と蛙の験競べ",
         kobun: "",
@@ -804,7 +776,6 @@ const data = [
         name: "鳥獣人物戯画絵巻丙巻摸本の画像",
       },
       {
-        load: false,
         cat: "ekotoba",
         chapter: "蛇の出現",
         kobun: "",
@@ -844,7 +815,6 @@ const data = [
     type: "連続式絵巻",
     emakis: [
       {
-        load: true,
         cat: "ekotoba",
         chapter:
           "<ruby><rb>侏儒</rb><rp>（</rp><rt>しゅじゅ</rt><rp>）</rp></ruby>（小人）の<ruby><rb>籠脱け</rb><rp>（</rp><rt>かごぬけ</rt><rp>）</rp></ruby>",
@@ -860,7 +830,6 @@ const data = [
         name: "鳥獣人物戯画絵巻丁巻摸本の画像",
       },
       {
-        load: true,
         cat: "ekotoba",
         chapter: "験競べ",
         kobun: "",
@@ -883,7 +852,6 @@ const data = [
         name: "鳥獣人物戯画絵巻丁巻摸本の画像",
       },
       {
-        load: true,
         cat: "ekotoba",
         chapter:
           "供養の<ruby><rb>結縁者</rb><rp>（</rp><rt>けちえんしゃ</rt><rp>）</rp></ruby>たち",
@@ -907,7 +875,6 @@ const data = [
         name: "鳥獣人物戯画絵巻丁巻摸本の画像",
       },
       {
-        load: false,
         cat: "ekotoba",
         chapter:
           "<ruby><rb>流鏑馬</rb><rp>（</rp><rt>やぶさめ</rt><rp>）</rp></ruby>",
@@ -931,7 +898,6 @@ const data = [
         name: "鳥獣人物戯画絵巻丁巻摸本の画像",
       },
       {
-        load: false,
         cat: "ekotoba",
         chapter: "田楽",
         kobun: "",
@@ -946,7 +912,6 @@ const data = [
         name: "鳥獣人物戯画絵巻丁巻摸本の画像",
       },
       {
-        load: false,
         cat: "ekotoba",
         chapter:
           "<ruby><rb>毬打</rb><rp>（</rp><rt>ぎっちょう</rt><rp>）</rp></ruby>",
@@ -962,7 +927,6 @@ const data = [
         name: "鳥獣人物戯画絵巻丁巻摸本の画像",
       },
       {
-        load: false,
         cat: "ekotoba",
         chapter:
           "<ruby><rb>木遣り</rb><rp>（</rp><rt>きやり</rt><rp>）</rp></ruby>",
@@ -994,7 +958,6 @@ const data = [
         name: "鳥獣人物戯画絵巻丁巻摸本の画像",
       },
       {
-        load: false,
         cat: "ekotoba",
         chapter:
           "<ruby><rb>番論義</rb><rp>（</rp><rt>ばんろんぎ</rt><rp>）</rp></ruby>に着座した公卿たち",
@@ -1010,7 +973,6 @@ const data = [
         name: "鳥獣人物戯画絵巻丁巻摸本の画像",
       },
       {
-        load: false,
         cat: "ekotoba",
         chapter:
           "<ruby><rb>印地</rb><rp>（</rp><rt>いんじ</rt><rp>）</rp></ruby>打ち",
@@ -1026,7 +988,6 @@ const data = [
         name: "鳥獣人物戯画絵巻丁巻摸本の画像",
       },
       {
-        load: false,
         cat: "ekotoba",
         chapter:
           "<ruby><rb>拝賀</rb><rp>（</rp><rt>はいが</rt><rp>）</rp></ruby>の<ruby><rb>大臣</rb><rp>（</rp><rt>おとど</rt><rp>）</rp></ruby>",
@@ -1116,7 +1077,7 @@ const data = [
         ],
       },
       {
-        load: false,
+        load: true,
         cat: "image",
         srcSp: "/images/naomoto_02-375.webp",
         srcTb: "/images/naomoto_02-800.webp",
