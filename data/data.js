@@ -5,7 +5,7 @@ const data = [
     edition: "甲巻 摸本",
     backgroundImage: "images/110310200304.webp",
     thumb: "/images/cyoujyuu_yamazaki_kou_thumb.webp",
-    thumb2:"/images/cyoujyuu_yamazaki_kou_thumb.jpeg",
+    thumb2: "/images/cyoujyuu_yamazaki_kou_thumb.jpeg",
     video: "https://youtu.be/Si8NzY2drSg",
     gif: "/img/cyoujyuu_yamazaki_kou.mp4",
     era: "明治22年以前",
@@ -262,7 +262,7 @@ const data = [
     backgroundImage: "images/110310200304.webp",
     video: "https://youtu.be/0OCF6w7Ljj4",
     thumb: "/images/cyoujyuu_yamazaki_otu_thumb.webp",
-    thumb2:"/images/cyoujyuu_yamazaki_kou_thumb.jpeg",
+    thumb2: "/images/cyoujyuu_yamazaki_kou_thumb.jpeg",
     era: "明治22年以前",
     metadesc:
       "国宝として有名な甲巻と同じ絵師が描いたと言われる、鳥獣人物戯画絵巻乙巻の全シーンを横スクロールでご覧になることができます。「動物尽くし」の図鑑のような乙巻は、牛や馬など現実の動物と、玄武、麒麟など空想の動物が、想像力を交えて生き生きと描かれています。",
@@ -547,7 +547,7 @@ const data = [
     backgroundImage: "images/110310200304.webp",
     video: "https://youtu.be/ZByb_6oS-30",
     thumb: "/images/cyoujyuu_yamazaki_hei_thumb.webp",
-    thumb2:"/images/cyoujyuu_yamazaki_kou_thumb.jpeg",
+    thumb2: "/images/cyoujyuu_yamazaki_kou_thumb.jpeg",
     metadesc:
       "人間と動物の戯画が描かれる鳥獣人物戯画絵巻乙巻の全シーンを横スクロールでご覧になることができます。丙巻の後半は、甲巻に戻ったかのように、蛙、猿などが競馬、蹴鞠に興じる様が描かれています。甲巻の成り立ちを考えるうえで、興味が尽きない一巻です。",
     desc: "平安～鎌倉時代（12世紀～13世紀）にかけて描かれた鳥獣人物戯画絵巻 丙巻の摸本。この巻になり初めて人間が登場する。双六、目比べなど庶民が遊びに興じするさまが、前半の「人間の戯画」で生き生きと描かれる。後半は一転して、甲巻に戻ったかのように、蛙、猿などが競馬、蹴鞠に興じる様が描かれる。前半と後半は、もともと料紙の裏表に描かれており、描かれた時代も絵師も違うのではないといの指摘がある。",
@@ -556,6 +556,7 @@ const data = [
     type: "連続式絵巻",
     emakis: [
       {
+        cat: "ekotoba",
         chapter: "囲碁",
         kobun: "",
         gendaibun: "",
@@ -806,7 +807,7 @@ const data = [
     backgroundImage: "images/110310200304.webp",
     video: "https://youtu.be/Qgc0lrTPkiY",
     thumb: "/images/cyoujyuu_yamazaki_tei_thumb.webp",
-    thumb2:"/images/cyoujyuu_yamazaki_kou_thumb.jpeg",
+    thumb2: "/images/cyoujyuu_yamazaki_kou_thumb.jpeg",
     metadesc:
       "人間しか描かれない異色の鳥獣人物戯画絵巻丁巻の全シーンを横スクロールでご覧になることができます。腕のたつ絵師が、酔った勢いで一気に描きあげたような勢いのある荒々しい描き方が面白く、スピード感があります。リアルな顔の公卿は必見です。",
     desc: "鎌倉時代に描かれた鳥獣人物戯画絵巻 丁巻の摸本。甲、乙、丙巻とはタッチがまったく異なり、鳥獣戯画といいながら人間しか登場しない。腕のたつ絵師が、酔った勢いで一気に描きあげたような勢いのある筆致が特徴。「番論義に着座した公卿たち」では、着座した4人の公卿のうち1人だけがリアルな顔（似絵）で描かれるなど、謎多き一巻でもある。",
@@ -1033,7 +1034,7 @@ const data = [
     backgroundImage: "images/washi_green_03.webp",
     video: "https://youtu.be/Qgc0lrTPkiY",
     thumb: "/images/cyoujyuu_yamazaki_tei_thumb.webp",
-    thumb2:"/images/cyoujyuu_yamazaki_kou_thumb.jpeg",
+    thumb2: "/images/cyoujyuu_yamazaki_kou_thumb.jpeg",
     desc: "<ruby><rb>直幹申文絵詞</rb><rp>（</rp><rt>なおもともうしぶみえことば</rt><rp>）</rp></ruby>。",
     era: "安政4（1857）年",
     gif: "/images/cyoujyuu_yamazaki_kou.mp4",
