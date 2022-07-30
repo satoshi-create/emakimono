@@ -137,3 +137,16 @@ img,
     display: block;
   }
 } */
+.lazyload {
+  opacity: 0;
+}
+
+.loading.lazyloading {
+  opacity: 0.3;
+  transition: opacity 300ms;
+  background: #f7f7f7 url(../img/loading.gif) no-repeat center;
+}
+.lazyloaded {
+  opacity: 1;
+  transition: opacity 1s;
+}
