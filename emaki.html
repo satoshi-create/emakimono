@@ -7,11 +7,21 @@
   <title>鳥獣人物戯画 甲巻 東博模本 | 横スクロールで楽しむ絵巻物</title>
   <link rel="icon" href="img/favicon.svg" type="image/x-icon" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://kit.fontawesome.com/a07a7ea817.js" crossorigin="anonymous"></script>
+  
   <link rel="stylesheet" href="css/common.css" type="text/css" />
   <link rel="stylesheet" href="css/emaki.css" type="text/css" />
   <link rel="stylesheet" href="css/ekotoba.css" type="text/css" />
-  <link rel="stylesheet" href="css/pace-theme-flattop.css" />
-  <script src="https://kit.fontawesome.com/a07a7ea817.js" crossorigin="anonymous"></script>
+
+  <link rel="preload" href="css/pace-theme-flattop.css" as="style" onload="this. onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="css/common.css" as="style" onload="this. onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="css/emaki.css" as="style" onload="this. onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="css/ekotoba.css" as="style" onload="this. onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="css/pace-theme-flattop.css" />
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+  </noscript>
   <style>
     @font-face {
       font-family: "Kaisei Decol";
@@ -60,7 +70,6 @@
     <div class="slide-innerB" class="Roff">
     </div>
   </div>
-
 
   <div class="contents pc"></div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
