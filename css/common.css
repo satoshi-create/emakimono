@@ -90,6 +90,7 @@ body {
 .image-container {
   height: 100%;
   position: relative;
+  /* aspect-ratio: 16/9; */
 }
 
 .off {
@@ -104,6 +105,7 @@ a {
 img,
 .mainimage {
   height: 100%;
+  /* width: 2000px; */
 }
 /* firefoxでheight100%にすると余白ができる不具合を修正 */
 @-moz-document url-prefix() {
