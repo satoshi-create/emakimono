@@ -8,6 +8,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="縦書き、横スクロールで、絵巻物本来の見方を楽しむことを追求しているサイトです。本サイトで、絵巻物を繰りひろげながら絵を追いかける面白さを、体験してみてください☆">
   <link rel="icon" href="img/favicon.svg" type="image/x-icon" />
+  <link rel="preload" as="image" href="/images/cyoujyuu_yamazaki_kou_thumb.webp">
+  <link rel="preload" as="image" href="/images/cyoujyuu_yamazaki_otu_thumb.webp">
+  <link rel="preload" as="image" href="/images/cyoujyuu_yamazaki_hei_thumb.webp">
+  <link rel="preload" as="image" href="/images/cyoujyuu_yamazaki_tei_thumb.webp">
   <link rel="preload" href="css/common.css" as="style" onload="this. onload=null;this.rel='stylesheet'">
   <link rel="preload" href="css/index.css" as="style" onload="this. onload=null;this.rel='stylesheet'">
   <noscript>
@@ -16,7 +20,6 @@
   </noscript>
 
   <style>
-
     /* kaisei-decol-regular - latin_japanese */
     @font-face {
       font-family: "Kaisei Decol";
@@ -26,8 +29,144 @@
       src: local("Kaisei Decol"),
         url("../fonts/kaisei-decol-v8-latin_japanese-regular.woff2") format("woff2"),
     }
-    :root{font-size:10px;--title-font: "Kaisei Decol", serif;--text-font: "Zen Kurenaido", sans-serif;--my-font: 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN",
-    "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;--clr-black: #222222;--clr-gray: #6c6c6c;--clr-white: #fff;--clr-primary-01: rgba(117, 159, 238, 0.57);--clr-primary-01-02: rgba(117, 159, 238, 0.3);--clr-primary-02: #7daaff;--clr-primary-03: #5c8fed;--clr-accent-01: #e1644d;--clr-btn: #d6d6d6;--clr-btn-02: #b3b3b3;--h1-right: 137px;--slideR-width: 180px;--slideR-height: 400px;--slideR-right: -140px;--shadowR: -10px 15px 10px rgba(0, 0, 0, 0.2);--shadowL: 10px 15px 10px rgba(0, 0, 0, 0.2);--shadowB: 10px -15px 10px rgba(0, 0, 0, 0.2)}*,::after,::before{margin:0;padding:0;box-sizing:border-box;list-style:none}body{font-family:var(--my-font);font-size:16px;color:var(--clr-black)}a{text-decoration:none;color:inherit}.btn{font-size:1.5rem;background:transparent;border-color:transparent}body{background-color:#f9fbff}nav{background:white;box-shadow:0 5px 15px rgba(0,0,0,0.1);margin-bottom:5rem}.nav-header{display:flex;align-items:center;justify-content:space-between;padding:2rem}.nav-header h1{font-family:"Kaisei Decol",serif;font-size:2rem}.nav-toggle{font-size:2.4rem}.links{height:0;overflow:hidden}.links a{font-size:2rem;text-transform:capitalize;display:block;padding:0.5rem 1rem}.section-center{margin:0 auto;width:90vw;max-width:1200px}@media screen and (min-width:768px){.nav-center{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:1rem}.nav-toggle{display:none}.links{height:auto;display:flex}.conteiner-list{display:flex;flex-wrap:wrap;justify-content:space-between}}.emaki-header .author{grid-area:1/2;justify-self:flex-end}.emaki-header .era{grid-area:2/2;justify-self:flex-end}.footer{background-color:var(--clr-gray);display:grid;height:40vh;place-items:center}
+
+    :root {
+      font-size: 10px;
+      --title-font: "Kaisei Decol", serif;
+      --text-font: "Zen Kurenaido", sans-serif;
+      --my-font: 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN",
+        "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
+      --clr-black: #222222;
+      --clr-gray: #6c6c6c;
+      --clr-white: #fff;
+      --clr-primary-01: rgba(117, 159, 238, 0.57);
+      --clr-primary-01-02: rgba(117, 159, 238, 0.3);
+      --clr-primary-02: #7daaff;
+      --clr-primary-03: #5c8fed;
+      --clr-accent-01: #e1644d;
+      --clr-btn: #d6d6d6;
+      --clr-btn-02: #b3b3b3;
+      --h1-right: 137px;
+      --slideR-width: 180px;
+      --slideR-height: 400px;
+      --slideR-right: -140px;
+      --shadowR: -10px 15px 10px rgba(0, 0, 0, 0.2);
+      --shadowL: 10px 15px 10px rgba(0, 0, 0, 0.2);
+      --shadowB: 10px -15px 10px rgba(0, 0, 0, 0.2)
+    }
+
+    *,
+    ::after,
+    ::before {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      list-style: none
+    }
+
+    body {
+      font-family: var(--my-font);
+      font-size: 16px;
+      color: var(--clr-black)
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit
+    }
+
+    .btn {
+      font-size: 1.5rem;
+      background: transparent;
+      border-color: transparent
+    }
+
+    body {
+      background-color: #f9fbff
+    }
+
+    nav {
+      background: white;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      margin-bottom: 5rem
+    }
+
+    .nav-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem
+    }
+
+    .nav-header h1 {
+      font-family: "Kaisei Decol", serif;
+      font-size: 2rem
+    }
+
+    .nav-toggle {
+      font-size: 2.4rem
+    }
+
+    .links {
+      height: 0;
+      overflow: hidden
+    }
+
+    .links a {
+      font-size: 2rem;
+      text-transform: capitalize;
+      display: block;
+      padding: 0.5rem 1rem
+    }
+
+    .section-center {
+      margin: 0 auto;
+      width: 90vw;
+      max-width: 1200px
+    }
+
+    @media screen and (min-width:768px) {
+      .nav-center {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem
+      }
+
+      .nav-toggle {
+        display: none
+      }
+
+      .links {
+        height: auto;
+        display: flex
+      }
+
+      .conteiner-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between
+      }
+    }
+
+    .emaki-header .author {
+      grid-area: 1/2;
+      justify-self: flex-end
+    }
+
+    .emaki-header .era {
+      grid-area: 2/2;
+      justify-self: flex-end
+    }
+
+    .footer {
+      background-color: var(--clr-gray);
+      display: grid;
+      height: 40vh;
+      place-items: center
+    }
   </style>
 </head>
 
@@ -64,7 +203,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/plugins/unveilhooks/ls.unveilhooks.min.js"
     defer></script>
-    <script src="https://kit.fontawesome.com/a07a7ea817.js" crossorigin="anonymous" defer></script>
+  <script src="https://kit.fontawesome.com/a07a7ea817.js" crossorigin="anonymous" defer></script>
 </body>
 
 </html>
