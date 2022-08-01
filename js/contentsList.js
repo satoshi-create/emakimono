@@ -26,9 +26,6 @@ $(function () {
       <source data-srcset=${thumb} type="image/webp"/>
       <img decoding="async" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="lazyload loading" alt=${thumb} />
       </picture>  
-      <video autoplay loop muted playsinline class="video lazy" poster="${thumb2}">
-        <source  data-src=${gif} type="video/mp4" class="mp4"> 
-      </video>
       <a href=${video} target="_blank" class="video-icon">
       <i class="fa-brands fa-youtube"></i>
       </a>
