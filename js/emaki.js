@@ -9,9 +9,16 @@ const id = params.get("id");
 // import datas from "../data/${hash}.js";
 // console.log(datas);
 const data = datas[id];
-const { title, author, edition, emakis, backgroundImage, metadesc, type } =
-  data;
-
+const {
+  title,
+  author,
+  edition,
+  emakis,
+  backgroundImage,
+  metadesc,
+  type,
+  srcFirstView,
+} = data;
 const contentsPc = document.querySelector(".contents.pc");
 const contentsSp = document.querySelector(".contents.sp");
 const sidebarOpenBtn = document.querySelector(".sidebar-open-btn");
@@ -26,6 +33,7 @@ document.title = `${title} ${
   edition ? edition : ""
 } ${author} | 横スクロールで楽しむ絵巻物`;
 document.querySelector('meta[name="description"]').content = `${metadesc}`;
+document.querySelector('link[rel="preload"]').href = `${srcFirstView}`;
 
 const header = document.querySelector(".header");
 

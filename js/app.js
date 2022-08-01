@@ -1,4 +1,5 @@
 $(function () {
+
   // footer
   const year = new Date().getFullYear();
   const footer = document.querySelector(".footer");

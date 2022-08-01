@@ -1,6 +1,17 @@
 import data from "../data/data.js";
 
 $(function () {
+  document.querySelector("head").insertAdjacentHTML('afterend', data.map((item) => {
+    return `
+    <link rel="preload" as="image" href=${item.thumb}></link>
+    `;
+  }).join(""));
+
+  // document.querySelector("head").innerHTML = data.map((item) => {
+  //   return `
+  //   <link rel="preload" as="image" href=${item.thumb}></link>
+  //   `;
+  // }).join("");
   const contentsList = document.querySelector(".conteiner-list");
   window.showMore = () => {
     console.log("test");

@@ -6,6 +6,7 @@ const data = [
     backgroundImage: "images/110310200304.webp",
     thumb: "/images/cyoujyuu_yamazaki_kou_thumb.webp",
     thumb2: "/images/cyoujyuu_yamazaki_kou_thumb.jpeg",
+    srcFirstView:"/images/cyoujyuu_yamazaki_kou_01-1080.webp",
     video: "https://youtu.be/Si8NzY2drSg",
     gif: "/img/cyoujyuu_yamazaki_kou.mp4",
     era: "明治22年以前",
