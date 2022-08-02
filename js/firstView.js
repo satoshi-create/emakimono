@@ -20,11 +20,4 @@ const {
 } = data;
 console.log(srcFirstView);
 
-  document.querySelector("head").insertAdjacentHTML('afterend', data.map((item) => {
-    return `
-    <link rel="preload" as="image" href=${item.thumb}></link>
-    `;
-  }).join(""));
-
-
 document.querySelector('link[rel="preload"]').href = `${srcFirstView}`;
