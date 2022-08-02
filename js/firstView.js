@@ -13,6 +13,6 @@ const {
 } = data;
 console.log(srcFirstView);
 
-  document.querySelector("head").insertAdjacentHTML('afterbegin',`<link rel="preload" as="image" href=${srcFirstView}></link>`)
+  document.querySelector("head").insertAdjacentHTML('beforeend',`<link rel="preload" as="image" href=${srcFirstView}></link>`)
 
 // document.querySelector('link[rel="preload"]').href = `${srcFirstView}`;

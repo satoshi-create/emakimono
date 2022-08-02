@@ -6,7 +6,7 @@ const data = [
     backgroundImage: "images/110310200304.webp",
     thumb: "/images/cyoujyuu_yamazaki_kou_thumb.webp",
     thumb2: "/images/cyoujyuu_yamazaki_kou_thumb.jpeg",
-    srcFirstView:"/images/cyoujyuu_yamazaki_kou_01-375.webp",
+    srcFirstView:"/images/cyoujyuu_yamazaki_kou_01-1080.webp",
     video: "https://youtu.be/Si8NzY2drSg",
     gif: "/img/cyoujyuu_yamazaki_kou.mp4",
     era: "明治22年以前",
@@ -264,7 +264,7 @@ const data = [
     video: "https://youtu.be/0OCF6w7Ljj4",
     thumb: "/images/cyoujyuu_yamazaki_otu_thumb.webp",
     thumb2: "/images/cyoujyuu_yamazaki_kou_thumb.jpeg",
-    srcFirstView:"/images/cyoujyuu_yamazaki_otu_01-375.webp",
+    srcFirstView:"/images/cyoujyuu_yamazaki_otu_01-1080.webp",
     era: "明治22年以前",
     metadesc:
       "国宝として有名な甲巻と同じ絵師が描いたと言われる、鳥獣人物戯画絵巻乙巻の全シーンを横スクロールでご覧になることができます。「動物尽くし」の図鑑のような乙巻は、牛や馬など現実の動物と、玄武、麒麟など空想の動物が、想像力を交えて生き生きと描かれています。",
