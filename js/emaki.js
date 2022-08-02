@@ -33,7 +33,7 @@ document.title = `${title} ${
   edition ? edition : ""
 } ${author} | 横スクロールで楽しむ絵巻物`;
 document.querySelector('meta[name="description"]').content = `${metadesc}`;
-document.querySelector('link[rel="preload"]').href = `${srcFirstView}`;
+// document.querySelector('link[rel="preload"]').href = `${srcFirstView}`;
 
 const header = document.querySelector(".header");
 

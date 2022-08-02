@@ -18,13 +18,13 @@ const {
   type,
   srcFirstView,
 } = data;
+console.log(srcFirstView);
 
-document.querySelector("head").innerHTML = datas
-  .map((item) => {
+  document.querySelector("head").insertAdjacentHTML('afterend', data.map((item) => {
     return `
     <link rel="preload" as="image" href=${item.thumb}></link>
     `;
-  })
-  .join("");
+  }).join(""));
+
 
 document.querySelector('link[rel="preload"]').href = `${srcFirstView}`;
