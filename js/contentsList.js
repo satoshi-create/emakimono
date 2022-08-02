@@ -22,7 +22,7 @@ $(function () {
         id,
         era,
         gif,
-        thumb,
+        thumb,  
         desc,
         title,
         edition,

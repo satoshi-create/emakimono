@@ -31,7 +31,7 @@ sidebarR.style.backgroundImage = `url(${backgroundImage})`;
 // get title
 document.title = `${title} ${
   edition ? edition : ""
-} ${author} | 横スクロールで楽しむ絵巻物`;
+}を縦書き横スクロールで楽しむ | 横スクロールで楽しむ絵巻物`;
 document.querySelector('meta[name="description"]').content = `${metadesc}`;
 // document.querySelector('link[rel="preload"]').href = `${srcFirstView}`;
 
