@@ -9,13 +9,6 @@ const id = params.get("id");
 // console.log(datas);
 const data = datas[id];
 const {
-  title,
-  author,
-  edition,
-  emakis,
-  backgroundImage,
-  metadesc,
-  type,
   srcFirstView,
 } = data;
 console.log(srcFirstView);
