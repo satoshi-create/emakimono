@@ -1189,22 +1189,6 @@ const data = [
       {
         load: false,
         cat: "image",
-        srcSp: "/images/naomoto_11-375.webp",
-        srcTb: "/images/naomoto_11-800.webp",
-        src: "/images/naomoto_11-1080.webp",
-        name: "naomoto_11.webp",
-      },
-      {
-        load: false,
-        cat: "image",
-        srcSp: "/images/naomoto_12-375.webp",
-        srcTb: "/images/naomoto_12-800.webp",
-        src: "/images/naomoto_12-1080.webp",
-        name: "naomoto_12.webp",
-      },
-      {
-        load: false,
-        cat: "image",
         srcSp: "/images/naomoto_13-375.webp",
         srcTb: "/images/naomoto_13-800.webp",
         src: "/images/naomoto_13-1080.webp",
@@ -1287,6 +1271,326 @@ const data = [
         srcTb: "/images/naomoto_20-800.webp",
         src: "/images/naomoto_20-1080.webp",
         name: "naomoto_20.webp",
+      },
+    ],
+  },
+  {
+    title: "奈与竹物語絵巻",
+    author: "谷文膺",
+    backgroundImage: "images/washi_green_03.webp",
+    video: "https://youtu.be/Qgc0lrTPkiY",
+    thumb: "/images/nayotake_thumb.webp",
+    thumb2: "/images/nayotake_thumb2.webp",
+    srcFirstView: "/images/nayotake_02-1080.webp",
+    desc: "",
+    era: "",
+    gif: "/images/cyoujyuu_yamazaki_kou.mp4",
+    type: "説話絵巻",
+    emakis: [
+      {
+        cat: "ekotoba",
+        chapter: "第一段 後嵯峨天皇、蹴鞠の日に女を見染める",
+        kobun: "",
+        gendaibun: "",
+        srcSp: "/images/nayotake_01-375.webp",
+        srcTb: "/images/nayotake_01-800.webp",
+        src: "/images/nayotake_01-1080.webp",
+        name: "nayotake_06.webp",
+        phrase: [
+          {
+            phrasekobun: "【文章博士】（もんじょうはかせ）",
+            transphrase:
+              "大学寮に属して詩文と歴史とを教授した教官。<br>大学寮は、中央官吏養成のための高等教育機関",
+          },
+          {
+            phrasekobun: "【陋巷】（ろうこう）",
+            transphrase: "むさくるしく見苦しい町。狭くきたない町。狭い小路。",
+          },
+          {
+            phrasekobun: "【蓬戸】（ほうこ）",
+            transphrase: "粗末で貧しい家。",
+          },
+          {
+            phrasekobun: "【民部大輔】",
+            transphrase: "民部省の次官二人のうち、上位の者の官名",
+          },
+          {
+            phrasekobun: "【申文】（もうしぶみ）",
+            transphrase:
+              "1　下位の者から上位の者へ、願い事などを書いて差し出す文書。<br>2　  特に平安時代以後、官人が、叙任や官位の昇進を望むとき、その理由を書いて朝廷に上奏した文書。",
+          },
+        ],
+      },
+      {
+        load: true,
+        cat: "image",
+        srcSp: "/images/nayotake_02-375.webp",
+        srcTb: "/images/nayotake_02-800.webp",
+        src: "/images/nayotake_02-1080.webp",
+        name: "nayotake_02.webp",
+      },
+      {
+        load: false,
+        cat: "image",
+        srcSp: "/images/nayotake_03-375.webp",
+        srcTb: "/images/nayotake_03-800.webp",
+        src: "/images/nayotake_03-1080.webp",
+        name: "nayotake_03.webp",
+      },
+      {
+        load: false,
+        cat: "image",
+        srcSp: "/images/nayotake_04-375.webp",
+        srcTb: "/images/nayotake_04-800.webp",
+        src: "/images/nayotake_04-1080.webp",
+        name: "nayotake_04.webp",
+      },
+      {
+        cat: "ekotoba",
+        chapter: "第二段　公卿たち、帝の悶々の心を慰める",
+        kobun: "",
+        gendaibun: "",
+        srcSp: "/images/nayotake_05-375.webp",
+        srcTb: "/images/nayotake_05-800.webp",
+        src: "/images/nayotake_05-1080.webp",
+        name: "nayotake_05.webp",
+        phrase: [
+          {
+            phrasekobun: "【小野道風】（おののみちかぜ）",
+            transphrase:
+              "［894～967］平安中期の書家。尾張の人。篁たかむらの孫。書道にすぐれ、和様発達の基礎を築いた。三蹟（さんせき）の一人で、その筆跡を野跡という。真跡とされるものに「智証大師諡号勅書」「屏風土代」など。本名は「みちかぜ」で、「とうふう」は後世に尊んで音でよんだもの。（デジタル大辞泉）",
+          },
+          {
+            phrasekobun: "【職事】（しきじ）",
+            transphrase:
+              "蔵人所の頭(とう)、および五位・六位の蔵人の総称。<br>蔵人所は、天皇と天皇家に関する私的な要件について、進奏、詔勅の伝宣を行ない、天皇身辺の雑事や宮中における物資の調達、儀式の奉行や宮中の整備取締りをするなど、昇殿者の統率と宮中諸雑事処理の中心であった。",
+          },
+        ],
+      },
+      {
+        load: false,
+        cat: "image",
+        srcSp: "/images/nayotake_06-375.webp",
+        srcTb: "/images/nayotake_06-800.webp",
+        src: "/images/nayotake_06-1080.webp",
+        name: "nayotake_06.webp",
+      },
+      {
+        cat: "ekotoba",
+        chapter: "第三段　蔵人、陰陽師の占いにより女を待つ",
+        kobun: "",
+        gendaibun: "",
+        srcSp: "/images/nayotake_07-375.webp",
+        srcTb: "/images/nayotake_07-800.webp",
+        src: "/images/nayotake_07-1080.webp",
+        name: "nayotake_07.webp",
+        phrase: [
+          {
+            phrasekobun: "【小野道風】（おののみちかぜ）",
+            transphrase:
+              "［894～967］平安中期の書家。尾張の人。篁たかむらの孫。書道にすぐれ、和様発達の基礎を築いた。三蹟（さんせき）の一人で、その筆跡を野跡という。真跡とされるものに「智証大師諡号勅書」「屏風土代」など。本名は「みちかぜ」で、「とうふう」は後世に尊んで音でよんだもの。（デジタル大辞泉）",
+          },
+          {
+            phrasekobun: "【職事】（しきじ）",
+            transphrase:
+              "蔵人所の頭(とう)、および五位・六位の蔵人の総称。<br>蔵人所は、天皇と天皇家に関する私的な要件について、進奏、詔勅の伝宣を行ない、天皇身辺の雑事や宮中における物資の調達、儀式の奉行や宮中の整備取締りをするなど、昇殿者の統率と宮中諸雑事処理の中心であった。",
+          },
+        ],
+      },
+      {
+        load: false,
+        cat: "image",
+        srcSp: "/images/nayotake_08-375.webp",
+        srcTb: "/images/nayotake_08-800.webp",
+        src: "/images/nayotake_08-1080.webp",
+        name: "nayotake_08.webp",
+      },
+      {
+        cat: "ekotoba",
+        chapter: "第四段　蔵人、最勝講聴聞のかの女をみつける",
+        kobun: "",
+        gendaibun: "",
+        srcSp: "/images/nayotake_09-375.webp",
+        srcTb: "/images/nayotake_09-800.webp",
+        src: "/images/nayotake_09-1080.webp",
+        name: "nayotake_09.webp",
+        phrase: [
+          {
+            phrasekobun: "【大内記】（だいないき）",
+            transphrase:
+              "律令制で、内記のうち上位の官職。<br>内記は、朝廷の書記。中務(なかつかさ)省にあって詔勅(しょうちょく)の作成，宮中の記録を担当。",
+          },
+          {
+            phrasekobun: "【三統元夏】（みむねのもとなつ）",
+            transphrase:
+              "平安時代中期の官吏。<br>三統理平(まさひら)の子。文章博士,ついで式部少輔(しょう)となり,天徳元年(957)東宮学士をかねた。<br>（デジタル版 日本人名大辞典+Plus）",
+          },
+        ],
+      },
+      {
+        load: false,
+        cat: "image",
+        srcSp: "/images/nayotake_10-375.webp",
+        srcTb: "/images/nayotake_10-800.webp",
+        src: "/images/nayotake_10-1080.webp",
+        name: "nayotake_10.webp",
+      },
+
+      {
+        cat: "ekotoba",
+        chapter: "第五段　蔵人、女の家を突き止め、帝の文をつける",
+        kobun: "",
+        gendaibun: "",
+        srcSp: "/images/nayotake_13-375.webp",
+        srcTb: "/images/nayotake_13-800.webp",
+        src: "/images/nayotake_13-1080.webp",
+        name: "nayotake_13.webp",
+        phrase: [
+          {
+            phrasekobun: "【内侍所】（ないしどころ）",
+            transphrase:
+              "三種の神器(じんぎ)の一つである神鏡を、天皇との日常の同座を避けるようになって以後、安置した場所。平安前期以降、蔵司に変わり内侍所に置かれるようになったので、この名がある。かしこどころ。（精選版 日本国語大辞典）",
+          },
+          {
+            phrasekobun: "【温明殿】（うんめいでん）",
+            transphrase:
+              "平安京の内裏(だいり)十七殿の一つ。紫宸殿(ししんでん)の東北にあたり、綾綺殿(りょうきでん)の東、宣陽門の内にあり、その南部を賢所とし、神鏡を安置した。また、内侍の候所ともなっていたため内侍所ともいう。（精選版 日本国語大辞典）",
+          },
+          {
+            phrasekobun: "【藤原実頼】（ふじわらさねより）",
+            transphrase:
+              "平安中期の公卿。藤原忠平と宇多天皇の娘源順子の子。右大臣,左大臣を経て,康保4(967)年冷泉天皇の即位により関白太政大臣,次いで安和2(969)年円融天皇の摂政となり,以後摂政,関白が常置される先例となった。",
+          },
+        ],
+      },
+      {
+        load: false,
+        cat: "image",
+        srcSp: "/images/nayotake_14-375.webp",
+        srcTb: "/images/nayotake_14-800.webp",
+        src: "/images/nayotake_14-1080.webp",
+        name: "nayotake_14.webp",
+      },
+      {
+        load: false,
+        cat: "image",
+        srcSp: "/images/nayotake_15-375.webp",
+        srcTb: "/images/nayotake_15-800.webp",
+        src: "/images/nayotake_15-1080.webp",
+        name: "nayotake_15.webp",
+      },
+      {
+        cat: "ekotoba",
+        chapter: "第六段　帝、返し文の「を」の字のなぞにいぶかる",
+        kobun: "",
+        gendaibun: "",
+        srcSp: "/images/nayotake_16-375.webp",
+        srcTb: "/images/nayotake_16-800.webp",
+        src: "/images/nayotake_16-1080.webp",
+        name: "nayotake_16.webp",
+        phrase: [
+          {
+            phrasekobun: "【内侍所】（ないしどころ）",
+            transphrase:
+              "三種の神器(じんぎ)の一つである神鏡を、天皇との日常の同座を避けるようになって以後、安置した場所。平安前期以降、蔵司に変わり内侍所に置かれるようになったので、この名がある。かしこどころ。（精選版 日本国語大辞典）",
+          },
+          {
+            phrasekobun: "【温明殿】（うんめいでん）",
+            transphrase:
+              "平安京の内裏(だいり)十七殿の一つ。紫宸殿(ししんでん)の東北にあたり、綾綺殿(りょうきでん)の東、宣陽門の内にあり、その南部を賢所とし、神鏡を安置した。また、内侍の候所ともなっていたため内侍所ともいう。（精選版 日本国語大辞典）",
+          },
+          {
+            phrasekobun: "【藤原実頼】（ふじわらさねより）",
+            transphrase:
+              "平安中期の公卿。藤原忠平と宇多天皇の娘源順子の子。右大臣,左大臣を経て,康保4(967)年冷泉天皇の即位により関白太政大臣,次いで安和2(969)年円融天皇の摂政となり,以後摂政,関白が常置される先例となった。",
+          },
+        ],
+      },
+      {
+        load: false,
+        cat: "image",
+        srcSp: "/images/nayotake_17-375.webp",
+        srcTb: "/images/nayotake_17-800.webp",
+        src: "/images/nayotake_17-1080.webp",
+        name: "nayotake_17.webp",
+      },
+      {
+        cat: "ekotoba",
+        chapter: "第七段　夜陰に紛れて、女が帝のもとに参入",
+        kobun: "",
+        gendaibun: "",
+        srcSp: "/images/nayotake_18-375.webp",
+        srcTb: "/images/nayotake_18-800.webp",
+        src: "/images/nayotake_18-1080.webp",
+        name: "nayotake_18.webp",
+        phrase: [
+          {
+            phrasekobun: "【内侍所】（ないしどころ）",
+            transphrase:
+              "三種の神器(じんぎ)の一つである神鏡を、天皇との日常の同座を避けるようになって以後、安置した場所。平安前期以降、蔵司に変わり内侍所に置かれるようになったので、この名がある。かしこどころ。（精選版 日本国語大辞典）",
+          },
+          {
+            phrasekobun: "【温明殿】（うんめいでん）",
+            transphrase:
+              "平安京の内裏(だいり)十七殿の一つ。紫宸殿(ししんでん)の東北にあたり、綾綺殿(りょうきでん)の東、宣陽門の内にあり、その南部を賢所とし、神鏡を安置した。また、内侍の候所ともなっていたため内侍所ともいう。（精選版 日本国語大辞典）",
+          },
+          {
+            phrasekobun: "【藤原実頼】（ふじわらさねより）",
+            transphrase:
+              "平安中期の公卿。藤原忠平と宇多天皇の娘源順子の子。右大臣,左大臣を経て,康保4(967)年冷泉天皇の即位により関白太政大臣,次いで安和2(969)年円融天皇の摂政となり,以後摂政,関白が常置される先例となった。",
+          },
+        ],
+      },
+      {
+        load: false,
+        cat: "image",
+        srcSp: "/images/nayotake_19-375.webp",
+        srcTb: "/images/nayotake_19-800.webp",
+        src: "/images/nayotake_19-1080.webp",
+        name: "nayotake_19.webp",
+      },
+      {
+        cat: "ekotoba",
+        chapter: "第八段　女により、夫は中将に昇進。人呼んで鳴門中将と",
+        kobun: "",
+        gendaibun: "",
+        srcSp: "/images/nayotake_18-375.webp",
+        srcTb: "/images/nayotake_18-800.webp",
+        src: "/images/nayotake_18-1080.webp",
+        name: "nayotake_18.webp",
+        phrase: [
+          {
+            phrasekobun: "【内侍所】（ないしどころ）",
+            transphrase:
+              "三種の神器(じんぎ)の一つである神鏡を、天皇との日常の同座を避けるようになって以後、安置した場所。平安前期以降、蔵司に変わり内侍所に置かれるようになったので、この名がある。かしこどころ。（精選版 日本国語大辞典）",
+          },
+          {
+            phrasekobun: "【温明殿】（うんめいでん）",
+            transphrase:
+              "平安京の内裏(だいり)十七殿の一つ。紫宸殿(ししんでん)の東北にあたり、綾綺殿(りょうきでん)の東、宣陽門の内にあり、その南部を賢所とし、神鏡を安置した。また、内侍の候所ともなっていたため内侍所ともいう。（精選版 日本国語大辞典）",
+          },
+          {
+            phrasekobun: "【藤原実頼】（ふじわらさねより）",
+            transphrase:
+              "平安中期の公卿。藤原忠平と宇多天皇の娘源順子の子。右大臣,左大臣を経て,康保4(967)年冷泉天皇の即位により関白太政大臣,次いで安和2(969)年円融天皇の摂政となり,以後摂政,関白が常置される先例となった。",
+          },
+        ],
+      },
+      {
+        load: false,
+        cat: "image",
+        srcSp: "/images/nayotake_11-375.webp",
+        srcTb: "/images/nayotake_11-800.webp",
+        src: "/images/nayotake_11-1080.webp",
+        name: "nayotake_11.webp",
+      },
+      {
+        load: false,
+        cat: "image",
+        srcSp: "/images/nayotake_12-375.webp",
+        srcTb: "/images/nayotake_12-800.webp",
+        src: "/images/nayotake_12-1080.webp",
+        name: "nayotake_12.webp",
       },
     ],
   },

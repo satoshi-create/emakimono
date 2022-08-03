@@ -5,7 +5,7 @@ import imageminWebp from 'imagemin-webp';
 // const imageminWebp = require("imagmagemin-webpemin");
 
 (async () => {
-  await imagemin(['./*.{jpg,png}'], {
+  await imagemin(['./img/*.{jpg,png}'], {
     destination: './images/',
     plugins: [imageminWebp({ quality: 50 })],
   });
