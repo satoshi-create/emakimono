@@ -146,7 +146,7 @@ img,
 .loading.lazyloading {
   opacity: 0.3;
   transition: opacity 300ms;
-  background: #f7f7f7 url(../img/loading.gif) no-repeat center;
+  background: #f7f7f7 url(../images/loading.gif) no-repeat center;
 }
 .lazyloaded {
   opacity: 1;
