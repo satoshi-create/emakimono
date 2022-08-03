@@ -235,7 +235,7 @@ ${kobun ? `<p>${kobun}</p>` : ""}
             load
               ? srcSp
               : "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-          } class="loading lazyload" alt=${name} />
+          } class="loading lazyload" data-expand="600" alt=${name} />
           </picture>  
           </div>
       </div>

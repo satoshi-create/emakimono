@@ -1189,6 +1189,22 @@ const data = [
       {
         load: false,
         cat: "image",
+        srcSp: "/images/naomoto_11-375.webp",
+        srcTb: "/images/naomoto_11-800.webp",
+        src: "/images/naomoto_11-1080.webp",
+        name: "naomoto_11.webp",
+      },
+      {
+        load: false,
+        cat: "image",
+        srcSp: "/images/naomoto_12-375.webp",
+        srcTb: "/images/naomoto_12-800.webp",
+        src: "/images/naomoto_12-1080.webp",
+        name: "naomoto_12.webp",
+      },
+      {
+        load: false,
+        cat: "image",
         srcSp: "/images/naomoto_13-375.webp",
         srcTb: "/images/naomoto_13-800.webp",
         src: "/images/naomoto_13-1080.webp",
