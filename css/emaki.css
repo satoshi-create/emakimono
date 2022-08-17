@@ -32,21 +32,15 @@ header/footer
   color: var(--clr-gray);
   cursor: pointer;
 }
-.renzokusiki .toggle-icon {
-  display: none;
-}
+.renzokusiki .toggle-icon,
+.renzokusiki .toggle-text-icon,
 .renzokusiki .toggle-text-icon {
   display: none;
 }
-.renzokusiki .toggle-text-icon {
+
+/* {
   display: none;
-}
-.renzokusiki .ekotoba-icon {
-  display: none;
-}
-.header .ekotoba-icon {
-  display: none;
-}
+} */
 .header i {
   font-size: 21px;
   transition: var(--transition);
@@ -269,17 +263,14 @@ slider-Bottom
 }
 .slideB .slide-innerB section h2,
 .slideB .slide-innerB section h3 {
-  font-family: var(--title-font);
   font-weight: 400;
   margin-left: 20px;
 }
-.slideB .slide-innerB section h3 {
-  transition: var(--transition);
+.slideB .slide-innerB section p {
+  margin-left: 20px;
+  text-orientation: upright;
 }
 
-.slideB .slide-innerB section h3:hover {
-  color: var(--clr-accent-01);
-}
 .slideB .slide-innerB section .title {
   margin-left: 0;
 }
@@ -323,9 +314,9 @@ slider-Bottom
 svg {
   z-index: 2;
   position: absolute;
-  cursor: pointer;
 }
 svg > * {
+  cursor: pointer;
   transition: var(--transition);
   opacity: 0.6;
 }

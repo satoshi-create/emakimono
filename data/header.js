@@ -24,6 +24,12 @@ const header = [
     title: "詞書の現代語訳と原文を比べて読む",
   },
   {
+    className: "zoom-icon",
+    link: "",
+    icon: "fa-solid fa-magnifying-glass",
+    title: "部分拡大＆解説を見る",
+  },
+  {
     className: "toggle-text-icon",
     link: "",
     icon: "fas fa-sync",
@@ -33,7 +39,7 @@ const header = [
     className: "ekotoba-icon",
     link: "",
     icon: "fas fa-scroll fa-rotate-90",
-    title: "ekotoba",
+    title: "出典",
   },
   {
     className: "start-icon js-smooth-scroll",
