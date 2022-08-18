@@ -34,7 +34,7 @@ ekotoba
     font-size: 3.5rem;
   }
 }
-@media (min-height: 800px) {
+@media (min-height: 767px) {
   .header {
     display: flex;
   }
