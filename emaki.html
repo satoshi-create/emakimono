@@ -31,7 +31,7 @@
     }
 
     /* zen-kurenaido-regular - latin_japanese */
-    @font-face {
+    /* @font-face {
       font-family: "Zen Kurenaido";
       font-style: normal;
       font-weight: 400;
@@ -39,6 +39,26 @@
       src: local("Zen Kurenaido"),
         url("../fonts/zen-kurenaido-v9-latin_japanese-regular.woff2") format("woff2"),
         url("../fonts/zen-kurenaido-v9-latin_japanese-regular.woff") format("woff"),
+    } */
+
+    /* zen-kurenaido-regular - japanese */
+    @font-face {
+      font-family: 'Zen Kurenaido';
+      font-style: normal;
+      font-weight: 400;
+      src: url('../fonts/zen-kurenaido-v9-japanese-regular.eot');
+      /* IE9 Compat Modes */
+      src: local(''),
+        url('../fonts/zen-kurenaido-v9-japanese-regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/zen-kurenaido-v9-japanese-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/zen-kurenaido-v9-japanese-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/zen-kurenaido-v9-japanese-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/zen-kurenaido-v9-japanese-regular.svg#ZenKurenaido') format('svg');
+      /* Legacy iOS */
     }
 
     :root {
