@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="css/index.css">
   </noscript>
   <style>
-    @font-face {
+    /* @font-face {
       font-family: "Kaisei Decol";
       font-style: normal;
       font-weight: 400;
@@ -28,7 +28,7 @@
       src: local("Kaisei Decol"),
         url("../fonts/kaisei-decol-v8-latin_japanese-regular.woff2") format("woff2"),
         url("../fonts/kaisei-decol-v8-latin_japanese-regular.woff") format("woff"),
-    }
+    } */
 
     /* zen-kurenaido-regular - latin_japanese */
     /* @font-face {
@@ -40,6 +40,26 @@
         url("../fonts/zen-kurenaido-v9-latin_japanese-regular.woff2") format("woff2"),
         url("../fonts/zen-kurenaido-v9-latin_japanese-regular.woff") format("woff"),
     } */
+    /* kaisei-decol-regular - japanese */
+    
+    @font-face {
+      font-family: 'Kaisei Decol';
+      font-style: normal;
+      font-weight: 400;
+      src: url('../fonts/kaisei-decol-v8-japanese-regular.eot');
+      /* IE9 Compat Modes */
+      src: local(''),
+        url('../fonts/kaisei-decol-v8-japanese-regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/kaisei-decol-v8-japanese-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/kaisei-decol-v8-japanese-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/kaisei-decol-v8-japanese-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/kaisei-decol-v8-japanese-regular.svg#KaiseiDecol') format('svg');
+      /* Legacy iOS */
+    }
 
     /* zen-kurenaido-regular - japanese */
     @font-face {
