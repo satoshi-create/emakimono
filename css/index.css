@@ -54,6 +54,25 @@ nav {
   width: 90vw;
   max-width: 1200px;
 }
+.attention {
+  background-color: var(--clr-accent-02);
+  margin-bottom: 3rem;
+  display: grid;
+  justify-content: center;
+  
+}
+.attention-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 2rem;
+  align-items: center;
+  font-size: 1.6rem;
+  padding: 1.5rem;
+}
+.attention i {
+  color: white;
+  font-size: 2.5rem;
+}
 
 @media screen and (min-width: 768px) {
   .nav-center {
