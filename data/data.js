@@ -1,6 +1,7 @@
 const data = [
   {
     title: "鳥獣人物戯画絵巻",
+    titleen:"cyoujyujinbutsugiga_kou",
     author: "山崎董詮",
     edition: "甲巻 摸本",
     backgroundImage: "images/110310200304.webp",
@@ -259,6 +260,7 @@ const data = [
   },
   {
     title: "鳥獣人物戯画絵巻",
+    titleen:"cyoujyujinbutsugiga_otu",
     author: "山崎董詮",
     edition: "乙巻 摸本",
     backgroundImage: "images/110310200304.webp",
@@ -546,6 +548,7 @@ const data = [
   },
   {
     title: "鳥獣人物戯画絵巻",
+    titleen:"cyoujyujinbutsugiga_hei",
     author: "山崎董詮",
     edition: "丙巻 摸本",
     backgroundImage: "images/110310200304.webp",
@@ -808,6 +811,7 @@ const data = [
   },
   {
     title: "鳥獣人物戯画絵巻",
+    titleen:"cyoujyujinbutsugiga_tei",
     author: "山崎董詮",
     edition: "丁巻 摸本",
     backgroundImage: "images/110310200304.webp",
@@ -1040,6 +1044,7 @@ const data = [
   },
   {
     title: "直幹申文絵詞",
+    titleen:"naomotomousibumiekotoba",
     author: "源朝臣武智良",
     backgroundImage: "images/washi_green_03.webp",
     video: "https://youtu.be/Qgc0lrTPkiY",
@@ -1300,6 +1305,7 @@ const data = [
   },
   {
     title: "奈与竹物語絵巻",
+    titleen:"nayotakemonogatariemaki",
     author: "谷文膺",
     backgroundImage: "images/washi_green_03.webp",
     video: "https://youtu.be/Qgc0lrTPkiY",

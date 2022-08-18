@@ -5,10 +5,12 @@ const params = new URLSearchParams(window.location.search);
 // console.log(window.location.hash);
 // const hash = window.location.hash.replace("#", "");
 // console.log(hash);
-const id = params.get("id");
+const id = params.get("title");
 // import datas from "../data/${hash}.js";
-// console.log(datas);
-const data = datas[id];
+console.log(datas);
+const data = datas.find((data) => data.titleen === id);
+console.log(data);
+// const product = products.find((product) => product.id === productId);
 const {
   title,
   author,
