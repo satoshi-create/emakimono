@@ -131,7 +131,7 @@ mokujiText.innerHTML = `
 <div class="mokuji-title">
     <h4>${title} ${edition ? edition : ""}</h4>
     <h4>${author}</h4>
-    </div>
+  </div>
     <ul>
     ${emakis
       .map((emaki, index) => {

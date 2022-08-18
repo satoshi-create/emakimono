@@ -168,20 +168,18 @@ Sidebar
 }
 
 /* sidebarR */
-
-.sidebarR h4 {
-  color: var(--clr-bcg);
-}
 .sidebarR .mokuji-title {
   margin-bottom: 2rem;
 }
-.sidebar .mokuji {
-  font-size: 2rem;
-  color: var(--clr-black);
+.sidebarR .mokuji-title h4 {
+  color: var(--clr-bcg);
+  font-size: var(--mokuji-size);
 }
 .sidebarR .mokuji li a {
+  font-family: var(--text-font);
   transition: var(--transition);
   color: var(--clr-bcg);
+  font-size: var(--mokuji-size);
 }
 .sidebarR .sidebar-close-btn {
   position: absolute;

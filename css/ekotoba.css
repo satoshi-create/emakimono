@@ -11,10 +11,10 @@ ekotoba
 }
 
 .section.ekotoba h3 {
-  font-size: calc(20px + (35 - 20) * ((100vh - 375px) / (1080 - 375)));
+  font-size: var(--title-size)
 }
 .section.ekotoba .kobun-text p {
-  font-size: calc(16px + (35 - 16) * ((100vh - 375px) / (1080 - 375)));
+  font-size: var(--text-size);
   /* font-size: calc([最小値] + ([最大値] - [最小値]) * ((100vw - [最小画面幅]) / ([最大画面幅] - [最小画面幅]))); */
 }
 .section.ekotoba .translate-text p {
