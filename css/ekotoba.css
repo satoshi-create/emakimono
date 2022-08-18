@@ -9,32 +9,22 @@ ekotoba
 .contents p {
   font-family: var(--text-font);
 }
-@media (max-height: 375px) {
-  .section.ekotoba h3 {
-    font-size: 2.5rem;
-  }
-  .section.ekotoba .kobun-text p {
-    font-size: 2.3rem;
-  }
-  .section.ekotoba .translate-text p {
-    font-size: 2.3rem;
-  }
-  .header {
-    display: none;
-  }
+
+.section.ekotoba h3 {
+  font-size: calc(20px + (35 - 20) * ((100vh - 375px) / (1080 - 375)));
 }
-@media (min-height: 376px) {
-  .section.ekotoba h3 {
-    font-size: 3.5rem;
-  }
-  .section.ekotoba .kobun-text p {
-    font-size: 3.5rem;
-  }
-  .section.ekotoba .translate-text p {
-    font-size: 3.5rem;
-  }
+.section.ekotoba .kobun-text p {
+  font-size: calc(16px + (35 - 16) * ((100vh - 375px) / (1080 - 375)));
+  /* font-size: calc([最小値] + ([最大値] - [最小値]) * ((100vw - [最小画面幅]) / ([最大画面幅] - [最小画面幅]))); */
 }
-@media (min-height: 767px) {
+.section.ekotoba .translate-text p {
+  font-size: calc(16px + (35 - 16) * ((100vh - 375px) / (1080 - 375)));
+}
+.header {
+  display: none;
+}
+
+@media (min-height: 800px) {
   .header {
     display: flex;
   }
@@ -42,7 +32,6 @@ ekotoba
 
 .section.ekotoba {
   writing-mode: vertical-rl;
-  /* background-image: url(/img/110310200304.png); */
 }
 .section.ekotoba {
   position: relative;
