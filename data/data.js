@@ -1652,5 +1652,354 @@ const data = [
       },
     ],
   },
+  {
+    title: "長谷雄草紙",
+    titleen:"haseozousshi",
+    author: "",
+    backgroundImage: "images/washi-pattern-01.webp",
+    video: "https://youtu.be/Qgc0lrTPkiY",
+    thumb: "/images/haseozousshi_thumb.webp",
+    thumb2: "/images/haseozousshi_thumb2.webp",
+    srcFirstView: "/images/haseozousshi_02-1080.webp",
+    desc: "",
+    era: "江戸時代中期",
+    gif: "/images/cyoujyuu_yamazaki_kou.mp4",
+    type: "説話絵巻",
+    sourceImage: "繪卷物長谷雄卿逢羅城門鬼神之圖（京都府立京都学・歴彩館　デジタルアーカイブ)",
+    sourceEkotoba: "『日本の絵巻十七 奈与竹物語絵巻 直幹申文絵詞』",
+    emakis: [
+      {
+        cat: "ekotoba",
+        chapter: "第一段 後嵯峨天皇、蹴鞠の日に女を見染める",
+        kobun: "",
+        gendaibun:
+          "とある年の三月（建長三年（一二五一）頃）、桜の花が満開のこと。二条<ruby><rb>前関白</rb><rp>（</rp><rt>さきのかんぱく</rt><rp>）</rp></ruby>（二条良光実＝三十六歳）、大宮大納言（西園寺<ruby><rb>公相</rb><rp>（</rp><rt>きんすけ</rt><rp>）</rp></ruby>）＝二十九歳）、<ruby><rb>兵部卿</rb><rp>（</rp><rt>ひょうぶきょう</rt><rp>）</rp></ruby>（源有教＝六十歳）、<ruby><rb>三位頭中将</rb><rp>（</rp><rt>さんみとうのちゅうじょう</rt><rp>）</rp></ruby>（<ruby><rb>姉小路実尚</rb><rp>（</rp><rt>あねのこうじのさねひさ</rt><rp>）</rp></ruby>）、これらの公卿たちが内裏の<ruby><rb>綾綺殿</rb><rp>（</rp><rt>りょうきでん</rt><rp>）</rp></ruby>の北、花徳門の御庭で、蹴鞠の遊戯を行った。<br><br>見物の中に、美しい女を見つけた後嵯峨天皇（三十二歳）は六位の蔵人を召して、彼女のあとを追わせた。女は、左衛門の陣のあたりで、かの蔵人に、「くれ竹の」と申しあげるようにと託した。蔵人は立ち帰って、そのことを奏上した。<br><br>が、だれも読み解くことができなかった。そこで、民部卿藤原為家（五十四歳）に尋ねさせると、『大和物語』に収める兵部卿元良親王と女房修理の贈答歌であった。歌は、修理の〈たかくともなににかはせむくれ竹の一夜ふたよのあだのふしをば〉という歌の意であったのだ。<br>蔵人が、ふたたび女の待つ場所に行ってみたが、姿はみえない。蔵人が事の次第を申しあげると、帝はすこぶる御機嫌が悪い。女を探し出さねば、そちを罪科に処すべし、という。顔青ざめた蔵人は、ほうほうの体で退去した。不機嫌になった帝は、蹴鞠どころではなく、<ruby><rb>入御</rb><rp>（</rp><rt>にゅうぎょ</rt><rp>）</rp></ruby>してしまった。",
+        srcSp: "/images/haseozoushi_01-375.webp",
+        srcTb: "/images/haseozoushi_01-800.webp",
+        src: "/images/haseozoushi_01-1080.webp",
+        name: "haseozoushi_06.webp",
+        phrase: [
+          {
+            phrasekobun: "【文章博士】（もんじょうはかせ）",
+            transphrase:
+              "大学寮に属して詩文と歴史とを教授した教官。<br>大学寮は、中央官吏養成のための高等教育機関",
+          },
+          {
+            phrasekobun: "【陋巷】（ろうこう）",
+            transphrase: "むさくるしく見苦しい町。狭くきたない町。狭い小路。",
+          },
+          {
+            phrasekobun: "【蓬戸】（ほうこ）",
+            transphrase: "粗末で貧しい家。",
+          },
+          {
+            phrasekobun: "【民部大輔】",
+            transphrase: "民部省の次官二人のうち、上位の者の官名",
+          },
+          {
+            phrasekobun: "【申文】（もうしぶみ）",
+            transphrase:
+              "1　下位の者から上位の者へ、願い事などを書いて差し出す文書。<br>2　  特に平安時代以後、官人が、叙任や官位の昇進を望むとき、その理由を書いて朝廷に上奏した文書。",
+          },
+        ],
+      },
+      {
+        load: true,
+        cat: "image",
+        srcSp: "/images/haseozoushi_02-375.webp",
+        srcTb: "/images/haseozoushi_02-800.webp",
+        src: "/images/haseozoushi_02-1080.webp",
+        name: "haseozoushi_02.webp",
+        viewBoxW: "669",
+        viewBoxH: "375",
+        clickImg: [
+          {
+            shape:
+              '<circle cx="334.5" cy="174" r="33" style="fill:rgb(255,0,0);fill-opacity:0.42;"/>',
+            partImg: "images/esi_03_partimage_01.webp",
+            title: "宣旨を読み上げる絵師",
+            text: "「伊予国・・・令知行・・・天気（によって執達件の如し）」と書いてある。",
+          },
+          {
+            shape:
+              '<rect x="130" y="159" width="62" height="41" style="fill:rgb(255,0,0);fill-opacity:0.42;"/>',
+            partImg: "images/esi_03_partimage_01.webp",
+            title: "宣旨を読み上げる絵師",
+            text: "宴会に興じる絵師一族",
+          },
+        ],
+      },
+      {
+        load: false,
+        cat: "image",
+        srcSp: "/images/haseozoushi_03-375.webp",
+        srcTb: "/images/haseozoushi_03-800.webp",
+        src: "/images/haseozoushi_03-1080.webp",
+        name: "haseozoushi_03.webp",
+      },
+      {
+        load: false,
+        cat: "image",
+        srcSp: "/images/haseozoushi_04-375.webp",
+        srcTb: "/images/haseozoushi_04-800.webp",
+        src: "/images/haseozoushi_04-1080.webp",
+        name: "haseozoushi_04.webp",
+      },
+      {
+        cat: "ekotoba",
+        chapter: "第二段　公卿たち、帝の悶々の心を慰める",
+        kobun: "",
+        gendaibun:
+          "その後、帝の心は曇り、苦り切った表情の毎日であった。明け暮れ、やるせない悶々の情を、かこっておいでになる。<br><br>見かねた近衛殿（摂政近衛兼経＝四十二歳）、二条殿（前関白二条良実＝三十六歳）、花山院大納言定雅（三十四歳）、大宮大納言公空相（西園寺公相＝三十歳）などの面々が参内して、管弦や酒宴の遊びを設けて、帝を慰めた。が、いつかの蹴鞠の日のようには、いかない。ただ、ただ、深く打ち沈んでおいでになる。<br><br>そこで、つとひざを進めた摂政兼経が、盃を勧めた。<ruby><rb>唐土</rb><rp>（</rp><rt>もろこし</rt><rp>）</rp></ruby>では、<ruby><rb>蓬莱</rb><rp>（</rp><rt>ほうらい</rt><rp>）</rp></ruby>まで、尋ね探したという例（奏始皇帝の故事）もあります。彼女は、京の中にいるのですから、それに比べれば、なんの訳もないことです。いまに、きっと見つけ出してまいりますよ。",
+        srcSp: "/images/haseozoushi_05-375.webp",
+        srcTb: "/images/haseozoushi_05-800.webp",
+        src: "/images/haseozoushi_05-1080.webp",
+        name: "haseozoushi_05.webp",
+        phrase: [
+          {
+            phrasekobun: "【小野道風】（おののみちかぜ）",
+            transphrase:
+              "［894～967］平安中期の書家。尾張の人。篁たかむらの孫。書道にすぐれ、和様発達の基礎を築いた。三蹟（さんせき）の一人で、その筆跡を野跡という。真跡とされるものに「智証大師諡号勅書」「屏風土代」など。本名は「みちかぜ」で、「とうふう」は後世に尊んで音でよんだもの。（デジタル大辞泉）",
+          },
+          {
+            phrasekobun: "【職事】（しきじ）",
+            transphrase:
+              "蔵人所の頭(とう)、および五位・六位の蔵人の総称。<br>蔵人所は、天皇と天皇家に関する私的な要件について、進奏、詔勅の伝宣を行ない、天皇身辺の雑事や宮中における物資の調達、儀式の奉行や宮中の整備取締りをするなど、昇殿者の統率と宮中諸雑事処理の中心であった。",
+          },
+        ],
+      },
+      {
+        load: false,
+        cat: "image",
+        srcSp: "/images/haseozoushi_06-375.webp",
+        srcTb: "/images/haseozoushi_06-800.webp",
+        src: "/images/haseozoushi_06-1080.webp",
+        name: "haseozoushi_06.webp",
+      },
+      {
+        cat: "ekotoba",
+        chapter: "第三段　蔵人、陰陽師の占いにより女を待つ",
+        kobun: "",
+        gendaibun:
+          "蔵人は、帝の御機嫌が悪いので、一生懸命に女を探す。が、いっこうにみつからない。神仏に祈請したが、まったくその効験がなく、困り果てていた。<br><br>人のうわさに、<ruby><rb>文平</rb><rp>（</rp><rt>ふみひら</rt><rp>）</rp></ruby>という陰陽師こそは、当世隠れもない名人である、と聞いた蔵人は、さっそく、かの陰陽師のもとに行き、占ってもらった。<br><br>たまたま、当日は巳の日であった。「巳は<ruby><rb>蛇</rb><rp>（</rp><rt>くちなわ</rt><rp>）</rp></ruby>である。だから、いったん隠れても、必ずもとのところに現れるであろう。それも、夏の中、五月中には、隠れたところに現れるであろう」、という。<br><br>蔵人は、いくら陰陽師とはいえ、同じ凡夫の身である。当てにはなるまい、とたかをくくっていた。が、ともかくも、その後はいつか彼女と別れた左衛門の陣のあたりで、待つことにした。",
+        srcSp: "/images/haseozoushi_07-375.webp",
+        srcTb: "/images/haseozoushi_07-800.webp",
+        src: "/images/haseozoushi_07-1080.webp",
+        name: "haseozoushi_07.webp",
+        phrase: [
+          {
+            phrasekobun: "【小野道風】（おののみちかぜ）",
+            transphrase:
+              "［894～967］平安中期の書家。尾張の人。篁たかむらの孫。書道にすぐれ、和様発達の基礎を築いた。三蹟（さんせき）の一人で、その筆跡を野跡という。真跡とされるものに「智証大師諡号勅書」「屏風土代」など。本名は「みちかぜ」で、「とうふう」は後世に尊んで音でよんだもの。（デジタル大辞泉）",
+          },
+          {
+            phrasekobun: "【職事】（しきじ）",
+            transphrase:
+              "蔵人所の頭(とう)、および五位・六位の蔵人の総称。<br>蔵人所は、天皇と天皇家に関する私的な要件について、進奏、詔勅の伝宣を行ない、天皇身辺の雑事や宮中における物資の調達、儀式の奉行や宮中の整備取締りをするなど、昇殿者の統率と宮中諸雑事処理の中心であった。",
+          },
+        ],
+      },
+      {
+        load: false,
+        cat: "image",
+        srcSp: "/images/haseozoushi_08-375.webp",
+        srcTb: "/images/haseozoushi_08-800.webp",
+        src: "/images/haseozoushi_08-1080.webp",
+        name: "haseozoushi_08.webp",
+      },
+      {
+        cat: "ekotoba",
+        chapter:
+          "第四段　蔵人、<ruby><rb>最勝講</rb><rp>（</rp><rt>さいしょうこう</rt><rp>）</rp></ruby>聴聞のかの女をみつける",
+        kobun: "",
+        gendaibun:
+          "五月十三日、最勝講の初日のこと。蔵人は、かの女が前とは違った装束を着飾って参入するのに、出会った。小躍りして喜んだ蔵人は、人に紛れて、かの女の様子をうかがった。すると、かの女らは<ruby><rb>仁寿殿</rb><rp>（</rp><rt>じじゅうでん</rt><rp>）</rp></ruby>の西庇に、群衆の中に交じって聴聞しているのがみつかった。蔵人は、講が終わって、見失ってはいけないと、やきもきしていた。<br><br>ところが、幸いなことに、右小弁<ruby><rb>勧修寺経俊</rb><rp>（</rp><rt>かじゅうじつねとし</rt><rp>）</rp></ruby>（三十八歳）が<ruby><rb>殿上口</rb><rp>（</rp><rt>でんじょうぐち</rt><rp>）</rp></ruby>にいた。急いで駆け寄ると、かくかくしかじか、と耳打ちをした。が、あいにくなことに、帝は中宮と同列で聴聞の座においでになる。と、そこで、<ruby><rb>伝奏</rb><rp>（</rp><rt>でんそう</rt><rp>）</rp></ruby>の役人を捜したが、見当たらない。困り果てた蔵人は、女房の一位殿や宰相<ruby><rb>典待</rb><rp>（</rp><rt>のすけ</rt><rp>）</rp></ruby>に事の由を申した。かの女らの計らいで、帝の耳に達することができた。帝は、たいそう喜んで、今度こそは、行方を確かに突き止めるように、と女房を介して、下知が下った。やがて、講は終わった。あたりは、すっかり夕闇に包まれていた。",
+        srcSp: "/images/haseozoushi_09-375.webp",
+        srcTb: "/images/haseozoushi_09-800.webp",
+        src: "/images/haseozoushi_09-1080.webp",
+        name: "haseozoushi_09.webp",
+        phrase: [
+          {
+            phrasekobun: "【大内記】（だいないき）",
+            transphrase:
+              "律令制で、内記のうち上位の官職。<br>内記は、朝廷の書記。中務(なかつかさ)省にあって詔勅(しょうちょく)の作成，宮中の記録を担当。",
+          },
+          {
+            phrasekobun: "【三統元夏】（みむねのもとなつ）",
+            transphrase:
+              "平安時代中期の官吏。<br>三統理平(まさひら)の子。文章博士,ついで式部少輔(しょう)となり,天徳元年(957)東宮学士をかねた。<br>（デジタル版 日本人名大辞典+Plus）",
+          },
+        ],
+      },
+      {
+        load: false,
+        cat: "image",
+        srcSp: "/images/haseozoushi_10-375.webp",
+        srcTb: "/images/haseozoushi_10-800.webp",
+        src: "/images/haseozoushi_10-1080.webp",
+        name: "haseozoushi_10.webp",
+      },
+
+      {
+        cat: "ekotoba",
+        chapter: "第五段　蔵人、女の家を突き止め、帝の文をつける",
+        kobun: "",
+        gendaibun:
+          "最勝講が終わると、女は車に乗って、帰路を急いだ。蔵人は、賢い女に命じてあとをつけさせた。女を乗せた車は、三条白河の某少将の家に入った。かの女は夫のある身であった。<br><br>蔵人は、立ち帰って、帝にその様子を告げた。帝は、すぐさま筆をとると、＜あだにみし　夢かうつつかくれ竹の　おきふしわぶる恋ぞくるしき＞という一首の歌に添えて、「この暮れに、かならず」と書いて、蔵人に届けさせた。<br><br>女は夫のある身の上なので、困り果てた。事の次第を、夫の少将に打ち明ける。聞き終えた少将は、帝の恋慕とあれば、しょせん、いたし方もあるまい。すぐにもご返事を差し上げるように、と勧める。女は涙ぐみながら、帝の文を開いた。やがて、女は、ひと筆、「この暮れに、かならず」とある下に、「を」という一文字を墨黒々と書きつけると、使いに返した。",
+        srcSp: "/images/haseozoushi_13-375.webp",
+        srcTb: "/images/haseozoushi_13-800.webp",
+        src: "/images/haseozoushi_13-1080.webp",
+        name: "haseozoushi_13.webp",
+        phrase: [
+          {
+            phrasekobun: "【内侍所】（ないしどころ）",
+            transphrase:
+              "三種の神器(じんぎ)の一つである神鏡を、天皇との日常の同座を避けるようになって以後、安置した場所。平安前期以降、蔵司に変わり内侍所に置かれるようになったので、この名がある。かしこどころ。（精選版 日本国語大辞典）",
+          },
+          {
+            phrasekobun: "【温明殿】（うんめいでん）",
+            transphrase:
+              "平安京の内裏(だいり)十七殿の一つ。紫宸殿(ししんでん)の東北にあたり、綾綺殿(りょうきでん)の東、宣陽門の内にあり、その南部を賢所とし、神鏡を安置した。また、内侍の候所ともなっていたため内侍所ともいう。（精選版 日本国語大辞典）",
+          },
+          {
+            phrasekobun: "【藤原実頼】（ふじわらさねより）",
+            transphrase:
+              "平安中期の公卿。藤原忠平と宇多天皇の娘源順子の子。右大臣,左大臣を経て,康保4(967)年冷泉天皇の即位により関白太政大臣,次いで安和2(969)年円融天皇の摂政となり,以後摂政,関白が常置される先例となった。",
+          },
+        ],
+      },
+      {
+        load: false,
+        cat: "image",
+        srcSp: "/images/haseozoushi_14-375.webp",
+        srcTb: "/images/haseozoushi_14-800.webp",
+        src: "/images/haseozoushi_14-1080.webp",
+        name: "haseozoushi_14.webp",
+      },
+      {
+        load: false,
+        cat: "image",
+        srcSp: "/images/haseozoushi_15-375.webp",
+        srcTb: "/images/haseozoushi_15-800.webp",
+        src: "/images/haseozoushi_15-1080.webp",
+        name: "haseozoushi_15.webp",
+      },
+      {
+        cat: "ekotoba",
+        chapter: "第六段　帝、返し文の「を」の字のなぞにいぶかる",
+        kobun: "",
+        gendaibun:
+          "蔵人は、女の文を持ち帰った。帝が、取る手ももどかしく、文箱を開いてみると、もとのままではないか。帝はがっかりした。が、よくみれば、文の結び目が一度、解いた形跡がある。広げてみると、最後の「を」という一字だけが、別の手である。これが、彼女の返事と申すのか、と帝は苛立ちをつのらせた。が、いくら考えても、この一字の謎は解けない。<br><br>そこで、近侍の女房たちを呼び集めて、問いかけた。中の一人、藤原家隆の娘で、<ruby><rb>承明門院</rb><rp>（</rp><rt>しょうめいもんいん</rt><rp>）</rp></ruby>（源通親妻範子の連れ子、後鳥羽天皇の後宮）<ruby><rb>小宰相局</rb><rp>（</rp><rt>こさいしょうのつぼね</rt><rp>）</rp></ruby>という女房が、頭にひらめいた故事を申し上げた。関白二条<ruby><rb>教通</rb><rp>（</rp><rt>のりみち</rt><rp>）</rp></ruby>と<ruby><rb>小式部内侍</rb><rp>（</rp><rt>こしきぶないし</rt><rp>）</rp></ruby>の贈答歌の故事である。<br><br>教通が、「月」という文字を書いて、小式部内侍のもとに送った。彼女は、その下に「を」の字を加えて返した。いったい「月」という文字は、「夜も待つ」という意味がある。人の召し出しの文の返事には、男は「よ」、女は「を」と申します。したがって、小式部内侍は、教通の召しに応じて<ruby><rb>上東門院</rb><rp>（</rp><rt>しょうとうもんいん</rt><rp>）</rp></ruby>（藤原道長の娘、一条天皇の中宮）の局から抜け参りました。だから、彼女も、かならず、帝さまのおもとに<ruby><rb>伺候</rb><rp>（</rp><rt>しこう</rt><rp>）</rp></ruby>するにちがいありません、と。",
+        srcSp: "/images/haseozoushi_16-375.webp",
+        srcTb: "/images/haseozoushi_16-800.webp",
+        src: "/images/haseozoushi_16-1080.webp",
+        name: "haseozoushi_16.webp",
+        phrase: [
+          {
+            phrasekobun: "【内侍所】（ないしどころ）",
+            transphrase:
+              "三種の神器(じんぎ)の一つである神鏡を、天皇との日常の同座を避けるようになって以後、安置した場所。平安前期以降、蔵司に変わり内侍所に置かれるようになったので、この名がある。かしこどころ。（精選版 日本国語大辞典）",
+          },
+          {
+            phrasekobun: "【温明殿】（うんめいでん）",
+            transphrase:
+              "平安京の内裏(だいり)十七殿の一つ。紫宸殿(ししんでん)の東北にあたり、綾綺殿(りょうきでん)の東、宣陽門の内にあり、その南部を賢所とし、神鏡を安置した。また、内侍の候所ともなっていたため内侍所ともいう。（精選版 日本国語大辞典）",
+          },
+          {
+            phrasekobun: "【藤原実頼】（ふじわらさねより）",
+            transphrase:
+              "平安中期の公卿。藤原忠平と宇多天皇の娘源順子の子。右大臣,左大臣を経て,康保4(967)年冷泉天皇の即位により関白太政大臣,次いで安和2(969)年円融天皇の摂政となり,以後摂政,関白が常置される先例となった。",
+          },
+        ],
+      },
+      {
+        load: false,
+        cat: "image",
+        srcSp: "/images/haseozoushi_17-375.webp",
+        srcTb: "/images/haseozoushi_17-800.webp",
+        src: "/images/haseozoushi_17-1080.webp",
+        name: "haseozoushi_17.webp",
+      },
+      {
+        cat: "ekotoba",
+        chapter: "第七段　夜陰に紛れて、女が帝のもとに参入",
+        kobun: "",
+        gendaibun:
+          "夜もしだいに更けていった。が、帝は寝所へはお入りにならない。かすかに、<ruby><rb>宿直申</rb><rp>（</rp><rt>とのいもうし</rt><rp>）</rp></ruby>の声が聞こえてくる。はや、丑時（午前二時）と覚える。<br><br>折から、例の蔵人が、彼女が参入したことを告げてきた。帝は、気もそぞろ。うれしさがこみあげた。唐の国に、絶世の美女とうたわれた漢の武帝の李夫人や楊貴妃を絵に描いたとて、彼女に及ぶものではない、と。<br><br>女を傍ら近く召し寄せて、さまざま語り明かすうちに、はや短い夏の夜は、明け方近くなった。女は、夫のある身、ままにならぬことを綿々とかきくどいた。帝は、いったん女を家に帰した。が、帝の心底は、彼女を後宮に召すつもりであった。<br><br>しかしながら、彼女の決意はなかなか固く、容易に翻すことができない。現在のままの身分で、人にも知られることがなければ、ときどきは召しにも応じよう、という。ついに、帝は彼女をもとの家に住まわせ、折々、ひそかに近侍させていた、という。",
+        srcSp: "/images/haseozoushi_18-375.webp",
+        srcTb: "/images/haseozoushi_18-800.webp",
+        src: "/images/haseozoushi_18-1080.webp",
+        name: "haseozoushi_18.webp",
+        phrase: [
+          {
+            phrasekobun: "【内侍所】（ないしどころ）",
+            transphrase:
+              "三種の神器(じんぎ)の一つである神鏡を、天皇との日常の同座を避けるようになって以後、安置した場所。平安前期以降、蔵司に変わり内侍所に置かれるようになったので、この名がある。かしこどころ。（精選版 日本国語大辞典）",
+          },
+          {
+            phrasekobun: "【温明殿】（うんめいでん）",
+            transphrase:
+              "平安京の内裏(だいり)十七殿の一つ。紫宸殿(ししんでん)の東北にあたり、綾綺殿(りょうきでん)の東、宣陽門の内にあり、その南部を賢所とし、神鏡を安置した。また、内侍の候所ともなっていたため内侍所ともいう。（精選版 日本国語大辞典）",
+          },
+          {
+            phrasekobun: "【藤原実頼】（ふじわらさねより）",
+            transphrase:
+              "平安中期の公卿。藤原忠平と宇多天皇の娘源順子の子。右大臣,左大臣を経て,康保4(967)年冷泉天皇の即位により関白太政大臣,次いで安和2(969)年円融天皇の摂政となり,以後摂政,関白が常置される先例となった。",
+          },
+        ],
+      },
+      {
+        load: false,
+        cat: "image",
+        srcSp: "/images/haseozoushi_19-375.webp",
+        srcTb: "/images/haseozoushi_19-800.webp",
+        src: "/images/haseozoushi_19-1080.webp",
+        name: "haseozoushi_19.webp",
+      },
+      {
+        cat: "ekotoba",
+        chapter: "第八段　女により、夫は中将に昇進。人呼んで、<ruby><rb>鳴門</rb><rp>（</rp><rt>なると</rt><rp>）</rp></ruby>中将と",
+        kobun: "",
+        gendaibun: "ところで、女の夫たる少将は、<ruby><rb>逼塞</rb><rp>（</rp><rt>ひっそく</rt><rp>）</rp></ruby>して隠者同然の身となって、いつとはなしに、世間から忘れ去られていた。が、帝の声がかかりで意外にも召し出されて、近習の人数に加えられた。そして、ほどなく昇進して、中将に任ぜられた。<br><br>しかし、妻と帝との情事は、隠そうとすればするほどに、世間にうわさが広がった。いつしか、たれ知らぬ者はいなくなった。やがて、口さがない人々は、この夫に 「鳴門の中将」 とあだ名をつけた。<br><br>いったい、鳴門という所は、阿波と淡路のはざまで、ワカメの産地として、古来有名であった。当時の人々は、この鳴門は、＜よきめ（わかめのめと、女のめをかける）ののぼる所）＞として知られていた。古来、＜君臣水魚の交わり＞ということわざがある。後嵯峨天皇とこの中将とは、まさにそれである、と。",
+        srcSp: "/images/haseozoushi_18-375.webp",
+        srcTb: "/images/haseozoushi_18-800.webp",
+        src: "/images/haseozoushi_18-1080.webp",
+        name: "haseozoushi_18.webp",
+        phrase: [
+          {
+            phrasekobun: "【内侍所】（ないしどころ）",
+            transphrase:
+              "三種の神器(じんぎ)の一つである神鏡を、天皇との日常の同座を避けるようになって以後、安置した場所。平安前期以降、蔵司に変わり内侍所に置かれるようになったので、この名がある。かしこどころ。（精選版 日本国語大辞典）",
+          },
+          {
+            phrasekobun: "【温明殿】（うんめいでん）",
+            transphrase:
+              "平安京の内裏(だいり)十七殿の一つ。紫宸殿(ししんでん)の東北にあたり、綾綺殿(りょうきでん)の東、宣陽門の内にあり、その南部を賢所とし、神鏡を安置した。また、内侍の候所ともなっていたため内侍所ともいう。（精選版 日本国語大辞典）",
+          },
+          {
+            phrasekobun: "【藤原実頼】（ふじわらさねより）",
+            transphrase:
+              "平安中期の公卿。藤原忠平と宇多天皇の娘源順子の子。右大臣,左大臣を経て,康保4(967)年冷泉天皇の即位により関白太政大臣,次いで安和2(969)年円融天皇の摂政となり,以後摂政,関白が常置される先例となった。",
+          },
+        ],
+      },
+      {
+        load: false,
+        cat: "image",
+        srcSp: "/images/haseozoushi_11-375.webp",
+        srcTb: "/images/haseozoushi_11-800.webp",
+        src: "/images/haseozoushi_11-1080.webp",
+        name: "haseozoushi_11.webp",
+      },
+      {
+        load: false,
+        cat: "image",
+        srcSp: "/images/haseozoushi_12-375.webp",
+        srcTb: "/images/haseozoushi_12-800.webp",
+        src: "/images/haseozoushi_12-1080.webp",
+        name: "haseozoushi_12.webp",
+      },
+    ],
+  },
 ];
 export default data;

@@ -32,9 +32,24 @@ ekotoba
 
 .section.ekotoba {
   writing-mode: vertical-rl;
+  z-index: 1;
 }
 .section.ekotoba {
   position: relative;
+}
+.section.ekotoba::after{
+  content: "";
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height:100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+  opacity: 0.6;
+}
+.section.ekotoba > *{
+  z-index: 3;
 }
 .section.ekotoba h3 {
   margin: 0 2rem;

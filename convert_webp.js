@@ -1,8 +1,6 @@
 import imagemin from 'imagemin';
 import imageminWebp from 'imagemin-webp';
 
-// const imagemin = require("imagemin");
-// const imageminWebp = require("imagmagemin-webpemin");
 
 (async () => {
   await imagemin(['./img/*.{jpg,png}'], {
@@ -10,3 +8,5 @@ import imageminWebp from 'imagemin-webp';
     plugins: [imageminWebp({ quality: 100 })],
   });
 })();
+
+// npm start（node convert_webp.js）
