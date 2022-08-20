@@ -37,7 +37,7 @@ ekotoba
 .section.ekotoba {
   position: relative;
 }
-.section.ekotoba::after{
+/* .section.ekotoba::after{
   content: "";
   position: absolute;
   z-index: 2;
@@ -50,7 +50,7 @@ ekotoba
 }
 .section.ekotoba > *{
   z-index: 3;
-}
+} */
 .section.ekotoba h3 {
   margin: 0 2rem;
   font-weight: 500;
