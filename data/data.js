@@ -2,20 +2,21 @@ const data = [
   {
     title: "鳥獣人物戯画絵巻",
     titleen: "cyoujyujinbutsugiga_kou",
-    author: "山崎董詮",
-    edition: "甲巻 摸本",
+    author: "鳥羽僧正覚猷",
+    edition: "甲巻",
     backgroundImage: "images/110310200304.webp",
     thumb: "/images/cyoujyuu_yamazaki_kou_thumb.webp",
     thumb2: "/images/cyoujyuu_yamazaki_kou_thumb2.webp",
     srcFirstView: "/images/cyoujyuu_yamazaki_kou_01-1080.webp",
     video: "https://youtu.be/Si8NzY2drSg",
     gif: "/img/cyoujyuu_yamazaki_kou.mp4",
-    era: "明治22年以前",
+    era: "平安時代末期",
     metadesc:
       "誰もが知っている国宝、鳥獣人物戯画絵巻甲巻の全シーンを横スクロールでご覧になることができます。猿と蛙の喧嘩はなぜ起きたのか？、兎と蛙の相撲の結末は？、猫と鼠の思わぬ共演！？、などなど動物たちの生き生きとした表情を、心ゆくまでご覧ください☆",
     desc: "平安時代（12世紀）に描かれた鳥獣人物戯画絵巻 甲巻の摸本。有名な猿と蛙の喧嘩、兎と蛙の相撲のほか、田楽、賭弓など、当時ミヤコで流行っていた様々な遊びに動物が興じる姿が、表情豊かに描かれている。摸本や断簡には競馬や双六遊び、高跳びなど、現在知られている絵巻とは異なるモチーフの遊びが描かれている。そもそもははもっと長大な絵巻だったようだ。",
     readMore: false,
     type: "連続式絵巻",
+    typeColor:'renzokushiki',
     sourceImage: "鳥獣人戯画絵巻 摸本（山崎董詮画 国立博物館）",
     emakis: [
       {
@@ -261,19 +262,20 @@ const data = [
   {
     title: "鳥獣人物戯画絵巻",
     titleen: "cyoujyujinbutsugiga_otu",
-    author: "山崎董詮",
-    edition: "乙巻 摸本",
+    author: "鳥羽僧正覚猷",
+    edition: "乙巻",
     backgroundImage: "images/110310200304.webp",
     video: "https://youtu.be/0OCF6w7Ljj4",
     thumb: "/images/cyoujyuu_yamazaki_otu_thumb.webp",
     thumb2: "/images/cyoujyuu_yamazaki_otu_thumb2.webp",
     srcFirstView: "/images/cyoujyuu_yamazaki_otu_01-1080.webp",
-    era: "明治22年以前",
+    era: "平安時代末期",
     metadesc:
       "国宝として有名な甲巻と同じ絵師が描いたと言われる、鳥獣人物戯画絵巻乙巻の全シーンを横スクロールでご覧になることができます。「動物尽くし」の図鑑のような乙巻は、牛や馬など現実の動物と、玄武、麒麟など空想の動物が、想像力を交えて生き生きと描かれています。",
     desc: "平安時代（12世紀）に描かれた鳥獣人物戯画絵巻 乙巻の摸本。「動物尽くし」の図鑑のような一巻で、絵師の手習いとして使われたという説もある。前半は「日本に生息する動物」を扱い、馬、牛など当時身近だった動物が描かれる。後半は、一転して「日本に生息しない動物＆霊獣」が描かれ、玄武、麒麟など空想上の動物と象、虎など日本には生息していない動物が、想像力を交えて描かれる。",
     gif: "/img/cyoujyuu_yamazaki_kou.mp4",
     type: "連続式絵巻",
+    typeColor:'renzokushiki',
     sourceImage: "鳥獣人戯画絵巻 摸本（山崎董詮画 国立博物館）",
     emakis: [
       {
@@ -549,8 +551,8 @@ const data = [
   {
     title: "鳥獣人物戯画絵巻",
     titleen: "cyoujyujinbutsugiga_hei",
-    author: "山崎董詮",
-    edition: "丙巻 摸本",
+    author: "不明",
+    edition: "丙巻",
     backgroundImage: "images/110310200304.webp",
     video: "https://youtu.be/ZByb_6oS-30",
     thumb: "/images/cyoujyuu_yamazaki_hei_thumb.webp",
@@ -559,9 +561,10 @@ const data = [
     metadesc:
       "人間と動物の戯画が描かれる鳥獣人物戯画絵巻乙巻の全シーンを横スクロールでご覧になることができます。丙巻の後半は、甲巻に戻ったかのように、蛙、猿などが競馬、蹴鞠に興じる様が描かれています。甲巻の成り立ちを考えるうえで、興味が尽きない一巻です。",
     desc: "平安～鎌倉時代（12世紀～13世紀）にかけて描かれた鳥獣人物戯画絵巻 丙巻の摸本。この巻になり初めて人間が登場する。双六、目比べなど庶民が遊びに興じするさまが、前半の「人間の戯画」で生き生きと描かれる。後半は一転して、甲巻に戻ったかのように、蛙、猿などが競馬、蹴鞠に興じる様が描かれる。前半と後半は、もともと料紙の裏表に描かれており、描かれた時代も絵師も違うのではないといの指摘がある。",
-    era: "明治22年以前",
+    era: "平安～鎌倉時代",
     gif: "/images/cyoujyuu_yamazaki_hei.mp4",
     type: "連続式絵巻",
+    typeColor:"renzokushiki",
     sourceImage: "鳥獣人戯画絵巻 摸本（山崎董詮画 国立博物館）",
     emakis: [
       {
@@ -812,8 +815,8 @@ const data = [
   {
     title: "鳥獣人物戯画絵巻",
     titleen: "cyoujyujinbutsugiga_tei",
-    author: "山崎董詮",
-    edition: "丁巻 摸本",
+    author: "不明",
+    edition: "丁巻",
     backgroundImage: "images/110310200304.webp",
     video: "https://youtu.be/Qgc0lrTPkiY",
     thumb: "/images/cyoujyuu_yamazaki_tei_thumb.webp",
@@ -824,9 +827,10 @@ const data = [
     metadesc:
       "人間しか描かれない異色の鳥獣人物戯画絵巻丁巻の全シーンを横スクロールでご覧になることができます。腕のたつ絵師が、酔った勢いで一気に描きあげたような勢いのある荒々しい描き方が面白く、スピード感があります。リアルな顔の公卿は必見です。",
     desc: "鎌倉時代に描かれた鳥獣人物戯画絵巻 丁巻の摸本。甲、乙、丙巻とはタッチがまったく異なり、鳥獣戯画といいながら人間しか登場しない。腕のたつ絵師が、酔った勢いで一気に描きあげたような勢いのある筆致が特徴。「番論義に着座した公卿たち」では、着座した4人の公卿のうち1人だけがリアルな顔（似絵）で描かれるなど、謎多き一巻でもある。",
-    era: "明治22年以前",
+    era: "鎌倉時代末期",
     gif: "/images/cyoujyuu_yamazaki_kou.mp4",
     type: "連続式絵巻",
+    typeColor:'renzokushiki',
     sourceImage: "鳥獣人戯画絵巻 摸本（山崎董詮画 国立博物館）",
     emakis: [
       {
@@ -1045,16 +1049,17 @@ const data = [
   {
     title: "直幹申文絵詞",
     titleen: "naomotomousibumiekotoba",
-    author: "源朝臣武智良",
+    author: "不明",
     backgroundImage: "images/washi_green_03.webp",
     video: "https://youtu.be/Qgc0lrTPkiY",
     thumb: "/images/naomoto_thumb.webp",
     thumb2: "/images/naomoto_thumb2.webp",
     srcFirstView: "/images/naomoto_02-1080.webp",
-    desc: "子だくさんの文章博士、<ruby><rb>橘直幹</rb><rp>（</rp><rt>たちばななおもと</rt><rp>）</rp></ruby>は、一家を支えるために民部大輔との兼任を望み、申文を書き朝廷に奉った。しかし、申文を目にした帝は、その文言に気分を害し、直幹の望みは叶えられなかった。月日は流れ、ある夜、内裏は炎に包まれる。しかし内裏に残された直幹の申文が（？）、奇跡を起こすー",
-    era: "安政4（1857）年",
+    desc: "子だくさんの文章博士、<ruby><rb>橘直幹</rb><rp>（</rp><rt>たちばななおもと</rt><rp>）</rp></ruby>は、一家を支えるために民部大輔との兼任を望み、申文を書き朝廷に奉った。しかし、申文を目にした帝は、その文言に気分を害し、直幹の望みは叶えられなかった。月日は流れ、ある夜、内裏は炎に包まれる。しかし内裏に残された直幹の申文が（？）、奇跡を起こす—",
+    era: "鎌倉時代",
     gif: "/images/cyoujyuu_yamazaki_kou.mp4",
     type: "説話絵巻",
+    typeColor:'setsuwa',
     sourceImage: "直幹申文絵詞（国立国会図書館）",
     sourceEkotoba: "『日本の絵巻十七 奈与竹物語絵巻 直幹申文絵詞』",
     emakis: [
@@ -1306,16 +1311,17 @@ const data = [
   {
     title: "奈与竹物語絵巻",
     titleen: "nayotakemonogatariemaki",
-    author: "谷文膺",
+    author: "不明",
     backgroundImage: "images/washi_green_03.webp",
     video: "https://youtu.be/Qgc0lrTPkiY",
     thumb: "/images/nayotake_thumb.webp",
     thumb2: "/images/nayotake_thumb2.webp",
     srcFirstView: "/images/nayotake_02-1080.webp",
-    desc: "",
-    era: "",
+    desc: "平安の頃の春三月、桜が満開の宮廷で蹴鞠の遊戯が行われた。時のミカド、御嵯峨天皇は、見物客のなかに美しい女人を見つけ、ひと目惚れしてしまう。急いで部下の者に彼女のあとを追わせ、宮廷にくるよう迫るが、ミカドに見染められた女人は、人妻であった—",
+    era: "鎌倉時代",
     gif: "/images/cyoujyuu_yamazaki_kou.mp4",
     type: "説話絵巻",
+    typeColor:'setsuwa',
     sourceImage: "弱竹物語（国立国会図書館）",
     sourceEkotoba: "『日本の絵巻十七 奈与竹物語絵巻 直幹申文絵詞』",
     emakis: [
@@ -1667,6 +1673,7 @@ const data = [
     era: "鎌倉時代末期",
     gif: "/images/cyoujyuu_yamazaki_kou.mp4",
     type: "説話絵巻",
+    typeColor:'setsuwa',
     sourceImage:
       "繪卷物長谷雄卿逢羅城門鬼神之圖（京都府立京都学・歴彩館　デジタルアーカイブ）",
     sourceEkotoba: "『鬼のいる光景 -『長谷雄草紙』に見る中世-』（楊暁捷 著　角川叢書）",

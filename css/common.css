@@ -1,4 +1,4 @@
-/*
+  /*
 =============== 
 Root
 ===============
@@ -19,6 +19,7 @@ Root
   --clr-primary-03: #5c8fed;
   --clr-accent-01: #e1644d;
   --clr-accent-02: #ff8c77;
+  --clr-green-01: #54896a;
   --clr-btn: #d6d6d6;
   --clr-btn-02: #b3b3b3;
   --transition: all 0.3s linear;

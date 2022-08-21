@@ -59,7 +59,6 @@ nav {
   margin-bottom: 3rem;
   display: grid;
   justify-content: center;
-  
 }
 .attention-container {
   display: grid;
@@ -181,6 +180,20 @@ nav {
 }
 .single-img-container .video-icon:hover {
   color: var(--clr-accent-01);
+}
+.emaki-type {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 1.4rem;
+  color: var(--clr-white);
+  padding: 0.1rem 0.8rem;
+}
+.renzokushiki {
+  background-color: var(--clr-accent-02);
+}
+.setsuwa {
+  background-color: var(--clr-green-01);
 }
 
 .emaki-header {
