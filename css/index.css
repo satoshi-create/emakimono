@@ -34,7 +34,7 @@ nav {
   z-index: 99;
 }
 
-.links {
+.nav-links {
   height: 0;
   overflow: hidden;
   transition: var(--transition);
@@ -42,7 +42,7 @@ nav {
 .show-links {
   height: 15rem;
 }
-.links a {
+.nav-links a {
   font-size: 2rem;
   text-transform: capitalize;
   display: block;
@@ -86,7 +86,7 @@ nav {
   .nav-toggle {
     display: none;
   }
-  .links {
+  .nav-links {
     height: auto;
     display: flex;
   }

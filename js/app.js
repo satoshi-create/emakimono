@@ -1,16 +1,43 @@
+import links from "../data/links.js";
+
 $(function () {
+  // nav
+  const nav = document.querySelector(".nav-center");
+
+  nav.innerHTML = `
+  <div class="nav-header">
+    <a href="index.html">
+      <h1>横スクロールで楽しむ絵巻物</h1>
+    </a>
+    <button class="btn nav-toggle">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+  <ul class="nav-links">
+  ${links
+    .map((item) => {
+      const { title, path } = item;
+      return `
+      <li>
+      <a href=${path}>${title}</a>
+    </li>
+      `;
+    })
+    .join("")}
+    </ul>
+  `;
+
+  const navToggle = document.querySelector(".nav-toggle");
+  const navlinks = document.querySelector(".nav-links");
+
+  navToggle.addEventListener("click", function () {
+    navlinks.classList.toggle("show-links");
+  });
 
   // footer
   const year = new Date().getFullYear();
   const footer = document.querySelector(".footer");
   footer.innerHTML = `<p>@${year} 横スクロールで楽しむ絵巻物 all right reserved</p> `;
-
-  const navToggle = document.querySelector(".nav-toggle");
-  const links = document.querySelector(".links");
-
-  navToggle.addEventListener("click", function () {
-    links.classList.toggle("show-links");
-  });
 
   // fixed navbar
   // const navbar = document.querySelector("nav");
