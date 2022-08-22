@@ -51,36 +51,34 @@ $(function () {
     })
     .join("");
 
-  // readmore.js
-  $(".emaki-desc p").readmore({
-    collapsedHeight: 100,
-    moreLink: '<a class="btn" href="#"><span>...続きを読む</span></a>',
-    lessLink: '<a class="btn btn_close" href="#"><span>...閉じる</span></a>',
-  });
-});
+  // // readmore.js
+  // $(".emaki-desc p").readmore({
+  //   collapsedHeight: 100,
+  //   moreLink: '<a class="btn" href="#"><span>...続きを読む</span></a>',
+  //   lessLink: '<a class="btn btn_close" href="#"><span>...閉じる</span></a>',
+  // });
 
-console.log(data);
-const filterddata = data.filter((item) => item.type === "連続式絵巻");
-console.log(filterddata);
+  const filterddata = data.filter((item) => item.type === "連続式絵巻");
+  console.log(filterddata);
 
-const filterdContentsList = document.querySelector("#filterdConteiner-list");
+  const filterdContentsList = document.querySelector("#filterdConteiner-list");
 
-filterdContentsList.innerHTML = filterddata
-  .map((item, index) => {
-    const {
-      era,
-      thumb,
-      desc,
-      title,
-      titleen,
-      edition,
-      author,
-      video,
-      thumb2,
-      type,
-      typeColor,
-    } = item;
-    return `
+  filterdContentsList.innerHTML = filterddata
+    .map((item, index) => {
+      const {
+        era,
+        thumb,
+        desc,
+        title,
+        titleen,
+        edition,
+        author,
+        video,
+        thumb2,
+        type,
+        typeColor,
+      } = item;
+      return `
   <div class="emaki-card">
   <div class="single-img-container">
   <picture>
@@ -111,5 +109,6 @@ filterdContentsList.innerHTML = filterddata
   </div>  
 </a>
 `;
-  })
-  .join("");
+    })
+    .join("");
+});
